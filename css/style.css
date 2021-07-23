@@ -1,0 +1,74 @@
+*, *::after, *::before {
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    /*Esto sirve para trabajar los rem con multiplos de 10 y no de 16*/
+    font-size: 10px;
+}
+
+body {
+    background: lemonchiffon;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+#About_Us{
+    width: 100%;
+    height: 45vh;
+}
+
+#About_Us nav{
+    background: rgb(37, 30, 30);
+    color: white;
+    display: flex;
+    padding: 0;
+    height: 10%;
+    width: 100%;
+}
+
+#About_Us nav span {
+    line-height: 100%;
+    margin-left: 5%;
+    font-size: 3rem;
+}
+
+#About_Us nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 45%;
+    margin-right: 3%;
+}
+
+#About_Us nav ul li {
+    line-height: 50%;
+    font-size: 2rem;
+}
+
+#About_Us nav ul li a {
+    color: white;
+}
+
+#About_Us h1 {
+    font-size: 3.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+#About_Us p {
+    float: left;
+    font-size: 2rem;
+    width: 60%;
+    margin-right: 5%;
+}
+
+#About_Us img {
+    height: 50%;
+    width: 30%;
+}
