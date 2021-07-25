@@ -1,4 +1,3 @@
-
 .hero{
     height: 550px;
     width: 100%;
@@ -7,8 +6,10 @@
   }
 
   h1{
-    color: rgba(4, 142, 255, 0.685);
+    color: rgba(35, 95, 223, 0.664);
+    text-shadow: rgb(6, 17, 20);
     font-size: 70px;
+    font-weight: bolder;
     display:flex;/* De esta linea para abajo es lo que necesitamos para centrar el texto del hero*/
     height: 550px; 
     width: 100%;
@@ -17,7 +18,7 @@
   }
  
 .img_des{
-    height: 500px;
+    height:250px;
     width:300px;
 }
 body{ /*Esto es para darle un color degradado al Body (se saco de la pagina https://uigradients.com/#CoolSky)*/
@@ -31,49 +32,37 @@ h2{
     color:#090788;
 }
 
-
 .parrafo_des{
     font-size: 20px;
-=======
-#About_Us p {
-    float: left;
-    font-size: 2rem;
-    width: 60%;
-    margin-right: 5%;
+    margin-left: 50px; /* Esta linea y la de abajo sirven para centrar un poco el parrafo con ayuda de los margenes*/
+    margin-right: 50px;
+}
+section{/*Esto nos ayuda a separar un poco cada seccion*/
+    padding-top: 30px;
 }
 
-#About_Us img {
-    height: 50%;
-    width: 30%;
+.card{
+    background: #005AA7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-#members{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10%;
-    grid-template-rows: repeat(3, 1fr);
-    width: 100%;
-    height: 50%;
+.card-text{
+    color: white;
 }
 
-#members div {
-    font-size: 2rem;
+h6{
+    color: rgba(3, 3, 90, 0.836);
 }
 
-
-#members div:nth-child(5){
-    grid-column: 1/3;
-
+.card-about-us{
+    cursor: pointer;/*Esta parte hace que el cursor cambie cuando se posiciona sobre las cards*/
 }
 
-#members div:not(div:nth-child(5)) {
-    padding-left: 15%;
+.cards-about-us:hover{
+    transform:scale(1.1);/*Esta parte hace pase el mouse sobre la card, esta aumente un poco de tama*/
 }
 
-
-#members div:nth-child(5) img, #members div:nth-child(5) span{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+#nav-fix{
+    z-index: 100;
 }
