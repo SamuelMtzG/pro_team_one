@@ -1,13 +1,16 @@
 .hero{
-    height: 550px;
+    height: 100vh;
     width: 100%;
     background-image:url("../images/hero.jpg");
+    background-color: #2980B9;
     background-size: cover;/*Esto es para que la imagen no se repita*/
+    background-blend-mode:lighten;
+    opacity: .8;
   }
 
   h1{
-    color: rgba(35, 95, 223, 0.664);
-    text-shadow: rgb(6, 17, 20);
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 10px rgb(6, 17, 20);
     font-size: 70px;
     font-weight: bolder;
     display:flex;/* De esta linea para abajo es lo que necesitamos para centrar el texto del hero*/
@@ -25,7 +28,6 @@ body{ /*Esto es para darle un color degradado al Body (se saco de la pagina http
     background: #2980B9;  
     background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); 
     background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); 
-    mix-blend-mode: multiply;
 }
 
 video { 
