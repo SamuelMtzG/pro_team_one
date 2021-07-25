@@ -25,7 +25,25 @@ body{ /*Esto es para darle un color degradado al Body (se saco de la pagina http
     background: #2980B9;  
     background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); 
     background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); 
+    mix-blend-mode: multiply;
 }
+
+video { 
+   
+    position: fixed;    
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); 
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    opacity: .25;
+    overflow: hidden;
+    object-fit: cover;
+  
+  } /* Esta parte es la que pone el video de fondo */
 
 h2{
     text-align: center;
