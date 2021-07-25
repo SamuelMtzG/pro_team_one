@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+</head>
+<!-- Pusé un style background-color muy similar al que se propuso en el wireframe -->
+<body style="background-color: #a2b1a6;">
+    <header id="contact_us">
+        <nav class="navbar navbar-light fixed-top" style="background-color: #000000">
+            <a class="navbar-brand text-light" href="#">
+                <img src="https://getbootstrap.com/docs/4.6/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top">
+                Logo
+            </a>
+            <!-- <span>LOGO</span> -->
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link active text-light" href="./index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active text-light" href="./contactanos.html">Contactanos</a></li>
+                <li class="nav-item"><a class="nav-link active text-light" href="./acerca_de_nosotros.html">Acerca de Nosotros</a></li>
+            </ul> 
+            <!-- fin de .nav -->
+        </nav>
+        <!-- fin de la etiqueta nav -->
+    </header>
+    <!-- fin de la etiqueta header -->
+
+    <div class="container">
+        <!-- Agregué espacio hasta arriba usando la etiqueta br, en total usé 3 -->
+        <br>
+        <br>
+        <br>
+
+        <h1>Contacta con nosotros</h1>
+        <p class="lead">Si tienes alguna duda o necesitas hablar con nosotros, escríbenos y dinos qué te preocupa. ¡Nuestro equipo estará encantado de ayudarte!</p>
+        <!-- Usé la etiqueta br para agregar espacio entre el párrafo de arriba y el formulario -->
+        <br>
+
+        <!-- Usé la clase .row para poder justificar todo el contenido hacia el centro con justify-content de Bootstrap -->
+        <div class="row justify-content-center">
+            <!-- Usé .w-50 para que el formulario ocupe el 50% de ancho que tiene la row -->
+            <form class="w-50">
+                <!-- Este div es para el input donde el usuario escribe su nombre -->
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <!-- Este div es para el input donde el usuario escribe su correo electrónico -->
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu correo electrónico con nadie más</small>
+                </div>
+                <!-- Este div es para el input donde el usuario escribe su asunto a tratar -->
+                <div class="form-group">
+                    <label for="matter">Asunto:</label>
+                    <input type="text" class="form-control" id="matter">
+                </div>
+                <!-- Este div es para el input donde el usuario escribe el nombre del proyecto -->
+                <div class="form-group">
+                    <label for="nameProject">Proyecto:</label>
+                    <input type="text" class="form-control" id="nameProject">
+                </div>
+                <!-- Este div es para el textarea donde el usuario escribe su mensaje -->
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea class="form-control" id="message" rows="3"></textarea>
+                </div>
+                <!-- Botón para enviar la información del formulario al servidor (eso creo xd) -->
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <!-- Espacios extra para agregar entre el fondo de la página y el botón de "Enviar" -->
+                <br>
+                <br>
+            </form>
+            <!-- fin del form -->
+        </div>
+        <!-- fin de la etiqueta div .row -->
+    </div>
+    <!-- fin de la etiqueta div .container -->
+</body>
+</html>
