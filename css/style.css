@@ -1,66 +1,40 @@
-*, *::after, *::before {
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
-}
 
-html{
-    /*Esto sirve para trabajar los rem con multiplos de 10 y no de 16*/
-    font-size: 10px;
-}
-
-body {
-    background: lemonchiffon;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    height: 100vh;
+.hero{
+    height: 550px;
     width: 100%;
-}
+    background-image:url("../images/hero.jpg");
+    background-size: cover;/*Esto es para que la imagen no se repita*/
+  }
 
-#About_Us{
+  h1{
+    color: rgba(4, 142, 255, 0.685);
+    font-size: 70px;
+    display:flex;/* De esta linea para abajo es lo que necesitamos para centrar el texto del hero*/
+    height: 550px; 
     width: 100%;
-    height: 45vh;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+.img_des{
+    height: 500px;
+    width:300px;
+}
+body{ /*Esto es para darle un color degradado al Body (se saco de la pagina https://uigradients.com/#CoolSky)*/
+    background: #2980B9;  
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); 
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); 
 }
 
-#About_Us nav{
-    background: rgb(37, 30, 30);
-    color: white;
-    display: flex;
-    padding: 0;
-    height: 10%;
-    width: 100%;
-}
-
-#About_Us nav span {
-    line-height: 100%;
-    margin-left: 5%;
-    font-size: 3rem;
-}
-
-#About_Us nav ul {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin-left: 45%;
-    margin-right: 3%;
-}
-
-#About_Us nav ul li {
-    line-height: 50%;
-    font-size: 2rem;
-}
-
-#About_Us nav ul li a {
-    color: white;
-}
-
-#About_Us h1 {
-    font-size: 3.5rem;
-    width: 100%;
+h2{
     text-align: center;
+    color:#090788;
 }
 
+
+.parrafo_des{
+    font-size: 20px;
+=======
 #About_Us p {
     float: left;
     font-size: 2rem;
