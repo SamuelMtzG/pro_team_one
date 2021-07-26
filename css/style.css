@@ -61,6 +61,7 @@ section{/*Esto nos ayuda a separar un poco cada seccion*/
     padding-top: 30px;
 }
 
+
 .card{ /* Esta parte le dara un efecto glass a las card */
     color: white;
     display: flex;
@@ -95,6 +96,9 @@ h6{
     z-index: 100;
 }
 
+#samuel_m {
+    background: #a133a1;
+}
 #gold-Elias{
     background: #e9d362;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #333333, #e9d362);  /* Chrome 10-25, Safari 5.1-6 */
