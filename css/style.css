@@ -2,24 +2,22 @@
     height: 100vh;
     width: 100%;
     background-image:url("../img/hero.jpg");
-    background-color: #414444;
+    background-color: #2980B9;
     background-size: cover;/*Esto es para que la imagen no se repita*/
     background-blend-mode:lighten;
-    /*opacity: .8;*/
+    opacity: .8;
   }
 
   h1{
-
-    color: rgb(128, 109, 0);
+    color: rgb(255, 255, 255);
     text-shadow: 3px 3px 10px rgb(6, 17, 20);
-    font-size: 100px;
+    font-size: 70px;
     font-weight: bolder;
     display:flex;/* De esta linea para abajo es lo que necesitamos para centrar el texto del hero*/
     height: 550px; 
     width: 100%;
     align-items: center;
     justify-content: center;
-    font: small-caps 700%/800% serif; /*tipo de letra*/
   }
  
 .img_des{
@@ -43,7 +41,7 @@ video {
     width: auto;
     height: auto;
     z-index: -100;
-    opacity: .18;
+    opacity: .25;
     overflow: hidden;
     object-fit: cover;
   
@@ -51,15 +49,11 @@ video {
 
 h2{
     text-align: center;
-    color:#1b8832f3;
-    font-variant: all-petite-caps   300%/400%;/*tipo de letra*/
-    font-weight: bold;
-    font-weight: bold;
+    color:#090788;
 }
 
 .parrafo_des{
     font-size: 20px;
-    font-weight: bold;
     margin-left: 50px; /* Esta linea y la de abajo sirven para centrar un poco el parrafo con ayuda de los margenes*/
     margin-right: 50px;
 }
@@ -70,6 +64,7 @@ section{/*Esto nos ayuda a separar un poco cada seccion*/
 #samL-card{
     background-color: rgba(45, 87, 44, 0.2); 
 }
+
 .card{ /* Esta parte le dara un efecto glass a las card */
     color: white;
     display: flex;
@@ -77,15 +72,16 @@ section{/*Esto nos ayuda a separar un poco cada seccion*/
     align-items: center;
     gap: 20px;
     border-radius: 10px;
-    
     box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
     border: 2px rgba(255,255,255,0.4) solid;
     border-bottom: 2px rgba(40,40,40,0.35) solid;
     border-right: 2px rgba(40,40,40,0.35) solid;
 }
+
 .card-text{
-    color: rgb;
+    color: white;
 }
+
 h6{
     color: rgba(3, 3, 90, 0.836);
 }
@@ -115,33 +111,6 @@ h6{
     font-size: 1rem;
 }
 
-.col-md-4 img {
-    width: 100%;
-    height: 100%;
-}
-#cardbg-3{
-    background: #A770EF;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
-}
-#samuel_m-Card {
-    background: #a133a1;
-}
-#miriam-Card{
-    background: #c125ff8e;
-}
-#erika-Card{
-    background: #4568DC;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-#elias-Card{
-    background: #e9d362;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #333333, #e9d362);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #333333, #e9d362); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-}
-.card-h6{
-    color: whitesmoke;
-}
+
+
 
