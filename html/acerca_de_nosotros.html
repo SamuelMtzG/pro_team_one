@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acerca de nosotros</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
     <div class="bg-video">
-        <video  autoplay loop muted>
+        <video autoplay loop muted>
             <source src="../img/Tree - 12687.mp4" type="video/mp4">
             <source src="../img/dk5o1-nk5ri.webm" type="video/webm">
         </video>
     </div>
     <!--Barra de navegación-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" >
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <!--Logo y nombre de la red social-->
         <a class="navbar-brand" href="#">
             <img src="../img/fenix.png" width="30" height="30" class="d-inline-block align-top" alt="">
-            <span>SEMPRENDEDOR</span>
+            <span>OSAR</span>
         </a>
         <!--Botón para colapsar la barra de navegacion dependiendo de la resolución de la pantalla-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerBarraNav" aria-controls="navbarTogglerBarraNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerBarraNav"
+            aria-controls="navbarTogglerBarraNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <!--Div con nuestras opciones.-->
         <div class="collapse navbar-collapse" id="navbarTogglerBarraNav">
-            <ul class="navbar-nav ml-auto text-right" >
+            <ul class="navbar-nav ml-auto text-right">
                 <li class="nav-item">
                     <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
                 </li>
@@ -40,11 +44,12 @@
                 </li>
             </ul>
         </div>
-    </nav><!--Aqui termina barnav-->
+    </nav>
+    <!--Aqui termina barnav-->
     <section class="hero">
         <div class="container">
             <!--Esto hace que esta seccion tome todo el ancho de la pantalla-->
-            <h1>NOMBRE DE LA RED</h1>
+            <h1>OSAR</h1>
         </div>
     </section>
     <!--Aqui termina section hero-->
@@ -54,11 +59,12 @@
             <article class="col-md-8">
                 <h2>¿QUIENES SOMOS?</h2>
                 <p class="parrafo_des">
-                    SEMprendimiento es una red social de origen Mexicano que busca apoyar a emprendedores, centros de
-                    acopio, brigadas, negocios, entre otros servicios. Brindamos un espacio donde personas con la misma mentalidad y vision puedan conectarse. 
-
-                    ¿Tienes un proyecto en mente pero aún no encuentras a las personas indicadas para llevarlo a cabo? En semprendemiento seguro las encuentras
-                    
+                    SEMprendimiento es una organización de origen Mexicano el cual desarrolló una red social llamada
+                    OSAR que busca apoyar a emprendedores, centros de acopio, brigadas, negocios, entre otros servicios.
+                    Brindamos un espacio donde personas con la misma mentalidad y visión puedan conectarse. <br>
+                    ¿Tienes un proyecto en mente pero aún no encuentras a las personas indicadas para llevarlo a cabo?
+                    <br> En OSAR
+                    seguro las encuentras.
                 </p>
             </article>
             <div class="col-md-4">
@@ -78,32 +84,33 @@
                 </div>
             </div> <!-- Titulo integrantes -->
             <div class="row justify-content-around">
-                <div class="card mb-3 cards-about-us" style="max-width: 540px;">
+                <div class="card mb-3 cards-about-us" id="samuel_m-Card" style="max-width: 540px;">
                     <div class="row no-gutters">
-                        <div class="col-md-4">
-                            <img src="..." alt="...">
+                        <div class="col-md-4" style="display: flex; justify-content: center;">
+                            <img src="../img/samo_photo.jpg" alt="Samuel_Martinez" >
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                                <h6>Last updated 3 mins ag</h6>
+                                <h5 class="card-title">Samuel Martinez Garcia</h5>
+                                <p class="card-text">Samuel es ingeniero en computación. Tiene conocimientos
+                                    en Full Stack, teniendo una preferencia mayor por el desarrollo Front.
+                                </p>
+                                <h6 class="card-h6">Front Developer</h6>
                             </div>
                         </div>
                     </div>
                 </div> <!-- primera card -->
-                <div class="card mb-3 cards-about-us" style="max-width: 540px;">
+                <div class="card mb-3 cards-about-us" style="max-width: 540px;" id="miriam-Card">
                     <div class="row no-gutters">
                         <div class="col-md-4">
-                            <img src="..." alt="...">
+                            <img src="../img/miri.jpg" alt="foto">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                                <h6>Last updated 3 mins ago</h6>
+                                <h5 class="card-title">Miriam Diego</h5>
+                                <p class="card-text">Soy desarroladora junior, me gusta el diseño,la tecnología y la innovación.
+                                    Utilizó estas herramientas para ayudar.</p>
+                                <h6 class="card-h6">Desarrolladora Full Stack Junior</h6>
                             </div>
                         </div>
                     </div>
@@ -128,14 +135,14 @@
                 <div  class="card mb-3 cards-about-us" style="max-width: 540px;">
                     <div class="row no-gutters">
                         <div class="col-md-4">
-                            <img src="..." alt="...">
+                            <img src="../img/erikaDiaz.jpg" alt="Foto de Erika Diaz">
                         </div>
                         <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                                <h6>Last updated 3 mins ago</h6>
+                            <div class="card-body" id="erika-Card">
+                                <h5 class="card-title">Erika Diaz Buceta</h5>
+                                <p class="card-text">Hola, mi nombre es Erika, tengo 24 años y soy desarrolladora web.
+                                    Me gusta el arte, la naturaleza y la tecnología.</p>
+                                <h6 class="card-h6">Desarrolladora FullStack Junior.</h6>
                             </div>
                         </div>
                     </div>
@@ -143,17 +150,16 @@
 
             </div> <!-- termina segunda fila -->
             <div class="row justify-content-center">
-                <div class="card mb-3 cards-about-us" style="max-width: 540px;">
+                <div class="card mb-3 cards-about-us" id="elias-Card" style="max-width: 540px;">
                     <div class="row no-gutters">
-                        <div class="col-md-4">
-                            <img src="..." alt="...">
+                        <div class="col-md-4" style="display: flex; justify-content: center;">
+                            <img src="../img/ELIAS.jpeg" alt="ELIAS">
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8" >
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                                <h6>Last updated 3 mins ago</h6>
+                                <h5 class="card-title">Elias Flores Vazquez</h5>
+                                <p class="card-text">Hola, soy desarrollador Full Stack Developer. Apasionado de la vida, la tecnología, el cine y la música. </p>
+                                <h6 class="card-h6">Scrum Master Jr.</h6>
                             </div>
                         </div>
                     </div>
@@ -164,7 +170,12 @@
         <!--Aqui termina section integrantes -->
     </div>
     <!--Este es el div que cierra el container de section integrantes-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-    </body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
