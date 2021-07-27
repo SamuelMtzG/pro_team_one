@@ -2,14 +2,14 @@
     height: 100vh;
     width: 100%;
     background-image:url("../img/hero.jpg");
-    background-color: #2980B9;
+    background-color: #414444;
     background-size: cover;/*Esto es para que la imagen no se repita*/
     background-blend-mode:lighten;
     opacity: .8;
   }
 
   h1{
-    color: rgb(255, 255, 255);
+    color: rgb(128, 109, 0);
     text-shadow: 3px 3px 10px rgb(6, 17, 20);
     font-size: 70px;
     font-weight: bolder;
@@ -18,6 +18,7 @@
     width: 100%;
     align-items: center;
     justify-content: center;
+    font: small-caps 700%/800% serif; /*tipo de letra*/
   }
  
 .img_des{
@@ -49,7 +50,8 @@ video {
 
 h2{
     text-align: center;
-    color:#090788;
+    color:#1b8832f3;
+    font-variant: all-petite-caps   300%/400%;/*tipo de letra*/
 }
 
 .parrafo_des{
@@ -66,9 +68,24 @@ section{/*Esto nos ayuda a separar un poco cada seccion*/
     background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
+#Miriam-Card{
+    background: #c125ff8e;
+}
 .card-text{
+    color: rgb;
+}
+.card{ /* Esta parte le dara un efecto glass a las card */
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 2px rgba(255,255,255,0.4) solid;
+    border-bottom: 2px rgba(40,40,40,0.35) solid;
+    border-right: 2px rgba(40,40,40,0.35) solid;
 }
 
 h6{
@@ -85,4 +102,8 @@ h6{
 
 #nav-fix{
     z-index: 100;
+}
+.col-md-4 img {
+    width: 100%;
+    height: 100%;
 }
