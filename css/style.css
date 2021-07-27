@@ -2,14 +2,13 @@
     height: 100vh;
     width: 100%;
     background-image:url("../img/hero.jpg");
-    background-color: #2980B9;
+    background-color: #414444;
     background-size: cover;/*Esto es para que la imagen no se repita*/
     background-blend-mode:lighten;
-    opacity: .8;
   }
 
   h1{
-    color: rgb(255, 255, 255);
+    color: rgb(128, 109, 0);
     text-shadow: 3px 3px 10px rgb(6, 17, 20);
     font-size: 70px;
     font-weight: bolder;
@@ -18,6 +17,7 @@
     width: 100%;
     align-items: center;
     justify-content: center;
+    font: small-caps 700%/800% serif; /*tipo de letra*/
   }
  
 .img_des{
@@ -49,10 +49,15 @@ video {
 
 h2{
     text-align: center;
-    color:#090788;
+    color:#1b8832f3;
+    font-variant: all-petite-caps   300%/400%;/*tipo de letra*/
+    font-weight: bold;
+    font-weight: bold;
+    
 }
 
 .parrafo_des{
+    text-align: justify;
     font-size: 20px;
     margin-left: 50px; /* Esta linea y la de abajo sirven para centrar un poco el parrafo con ayuda de los margenes*/
     margin-right: 50px;
