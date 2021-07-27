@@ -60,11 +60,6 @@ h2{
 section{/*Esto nos ayuda a separar un poco cada seccion*/
     padding-top: 30px;
 }
-
-#samL-card{
-    background-color: rgba(45, 87, 44, 0.2); 
-}
-
 .card{ /* Esta parte le dara un efecto glass a las card */
     color: white;
     display: flex;
@@ -80,10 +75,6 @@ section{/*Esto nos ayuda a separar un poco cada seccion*/
 
 .card-text{
     color: white;
-}
-
-h6{
-    color: rgba(3, 3, 90, 0.836);
 }
 
 .card-about-us{
@@ -111,6 +102,31 @@ h6{
     font-size: 1rem;
 }
 
-
-
+.col-md-4 img {
+    width: 100%;
+    height: 100%;
+}
+#samuel_m-Card {
+    background: #a133a1;
+}
+#miriam-Card{
+    background: #c125ff8e;
+}
+#samL-card{
+    background-color: rgba(45, 87, 44, 0.2); 
+}
+#erika-Card{
+    background: #4568DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#elias-Card{
+    background: #e9d362;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #333333, #e9d362);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333333, #e9d362); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.card-h6{
+    color: whitesmoke;
+}
 
