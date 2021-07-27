@@ -61,10 +61,22 @@ section{/*Esto nos ayuda a separar un poco cada seccion*/
     padding-top: 30px;
 }
 
-.card{
-    background: #005AA7;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+#samL-card{
+    background-color: rgba(45, 87, 44, 0.2); 
+}
+
+.card{ /* Esta parte le dara un efecto glass a las card */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 2px rgba(255,255,255,0.4) solid;
+    border-bottom: 2px rgba(40,40,40,0.35) solid;
+    border-right: 2px rgba(40,40,40,0.35) solid;
 }
 
 .card-text{
@@ -80,9 +92,26 @@ h6{
 }
 
 .cards-about-us:hover{
-    transform:scale(1.1);/*Esta parte hace pase el mouse sobre la card, esta aumente un poco de tama*/
+
+    transform:scale(1.1);
+    z-index: 1000;/*Esta parte hace pase el mouse sobre la card, esta aumente un poco de tama*/
+}
+
+.col-md-4 img { /* Esta parte ajusta las imagenes al tamaño de la card */
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 #nav-fix{
     z-index: 100;
 }
+
+.card-body p {
+    font-size: 1rem;
+}
+
+
+
+
