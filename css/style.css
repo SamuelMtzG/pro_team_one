@@ -2,14 +2,15 @@
     height: 100vh;
     width: 100%;
     background-image:url("../img/hero.jpg");
-    background-color: #2980B9;
+    background-color: #414444;
     background-size: cover;/*Esto es para que la imagen no se repita*/
     background-blend-mode:lighten;
     /*opacity: .8;*/
   }
 
   h1{
-    color: #b65ee6;
+
+    color: rgb(128, 109, 0);
     text-shadow: 3px 3px 10px rgb(6, 17, 20);
     font-size: 100px;
     font-weight: bolder;
@@ -18,6 +19,7 @@
     width: 100%;
     align-items: center;
     justify-content: center;
+    font: small-caps 700%/800% serif; /*tipo de letra*/
   }
  
 .img_des{
@@ -49,8 +51,9 @@ video {
 
 h2{
     text-align: center;
+    color:#1b8832f3;
+    font-variant: all-petite-caps   300%/400%;/*tipo de letra*/
     font-weight: bold;
-    color:#EF629F;
     font-weight: bold;
 }
 
@@ -78,11 +81,12 @@ section{/*Esto nos ayuda a separar un poco cada seccion*/
     border-bottom: 2px rgba(40,40,40,0.35) solid;
     border-right: 2px rgba(40,40,40,0.35) solid;
 }
-
-.card-text{
-    color: white;
+#Miriam-Card{
+    background: #c125ff8e;
 }
-
+.card-text{
+    color: rgb;
+}
 h6{
     color: rgba(3, 3, 90, 0.836);
 }
@@ -102,7 +106,6 @@ h6{
     width: 100%;
     height: 100%;
 }
-
 #cardbg-2{
     background: #800080;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #ffc0cb, #800080);  /* Chrome 10-25, Safari 5.1-6 */
