@@ -41,4 +41,8 @@ function validarEmail(e){
     }
 }
 
+function sendMail() {
+    window.open(`mailto:siloquieres149@gmail.com.com?subject=${$nombre.value}&body=${$mensaje.value}`);
+}
+
 
