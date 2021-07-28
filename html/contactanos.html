@@ -46,18 +46,18 @@
                 <!-- Este div es para el input donde el usuario escribe su nombre -->
                 <div class="form-group">
                     <label for="name">Nombre:</label>
-                    <input type="text" class="form-control is-invalid" id="name" name="nombre" required placeholder="Escribe tu nombre completo">
+                    <input type="text" class="form-control " id="name" name="nombre" required placeholder="Escribe tu nombre completo" pattern="[a-zA-Z]{3,30}" title="Debes escribir solo caracteres de tipo letras">
                 </div>
                 <!-- Este div es para el input donde el usuario escribe su correo electrónico -->
                 <div class="form-group">
                     <label for="email">Correo electrónico:</label>
-                    <input type="email" class="form-control is-invalid" id="email" aria-describedby="emailHelp" name="correo-electronico" required placeholder="example@some.com">
+                    <input type="email" class="form-control " id="email" aria-describedby="emailHelp" name="correo-electronico" required placeholder="example@some.com">
                     <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu correo electrónico con nadie más</small>
                 </div>
                 <!-- Este div es para el input donde el usuario escribe su teléfono celular -->
                 <div class="form-group">
                     <label for="phone">Teléfono celular:</label>
-                    <input type="text" class="form-control is-invalid" id="phone" name="telefono" required placeholder="Escriibe tu numero telefonico">
+                    <input type="tel" class="form-control " id="phone" name="telefono" required placeholder="Escriibe tu numero telefonico">
                 </div>
                 <!-- Este div es para el textarea donde el usuario escribe su mensaje -->
                 <div class="form-group">
