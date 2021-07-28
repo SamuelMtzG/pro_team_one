@@ -7,25 +7,37 @@ const $btnContacto = document.getElementById('btn-contacto-submit');
 
 
 //AQUI SE ASIGNAN LOS EVENTOS
+$nombre.addEventListener('input', validarCamposVacios);
+$telefono.addEventListener('input', validarCamposVacios);
 $email.addEventListener('input', validarEmail);
-$btnContacto.addEventListener('click', obtenerDatosFormulario);
 
 
 
 //AQUI SE DECLARAN LAS FUNCIONES
 
-function obtenerDatosFormulario(e) {
+function validarCamposVacios(e) {
     e.preventDefault();
-    
-    console.log($nombre.value, $email, $telefono, $mensaje);
-
+    if(e.target.value) {
+        e.target.classList.remove('is-invalid');
+        e.target.classList.add('is-valid');
+    } else {
+        e.target.classList.remove('is-valid');
+        e.target.classList.add('is-invalid');
+    }
 }
 
 function validarEmail(e){
-    e.preventDefault();
-    regExp = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-    if (regExp.test(e.target)) {
-        console.log('Todo bien')
+    let regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    let validacion = regex.test(e.target.value);
+
+    if (validacion) {
+        $email.classList.remove('is-invalid');
+        $email.classList.add('is-valid');
+    } else {
+        
+        $email.classList.remove('is-valid');
+        $email.classList.add('is-invalid');
+    
     }
 }
 
