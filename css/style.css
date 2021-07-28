@@ -8,17 +8,20 @@
     /*opacity: .8;*/
   }
 
-  h1{
+  .text-hero{
     color: #b65ee6;
     text-shadow: 3px 3px 10px rgb(6, 17, 20);
-    font-size: 100px;
+    /*font-size: 100px;*/
     font-weight: bolder;
     display:flex;/* De esta linea para abajo es lo que necesitamos para centrar el texto del hero*/
     height: 550px; 
     width: 100%;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
   }
+  }
+  
  
 .img_des{
     height:250px;
