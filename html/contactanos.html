@@ -70,7 +70,7 @@
                         <!-- Este div es para el input donde el usuario escribe su nombre -->
                         <div class="form-group">
                             <label for="name">Nombre:</label>
-                            <input type="text" class="form-control " id="name" name="nombre" required placeholder="Escribe tu nombre completo">
+                            <input type="text" class="form-control " id="name" name="nombre" required placeholder="Escribe tu nombre completo" pattern="[A-Za-z]{1,15}">
                         </div>
                         <!-- Este div es para el input donde el usuario escribe su correo electrónico -->
                         <div class="form-group">
@@ -81,7 +81,7 @@
                         <!-- Este div es para el input donde el usuario escribe su teléfono celular -->
                         <div class="form-group">
                             <label for="phone">Teléfono celular:</label>
-                            <input type="text" class="form-control " id="phone" name="telefono" required placeholder="Escriibe tu numero telefonico">
+                            <input type="tel" minlength="10" maxlength="10" min="0" class="form-control " id="phone" name="telefono" required placeholder="Escriibe tu numero telefonico">
                         </div>
                         <!-- Este div es para el textarea donde el usuario escribe su mensaje -->
                         <div class="form-group">
