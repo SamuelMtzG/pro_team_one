@@ -6,32 +6,17 @@
     background-size: cover;/*Esto es para que la imagen no se repita*/
     background-blend-mode:lighten;
   }
-
-<<<<<<< HEAD
-  .text-hero{
-    color: #b65ee6;
-    text-shadow: 3px 3px 10px rgb(6, 17, 20);
-    /*font-size: 100px;*/
-=======
-
   h1{
     color: rgb(128, 109, 0);
     text-shadow: 3px 3px 10px rgb(6, 17, 20);
     font-size: 70px;
->>>>>>> 9bfc3becee7391854b66b0485ebf37c1c2c29276
     font-weight: bolder;
     display:flex;/* De esta linea para abajo es lo que necesitamos para centrar el texto del hero */
     height: 300px; 
     width: 100%;
     align-items: center;
     justify-content: center;
-<<<<<<< HEAD
     flex-direction: column;
-  }
-  }
-  
- 
-=======
     font: small-caps 700%/800% serif; /*tipo de letra*/
   }
   h3{
@@ -44,7 +29,6 @@
     justify-content: center;
     text-align: center;
   }
->>>>>>> 9bfc3becee7391854b66b0485ebf37c1c2c29276
 .img_des{
     height:250px;
     width:300px;
