@@ -2,24 +2,34 @@
     height: 100vh;
     width: 100%;
     background-image:url("../img/hero.jpg");
-    background-color: #2980B9;
+    background-color: #414444;
     background-size: cover;/*Esto es para que la imagen no se repita*/
     background-blend-mode:lighten;
-    opacity: .8;
   }
 
+
   h1{
-    color: rgb(255, 255, 255);
+    color: rgb(128, 109, 0);
     text-shadow: 3px 3px 10px rgb(6, 17, 20);
     font-size: 70px;
     font-weight: bolder;
-    display:flex;/* De esta linea para abajo es lo que necesitamos para centrar el texto del hero*/
-    height: 550px; 
+    display:flex;/* De esta linea para abajo es lo que necesitamos para centrar el texto del hero */
+    height: 300px; 
     width: 100%;
     align-items: center;
     justify-content: center;
+    font: small-caps 700%/800% serif; /*tipo de letra*/
   }
- 
+  h3{
+    color: rgb(228, 229, 228);
+    text-shadow: 5px 5px 10px rgb(6, 17, 20);
+    font-size: 40px;
+    display:flex;/* De esta linea para abajo es lo que necesitamos para centrar el texto del hero */
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 .img_des{
     height:250px;
     width:300px;
@@ -49,10 +59,15 @@ video {
 
 h2{
     text-align: center;
-    color:#090788;
+    color:#1b8832f3;
+    font-variant: all-petite-caps   300%/400%;/*tipo de letra*/
+    font-weight: bold;
+    font-weight: bold;
+    
 }
 
 .parrafo_des{
+    text-align: justify;
     font-size: 20px;
     margin-left: 50px; /* Esta linea y la de abajo sirven para centrar un poco el parrafo con ayuda de los margenes*/
     margin-right: 50px;
@@ -60,19 +75,21 @@ h2{
 section{/*Esto nos ayuda a separar un poco cada seccion*/
     padding-top: 30px;
 }
-
-.card{
-    background: #005AA7;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.card{ /* Esta parte le dara un efecto glass a las card */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 2px rgba(255,255,255,0.4) solid;
+    border-bottom: 2px rgba(40,40,40,0.35) solid;
+    border-right: 2px rgba(40,40,40,0.35) solid;
 }
 
 .card-text{
     color: white;
-}
-
-h6{
-    color: rgba(3, 3, 90, 0.836);
 }
 
 .card-about-us{
@@ -80,9 +97,64 @@ h6{
 }
 
 .cards-about-us:hover{
-    transform:scale(1.1);/*Esta parte hace pase el mouse sobre la card, esta aumente un poco de tama*/
+
+    transform:scale(1.1);
+    z-index: 1000;/*Esta parte hace pase el mouse sobre la card, esta aumente un poco de tama*/
+}
+
+.col-md-4 img { /* Esta parte ajusta las imagenes al tamaño de la card */
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 #nav-fix{
     z-index: 100;
+}
+
+.card-body p {
+    font-size: 1rem;
+}
+
+.col-md-4 img {
+    width: 100%;
+    height: 100%;
+}
+#samuel_m-Card {
+    background: #a133a1;
+}
+#miriam-Card{
+    background: #c125ff8e;
+}
+#samL-card{
+    background-color: rgba(45, 87, 44, 0.2); 
+}
+#erika-Card{
+    background: #4568DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#elias-Card{
+    background: #e9d362;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #333333, #e9d362);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333333, #e9d362); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.card-h6{
+    color: whitesmoke;
+}
+
+hr {
+    border: 2px solid rgb(192, 192, 192);
+    box-shadow: 1px 1px 10px  black;
+    margin: 0;
+}
+#foot-col {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: ivory;
+    text-shadow: 3px 3px 10px black;
+    
 }
