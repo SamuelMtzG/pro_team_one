@@ -58,30 +58,30 @@
         <!-- Usé la clase .row para poder justificar todo el contenido hacia el centro con justify-content de Bootstrap -->
         <div class="row justify-content-center">
             <!-- Usé .w-50 para que el formulario ocupe el 50% de ancho que tiene la row -->
-            <form class="w-50">
+            <form class="w-50" action="javascript:sendMail();" method="POST">
                 <!-- Este div es para el input donde el usuario escribe su nombre -->
                 <div class="form-group">
                     <label for="name">Nombre:</label>
-                    <input type="text" class="form-control" id="name">
+                    <input type="text" class="form-control is-invalid" id="name" name="nombre" required placeholder="Escribe tu nombre completo">
                 </div>
                 <!-- Este div es para el input donde el usuario escribe su correo electrónico -->
                 <div class="form-group">
                     <label for="email">Correo electrónico:</label>
-                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                    <input type="email" class="form-control is-invalid" id="email" aria-describedby="emailHelp" name="correo-electronico" required placeholder="example@some.com">
                     <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu correo electrónico con nadie más</small>
                 </div>
                 <!-- Este div es para el input donde el usuario escribe su teléfono celular -->
                 <div class="form-group">
                     <label for="phone">Teléfono celular:</label>
-                    <input type="text" class="form-control" id="phone">
+                    <input type="text" class="form-control is-invalid" id="phone" name="telefono" required placeholder="Escriibe tu numero telefonico">
                 </div>
                 <!-- Este div es para el textarea donde el usuario escribe su mensaje -->
                 <div class="form-group">
                     <label for="message">Mensaje:</label>
-                    <textarea class="form-control" id="message" rows="3"></textarea>
+                    <textarea class="form-control" id="message" rows="3" name="mensaje" required></textarea>
                 </div>
                 <!-- Botón para enviar la información del formulario al servidor (eso creo xd) -->
-                <button id="btn-contacto-submit" type="submit" class="btn btn-primary">Enviar</button>
+                <input id="btn-contacto-submit"class="btn btn-primary" type="submit" value="Enviar">
                 <!-- Espacios extra para agregar entre el fondo de la página y el botón de "Enviar" -->
                 <br>
                 <br>
