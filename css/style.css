@@ -6,8 +6,6 @@
     background-size: cover;/*Esto es para que la imagen no se repita*/
     background-blend-mode:lighten;
   }
-
-
   h1{
     color: rgb(128, 109, 0);
     text-shadow: 3px 3px 10px rgb(6, 17, 20);
@@ -18,6 +16,7 @@
     width: 100%;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     font: small-caps 700%/800% serif; /*tipo de letra*/
   }
   h3{
