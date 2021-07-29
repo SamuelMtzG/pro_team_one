@@ -6,8 +6,6 @@
     background-size: cover;/*Esto es para que la imagen no se repita*/
     background-blend-mode:lighten;
   }
-
-
   h1{
     color: rgb(128, 109, 0);
     text-shadow: 3px 3px 10px rgb(6, 17, 20);
@@ -18,18 +16,22 @@
     width: 100%;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     font: small-caps 700%/800% serif; /*tipo de letra*/
   }
   h3{
-    color: rgb(228, 229, 228);
-    text-shadow: 5px 5px 10px rgb(6, 17, 20);
-    font-size: 40px;
+    color: rgb(156, 138, 37);
+    text-shadow: 3px 3px 5px rgb(13, 36, 43);
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
     display:flex;/* De esta linea para abajo es lo que necesitamos para centrar el texto del hero */
     width: 100%;
     align-items: center;
     justify-content: center;
     text-align: center;
-  }
+} 
+    
 .img_des{
     height:250px;
     width:300px;
@@ -136,11 +138,13 @@ section{/*Esto nos ayuda a separar un poco cada seccion*/
     background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 #elias-Card{
+    /*background-image: url("../img/elmo.gif");*/    
     background: #e9d362;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #333333, #e9d362);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #333333, #e9d362); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
 }
+
 .card-h6{
     color: whitesmoke;
 }
