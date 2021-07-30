@@ -2,8 +2,11 @@
     height: 100vh;
     width: 100%;
     background-image:url("../img/hero.jpg");
+    background-color:  rgba(96, 245, 146, 0.37);
     background-size: cover;/*Esto es para que la imagen no se repita*/
     opacity: 0.97;
+    background-blend-mode: luminosity;
+    box-shadow: 5px 5px 10px rgb(104, 99, 99);
   }
   
   .text-hero{
@@ -134,8 +137,8 @@ section{/*Esto nos ayuda a separar un poco cada seccion*/
     height: 100%;
 }
 
-.cards{
-    background-color: rgb(56, 43, 0);
+.card{
+    background-color: rgba(133, 106, 17, 0.411);
 }
 
 /*#samuel_m-Card {
