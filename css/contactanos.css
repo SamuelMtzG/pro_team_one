@@ -13,7 +13,7 @@ body{
     /*background: url("../img/fondo2.jpg");*/
     background-color: rgba(190, 110, 255, 0.89);
     background-image: url("../img/fondo3.png");
-    background-blend-mode:luminosity;
+    background-blend-mode:luminosity;    
 }
 
 .user-img{
