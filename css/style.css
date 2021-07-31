@@ -222,3 +222,14 @@ hr {
     width: 500px;
     height: 500px;
 }
+.caritas{
+	position: relative;
+	margin-top: -110px;
+	}
+	.tab-content{
+	height: 330px;
+}
+.comentarios-img{
+    width: 90px;
+    height: 90px;
+}
