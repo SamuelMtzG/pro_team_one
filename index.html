@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
+
 </head>
 
 <body>
@@ -42,6 +43,14 @@
         </nav><br/>
         <!--Aqui termina barnav-->
     </header>
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Iniciar sección</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Registrarse</a>
+        </li>
+      </ul>
     <!--contenido del body del index-->
     <div class="col">
         <section class="bienvenida">
@@ -67,6 +76,47 @@
                     <h3>Temas que encontrarás con nosotros.</h3>
                 </div>
             </div>-->
+        <section class="bienvenida row">
+                <div class="col-md-8">
+                    <h1 class="saludo_bienvenida">Bienvenidos</h1>
+                    <h1 class="saludo_bienvenida">a OSAR</h1>
+                </div>
+                <div class="col-md-4">
+                    <img src="./img/226367050_971806913672308_2249899465120508815_n.jpg">
+                </div>
+            <div class="row">
+                <div class="col-md-8">
+                <br/>
+                    <p> En OSAR encuntrá temas interesantes, en los cuales puedes tanto aportar como recibir ayuda. Además de conocer a personas con los mismos intereses que tú.</p>
+                </div>
+            </div>
+           <!--<div class="row">
+                <div class="col">
+                    <ul class="nav">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Brigadas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Personas</a>
+                          </li>
+                      </ul>
+                </div>
+            </div>-->
+        </section>
+    </div>
+    <div class="col">
+        <section class="Temas">
+            <div class="col">
+                <div class="row">
+                    <h3>Temas que encontrarás con nosotros.</h3>
+                </div>
+            </div>
             <br />
             <div class="col">
                 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -86,8 +136,8 @@
                         </div>
                         <div class="carousel-item">
                             <img src="./img/environmental-protection-3341942_1920.jpg" class="d-block w-100" alt="...">
-                            <div class="carousel-caption">
-                                <h5> MEDIO AMBIENTE</h5>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>MEDIO AMBIENTE</h5>
                                 <p>Únete a brigadas.</p>
                             </div>
                         </div>
@@ -185,6 +235,7 @@
                 </div>
             </div>
         </div> <!-- segunda card -->
+    </div>
     <!--inicia footer-->
     <hr>
     <div class="card-footer text-muted bg-dark">
@@ -241,6 +292,6 @@
 		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
 	}
 	// ]]>
-</script></body>
-
+</script>
+      </body>
 </html>

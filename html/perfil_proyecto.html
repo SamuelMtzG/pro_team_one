@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -41,30 +43,37 @@
 
     <main>
         <div class="container">
-            <h1 class="text-light">Creación de Proyecto</h1>
-            
-            <div class="row justify-content-center">
-                <div class="col-6">
-                    <!-- Este div es para el input donde el usuario escribe su nombre -->
-                    <div class="form-group text-dark">
-                        <label for="project_name">Nombre del Proyecto: </label>
-                        <input type="text" title="Escribe solo letras" class="form-control " id="project_name" name="proyecto_nombre" required placeholder="Escribe el nombre de tu proyecto" pattern="[A-Za-z]{1,15}">
-                    </div>
-
-                    <!-- Aquí pondré una imagen provisional -->
-                    <div class="d-flex justify-content-center">
-                        <img src="../img/elmo.gif" alt="project_image">
-                    </div>
+            <div class="row">
+                <div class="col w-75">
+                    <h1 class="h1 text-light">Creación de Proyecto</h1>
                 </div>
-                <div class="col-6">
-                    <!-- Usé .w-50 para que el formulario ocupe el 50% de ancho que tiene la row -->
-                    <form action="javascript:sendMail();" method="POST">
+            </div>
+
+            <!-- Aquí empieza el cuerpo del form -->
+            <form action="" method="POST">
+                <div class="form-row">
+                    <div class="form-group col-md-6 text-dark">
+                        <label for="project_name">Nombre del Proyecto: </label>
+                        <input type="text" title="Escribe solo letras" class="form-control " id="project_name"
+                            name="proyecto_nombre" required placeholder="Escribe el nombre de tu proyecto"
+                            pattern="[A-Za-z]{1,15}">
+
+                        <br>
+                        <!-- Aquí pondré una imagen provisional -->
+                        <div class="form-group d-flex justify-content-center">
+                            <img class="img-fluid" src="../img/elmo.gif" alt="project_image">
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <!-- Usé .w-50 para que el formulario ocupe el 50% de ancho que tiene la row -->
                         <!-- Este div es para el input donde el usuario escribe su nombre -->
                         <div class="form-group text-dark">
                             <label for="leader">Líder de proyecto:</label>
-                            <input type="text" title="Escribe solo letras" class="form-control " id="leader" name="nombre" required placeholder="Escribe tu nombre completo" pattern="[A-Za-z]{1,15}">
+                            <input type="text" title="Escribe solo letras" class="form-control " id="leader"
+                                name="nombre" required placeholder="Escribe tu nombre completo"
+                                pattern="[A-Za-z]{1,15}">
                         </div>
-                        
+
                         <!-- Este div es para el input donde el usuario escribe su nombre -->
                         <div class="form-group text-dark">
                             <label for="begin_date">Fecha de inicio:</label>
@@ -83,15 +92,14 @@
                             <textarea class="form-control" id="description" rows="4" name="mensaje" required></textarea>
                         </div>
                         <!-- Botón para enviar la información del formulario al servidor (eso creo xd) -->
-                        <input id="btn-contacto-submit"class="btn btn-primary" type="submit" value="Enviar">
+                        <input id="btn-contacto-submit" class="btn btn-primary" type="submit" value="Enviar">
                         <!-- Espacios extra para agregar entre el fondo de la página y el botón de "Enviar" -->
 
                         <br>
-                        <br>
-                    </form>
-                    <!-- fin del form -->
+                    </div>
                 </div>
-            </div>
+            </form>
+            <!-- fin del form -->
         </div>
     </main>
 
@@ -103,7 +111,7 @@
                     <span class="foot-text">OSAR &copy; 2021</span>
                     <span class="foot-text">MÉXICO, CDMX.</span>
                 </div>
-            </div>        
+            </div>
         </div>
     </footer>
 
@@ -114,4 +122,5 @@
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

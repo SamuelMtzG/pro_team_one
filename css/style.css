@@ -180,3 +180,8 @@ hr {
     width: 500px;
     height: 500px;
 }
+.saludo_bienvenida{
+    text-align: center;
+    font-size: 74px;
+    padding-top: 20px;
+}
