@@ -12,6 +12,7 @@ width: 250px;
   justify-content: center;
   color: black;
 }
+
 h1{
   text-align: center;
   font-size: 50px;
@@ -273,4 +274,114 @@ text-shadow: 3px 3px 10px black;
 width: 500px;
 height: 500px;
 }
+/*Cambios de miriam*/
+  div.frente_4 span{
+    font-size:11px;
+    background:#646464;
+    color:white;
+    padding: 7px;
+    position:absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+  }
+  div.carousel-caption{
+    font-size:11px;
+    background:#5a5a5a;
+    color:white;
+    padding: 15px;
+    position:absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+  }
+  .frente_2{
+    background-image: url("../img/edu.jpg");
+    color: #fff;
+    display: flex;
+    background-size: cover;/*Esto es para que la imagen no se repita*/
+  }
+  .frente_3{
+    background-image: url("../img/ambien.jpg");
+    color: #fff;
+    display: flex;
+    background-size: cover;/*Esto es para que la imagen no se repita*/
+  }
+  .frente_4{
+    background-image: url("../img/anim.png");
+    color: #fff;
+    display: flex;
+    background-size: cover;/*Esto es para que la imagen no se repita*/
+  }
+  .revez {
+    background-color: #2ead67;
+    color: #faebd7;
+    transform: rotateX(180deg);
+    transform: rotateY(180deg);
+    text-align:center;
+    opacity: 0.8;
+    text-shadow: 1px 1px 1px rgb(6, 17, 20);
+  }
+  
+.revez p {
+    font-size:0.65em;
+  }
+.saludo_bienvenida{
+    text-align: center;
+    font-size: 74px;
+    padding-top: 20px;
+}
+.caritas{
+	position: relative;
+	margin-top: -100px;
+	}
+	.tab-content{
+	height: 330px;
+}
+.comentarios-img{
+    width: 90px;
+    height: 90px;
+}
+.card-h6{
+  color:rgb(134, 115, 7);
+}
+
+hr {
+  border: 2px solid rgb(192, 192, 192);
+  box-shadow: 1px 1px 10px  black;
+  margin: 0;
+}
+#foot-col {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: ivory;
+  text-shadow: 3px 3px 10px black;
+}
+
+.d-block{
+  width: 500px;
+  height: 500px;
+}
+
+.form-group{
+  font-size: 20px;
+}
+
+#btn-1, #btn-2, #btn-3, #btn-4{
+  font-size: 0.9em;
+  color:rgb(19, 95, 0);
+  font-weight: bolder;
+  background-color: rgba(252, 208, 127, 0.911);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/*.botones{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}*/
 
