@@ -1,14 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/iniciar_sesion.css">
     <title>Iniciar sesión en Osar</title>
 </head>
+
 <body>
-    
+    <header id="contact_us">
+        <!--Barra de navegación-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <!--Logo y nombre de la red social-->
+            <a class="navbar-brand" href="#">
+                <img src="../img/fenix.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                <span>OSAR</span>
+            </a>
+            <!--Botón para colapsar la barra de navegacion dependiendo de la resolución de la pantalla-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerBarraNav"
+                aria-controls="navbarTogglerBarraNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Div con nuestras opciones.-->
+            <div class="collapse navbar-collapse" id="navbarTogglerBarraNav">
+                <ul class="navbar-nav ml-auto text-right">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contactanos.html">Contáctanos</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./acerca_de_nosotros.html">Acerca de Nosotros</a>
+                    </li>
+                </ul>
+            </div>
+        </nav><br />
+        <!--Aqui termina barnav-->
+    </header>
+    <div class="body">
+        <form class="formulario rounded px-5">
+            <div class="text-center mb-4">
+                <img class="mb-4" src="../img/fenix.png" alt="Logo de OSAR" width="90" height="90" />
+                <h1 class="titulo mb-3 font-weight-bold">OSAR</h1>
+                <p class="text-light">Inicie sesion para acceder a nuestro contenido.</p>
+            </div>
+            <div class="formulario-label">
+                <input type="email" id="email" class="form-control" placeholder="Ingrese su usuario" required autofocus>
+                <label for="email">Ingrese su usuario</label>
+            </div>
+            <div class="formulario-label">
+                <input type="password" id="password" class="form-control" placeholder="Ingrese su contraseña" required>
+                <label for="password">Ingrese su contraseña</label>
+            </div>
+            <div class="mb-3">
+                <label class="frase">Primera vez en OSAR?
+                    <a href="./registrarse.html">Registrate</a>
+                </label>
+            </div>
+            <button class="btn btn-danger btn-block">Iniciar sesion</button>
+        </form>
+    </div>
+    <br />
+    <div class="card-footer text-muted bg-dark">
+        <div class="row" id="foot-row">
+            <div class="col col-sm-col" id="foot-col">
+                <span class="foot-text">ATRÉVETE A EMPRENDER</span>
+                <span class="foot-text">OSAR &copy; 2021</span>
+                <span class="foot-text">MÉXICO, CDMX.</span>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
