@@ -7,6 +7,7 @@ body{
     justify-content: center;
     color: black;
 }
+
 h1{
     color: rgb(151, 129, 29);
     text-shadow: 1px 1px 1px rgb(6, 17, 20);
@@ -199,4 +200,25 @@ hr {
 .d-block{
   width: 500px;
   height: 500px;
+}
+
+.form-group{
+  font-size: 20px;
+}
+
+#btn-1, #btn-2, #btn-3, #btn-4{
+  font-size: 0.9em;
+  color:rgb(19, 95, 0);
+  font-weight: bolder;
+  background-color: rgba(252, 208, 127, 0.911);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.botones{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
