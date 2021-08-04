@@ -30,9 +30,12 @@ a:hover, a span:hover{
     width: 100%;
     background-image:url("../img/hero.jpg");
     background-color:  rgba(194, 245, 173, 0.384);
-    background-size: cover;/*Esto es para que la imagen no se repita*/
-    
+    background-size: cover;/*Esto es para que la imagen no se repita*/    
     background-blend-mode: darken;
+    /*background-color:  rgba(96, 245, 146, 0.37);*/
+    opacity: 0.97;
+    background-blend-mode: luminosity;
+
     box-shadow: 5px 5px 10px rgb(104, 99, 99);
   }
   
@@ -173,6 +176,11 @@ section{/*Esto nos ayuda a separar un poco cada seccion*/
 
 
 
+.card{
+    background-color: rgb(56, 43, 0);
+   /* background-color: rgba(133, 106, 17, 0.411);*/
+}
+
 /*#samuel_m-Card {
     background: #a133a1;
 }
@@ -234,4 +242,5 @@ hr {
     width: 90px;
     height: 90px;
 }
+
 
