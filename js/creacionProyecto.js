@@ -20,9 +20,13 @@ $fechaFin.addEventListener('blur', obtenerDatosInput);
 $description.addEventListener('blur', obtenerDatosInput);
 
 //Aqui van las funciones
+function obtenerProductos() {
+    window.sessionStorage
+}
 
 function agregaProducto() {
-    window.sessionStorage.setItem('nuevo-proyecto', JSON.stringify(objetoProductos));  
+    console.log(obtenerDatosInput());
+    window.sessionStorage.setItem('nuevo-proyecto', JSON.stringify(obtenerDatosInput()));  
 }
 
 function obtenerDatosInput(e) {
