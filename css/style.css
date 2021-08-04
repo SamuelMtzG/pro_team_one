@@ -1,9 +1,52 @@
+#nav-adn{
+    background-color: rgb(255, 255, 255);
+    border-bottom: 5px solid rgb(10, 150, 10);
+
+}
+
+
+a, a span{
+    color: rgb(0, 40, 0);
+    margin-right: 15px;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    transition: all .2s ease-in;
+    backface-visibility: hidden;
+}
+
+a{
+    border-bottom:5px solid rgb(10, 150, 10);
+    border-radius: 5px;
+    line-height: 10px;
+    padding-bottom: 5px;
+}
+
+#logo {
+    border: none;
+}
+#logo:hover{
+    background-color: white;
+}
+
+
+
+a:hover , a span:hover :not(:first-child){
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+    background-color: black;
+    border: none;
+
+}
+
 .hero{
     height: 100vh;
     width: 100%;
     background-image:url("../img/hero.jpg");
+    background-color:  rgba(194, 245, 173, 0.384);
     background-size: cover;/*Esto es para que la imagen no se repita*/
-    opacity: 0.97;
+    object-fit: contain;
+    background-blend-mode: darken;
+    box-shadow: 5px 5px 10px rgb(104, 99, 99);
   }
   
   .text-hero{
@@ -17,9 +60,9 @@
   }
   
   h1{
-    color: rgb(151, 129, 29);
-    text-shadow: 3px 3px 10px rgb(6, 17, 20);
-    font-size: 90px;
+    color: #ffffbb;
+    text-shadow: -3px -3px 3px  rgb(0, 40, 0), 5px 5px 5px rgb(0, 40, 0);
+    font-size: 9rem;
     font-weight: bolder;
     /*display:flex;/* De esta linea para abajo es lo que necesitamos para centrar el texto del hero 
     height: 300px; 
@@ -30,9 +73,9 @@
     font: small-caps 700%/800% serif; /*tipo de letra*/
   }
   h4{
-    color: rgb(37, 129, 3);
-    text-shadow: 3px 3px 10px rgb(6, 17, 20);
-    font-size: 30px;
+    color: #ffffbb;
+    text-shadow: -3px -3px 5px rgb(0, 40, 0), 3px 3px 5px rgb(0, 40, 0);
+    font-size: 2.7rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bolder;
     /*display:flex;/* De esta linea para abajo es lo que necesitamos para centrar el texto del hero 
@@ -45,10 +88,13 @@
 .img_des{
     height:250px;
     width:300px;
+    filter: drop-shadow(15px 15px 10px rgb(0, 40, 0))
 }
 
 body{
-    background-color:  rgba(204, 255, 217, 0.863);
+    background-color:  rgba(66, 159, 0, 0.253);
+    width: 100%;
+    height: 100vh;
     
 }
 
@@ -64,7 +110,7 @@ video {
     width: auto;
     height: auto;
     z-index: -100;
-    opacity: .20;
+    opacity: .90;
     overflow: hidden;
     object-fit: cover;
   
@@ -72,13 +118,16 @@ video {
 
 h2{
     text-align: center;
-    color:rgb(211, 175, 58);
+    color:#ffffbb;
+    text-shadow: 3px 3px 5px rgb(0, 40, 0);
     font-variant: all-petite-caps   300%/400%;/*tipo de letra*/
     font-weight: bold;
 }
 
 .parrafo_des{
     text-align: justify;
+    color: #ffffbb;
+    text-shadow: -3px -3px 5px rgb(0, 40, 0);
     font-size: 20px;
     margin-left: 50px; /* Esta linea y la de abajo sirven para centrar un poco el parrafo con ayuda de los margenes*/
     margin-right: 50px;
@@ -88,7 +137,8 @@ section{/*Esto nos ayuda a separar un poco cada seccion*/
     padding-top: 30px;
 }
 .card{ /* Esta parte le dara un efecto glass a las card */
-    color: rgb(37, 129, 3);
+    color: rgb(0, 40, 0);
+    background-color: rgba(255, 255, 255, 0.466);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,7 +151,7 @@ section{/*Esto nos ayuda a separar un poco cada seccion*/
 }
 
 .card-text{
-    color: rgb(3, 0, 0);
+    color: rgb(0, 0, 0);
 }
 
 .card-about-us{
@@ -134,9 +184,7 @@ section{/*Esto nos ayuda a separar un poco cada seccion*/
     height: 100%;
 }
 
-.cards{
-    background-color: rgb(56, 43, 0);
-}
+
 
 /*#samuel_m-Card {
     background: #a133a1;
@@ -160,23 +208,39 @@ section{/*Esto nos ayuda a separar un poco cada seccion*/
 }*/
 
 .card-h6{
-    color:rgb(134, 115, 7);
+    color:rgb(0, 40, 0);
 }
 
-hr {
-    border: 2px solid rgb(192, 192, 192);
-    box-shadow: 1px 1px 10px  black;
-    margin: 0;
+
+.card-footer {
+    background-color: rgb(255, 255, 255);   
+    border-top: 5px solid rgb(10, 150, 10);
 }
+.card-footer span {
+    color: black;
+}
+
 #foot-col {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     color: ivory;
     text-shadow: 3px 3px 10px black;
+    color: #ffffbb;
 }
 
 .d-block{
     width: 500px;
     height: 500px;
+}
+.caritas{
+	position: relative;
+	margin-top: -110px;
+	}
+	.tab-content{
+	height: 330px;
+}
+.comentarios-img{
+    width: 90px;
+    height: 90px;
 }
