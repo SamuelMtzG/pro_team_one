@@ -183,8 +183,10 @@ section{/*Esto nos ayuda a separar un poco cada seccion*/
     width: 100%;
     height: 100%;
 }
-
-
+.card{
+    background-color: rgb(56, 43, 0);
+   /* background-color: rgba(133, 106, 17, 0.411);*/
+}
 
 /*#samuel_m-Card {
     background: #a133a1;
@@ -244,3 +246,4 @@ section{/*Esto nos ayuda a separar un poco cada seccion*/
     width: 90px;
     height: 90px;
 }
+
