@@ -1,28 +1,41 @@
 #nav-adn{
-    background-color: rgb(182, 182, 139);
-    background-image: url(../img/May049.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-blend-mode: luminosity;
-    transition: all 1s linear;   
+    background-color: rgb(255, 255, 255);
+    border-bottom: 5px solid rgb(10, 150, 10);
+
 }
 
-#nav-adn:hover{
-    background-color: rgba(0, 40, 0,1);
-}
 
 a, a span{
-    color: #ffffbb;
-    text-shadow: 3px 3px 5px black;
+    color: rgb(0, 40, 0);
+    margin-right: 15px;
     font-size: 1.3rem;
     font-weight: bolder;
     transition: all .2s ease-in;
+    backface-visibility: hidden;
 }
 
-a:hover, a span:hover{
-    color: #cccc97;
+a{
+    border-bottom:5px solid rgb(10, 150, 10);
+    border-radius: 5px;
+    line-height: 10px;
+    padding-bottom: 5px;
+}
+
+#logo {
+    border: none;
+}
+#logo:hover{
+    background-color: white;
+}
+
+
+
+a:hover , a span:hover :not(:first-child){
+    color: rgb(255, 255, 255);
     transform: scale(1.1);
-    background-color: rgba(0, 0, 0, .7);
+    background-color: black;
+    border: none;
+
 }
 
 .hero{
@@ -31,7 +44,7 @@ a:hover, a span:hover{
     background-image:url("../img/hero.jpg");
     background-color:  rgba(194, 245, 173, 0.384);
     background-size: cover;/*Esto es para que la imagen no se repita*/
-    
+    object-fit: contain;
     background-blend-mode: darken;
     box-shadow: 5px 5px 10px rgb(104, 99, 99);
   }
@@ -125,7 +138,7 @@ section{/*Esto nos ayuda a separar un poco cada seccion*/
 }
 .card{ /* Esta parte le dara un efecto glass a las card */
     color: rgb(0, 40, 0);
-    background-color: rgba(255, 255, 219, 0.61);
+    background-color: rgba(255, 255, 255, 0.466);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,7 +151,7 @@ section{/*Esto nos ayuda a separar un poco cada seccion*/
 }
 
 .card-text{
-    color: rgb(0, 40, 0);
+    color: rgb(0, 0, 0);
 }
 
 .card-about-us{
@@ -198,16 +211,13 @@ section{/*Esto nos ayuda a separar un poco cada seccion*/
     color:rgb(0, 40, 0);
 }
 
-hr {
-    border: 2px solid rgb(192, 192, 192);
-    box-shadow: 1px 1px 10px  black;
-    margin: 0;
-}
 
 .card-footer {
-    background-color: rgba(0, 40, 0, 1);
-
-    
+    background-color: rgb(255, 255, 255);   
+    border-top: 5px solid rgb(10, 150, 10);
+}
+.card-footer span {
+    color: black;
 }
 
 #foot-col {
