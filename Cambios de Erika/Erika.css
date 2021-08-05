@@ -18,3 +18,58 @@ h5{
 .boton-nuevoP{
     text-align: center;
 }
+body {
+	background: linear-gradient(to white);
+}
+.nav-link{
+   color: black;
+}
+.nav_2 div button {
+	background-color: white;
+	border: 2px solid yellowgreen;
+	letter-spacing: 0em;
+	width: 10em;
+	height: 4.5em;
+	line-height: 1em;
+	position: relative;
+	overflow: hidden;
+	margin: 0.5em;
+	cursor: pointer;
+   justify-content: center;
+}
+.nav_2 div button::before {
+	content: '';
+	position: absolute;
+	width: 1.5em;
+	height: inherit;
+	background-color: yellowgreen;
+	border-radius: 50%;
+	top: 0;
+	left: -0.75em;
+	transition: 0.5s ease-out;
+}
+
+.nav_2 div button:hover::before {
+	transform: scale(12);
+}
+.nav_2-it{ 
+   justify-items: right;
+}/*barra de elementos*/
+/*esquinas*/
+.linver{
+    width: 35px;
+    height: 100%;
+    float: left;
+    background-color: rgba(84, 179, 169, 0.623);
+    border: 5px ridge silver;
+    border-radius: 2px;
+ }
+ .linver_1{
+    width: 35px;
+    height: 100%;
+    float: right;
+    background-color: rgba(84, 179, 169, 0.623);
+    border: 5px ridge silver;
+    border-radius: 2px;
+ }
+/*esquinas*/
