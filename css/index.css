@@ -97,7 +97,7 @@ color: white;
   perspective: 1000px;
   margin:0 auto;
 }
-
+/*cards*/
 .card_1{
   position: relative;
   display:inline-block;
@@ -241,7 +241,7 @@ div.carousel-caption{
 
 .revez p {
   font-size:0.65em;
-}
+}/*cards*/
 .caritas{
 position: relative;
 margin-top: -100px;
@@ -274,22 +274,22 @@ text-shadow: 3px 3px 10px black;
 width: 500px;
 height: 500px;
 }
-/*Cambios de miriam*/
-  div.frente_4 span{
+div.carousel-caption{
     font-size:11px;
-    background:#646464;
+    background:#5a5a5a;
     color:white;
-    padding: 7px;
+    padding: 15px;
     position:absolute;
     bottom: 0px;
     right: 0px;
     left: 0px;
   }
-  div.carousel-caption{
+/*Cards*/
+  div.frente_4 span{
     font-size:11px;
-    background:#5a5a5a;
+    background:#646464;
     color:white;
-    padding: 15px;
+    padding: 7px;
     position:absolute;
     bottom: 0px;
     right: 0px;
@@ -325,7 +325,7 @@ height: 500px;
   
 .revez p {
     font-size:0.65em;
-  }
+  }/*cards*/
 .saludo_bienvenida{
     text-align: center;
     font-size: 74px;
