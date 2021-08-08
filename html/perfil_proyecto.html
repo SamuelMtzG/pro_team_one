@@ -50,7 +50,7 @@
             </div>
 
             <!-- Aquí empieza el cuerpo del form -->
-            <form >
+            <form action="#" method="POST" id="form-add-project">
                 <div class="form-row">
                     <div class="form-group col-md-6 text-dark">
                         <label for="project_name">Nombre del Proyecto: </label>
@@ -92,7 +92,7 @@
                             <textarea class="form-control" id="description" rows="4" name="mensaje" required></textarea>
                         </div>
                         <!-- Botón para enviar la información del formulario al servidor (eso creo xd) -->
-                        <input id="btn-contacto-submit" class="btn btn-primary" type="submit" value="Enviar">
+                        <input id="btn-project-submit" class="btn btn-primary" type="submit" value="Enviar">
                         <!-- Espacios extra para agregar entre el fondo de la página y el botón de "Enviar" -->
 
                         <br>
@@ -114,6 +114,8 @@
             </div>
         </div>
     </footer>
+
+    <script type="text/javascript" src="../js/creacionJSON.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
