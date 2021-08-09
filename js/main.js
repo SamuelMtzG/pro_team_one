@@ -45,4 +45,37 @@ function sendMail() {
     window.open(`mailto:siloquieres149@gmail.com.com?subject=${$nombre.value}&body=${$mensaje.value}`);
 }
 
-
+/*Si clicamos en el botón del sol, borrarémos la clase css dark-mode del div 
+con id page y se aplicará el estilo active al sol*/
+document.getElementById('id-sun').onclick = function(){
+    let theme = document.getElementById("theme");
+  
+    if (theme.getAttribute("href") == "contactanos.css") {
+        document.getElementById('contact_us').classList.add('dark-mode')
+        document.getElementById('id-sun').classList.remove('activ')
+        this.classList.add('activ')
+        theme.href = "../css/contactanosD.css";
+    } else {
+        document.getElementById('contact_us').classList.remove('dark-mode')
+        document.getElementById('id-moon').classList.remove('activ')
+        this.classList.add('activ')
+        theme.href = "../css/contactanos.css";
+    }
+}
+  /*Si clicamos en el botón de la luna, añadiremos la clase css dark-mode del div 
+  con id page y se aplicará el estilo active a la luna*/
+  document.getElementById('id-moon').onclick = function(){
+    let theme = document.getElementById("theme");
+    if (theme.getAttribute("href") == "contactanosD.css") {
+        document.getElementById('contact_us').classList.remove('dark-mode')
+        document.getElementById('id-moon').classList.remove('activ')
+        this.classList.add('activ')
+        theme.href = "../css/contactanos.css";
+    } else {
+        document.getElementById('contact_us').classList.add('dark-mode')
+        document.getElementById('id-sun').classList.remove('activ')
+        this.classList.add('activ')
+        theme.href = "../css/contactanosD.css";
+    }
+  }
+  

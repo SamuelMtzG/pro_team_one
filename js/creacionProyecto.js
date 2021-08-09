@@ -34,7 +34,7 @@ function obtenerDatosInput(e) {
     let tmp = {[e.target.getAttribute('id')]: e.target.value};
     objetoProductos.push(tmp);
 } */
-const $products = JSON.parse(window.localStorage.getItem('projects'));
+const $products = JSON.parse(window.sessionStorage.getItem('projects'));
 
 window.addEventListener('DOMContentLoaded', createCards($products));
 function createCards(products){
