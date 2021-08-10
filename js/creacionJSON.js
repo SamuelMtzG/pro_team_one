@@ -1,5 +1,3 @@
-
-
 function addProject(e) {
     // Prevenimos el valor por defecto
     e.preventDefault();
@@ -12,7 +10,7 @@ function addProject(e) {
     let end = document.getElementById('end_date').value;
     let description = document.getElementById('description').value;
 
-    if (window.localStorage.getItem('projects') === null) {
+    if (window.sessionStorage.getItem('projects') === null) {
         const projectArray = [];
         const newProject = {
             'id': 0,
@@ -28,7 +26,7 @@ function addProject(e) {
         window.localStorage.setItem('projects', JSON.stringify(projectArray));
     }
     else {
-        const projectArray = JSON.parse(window.localStorage.getItem('projects'));
+        const projectArray = JSON.parse(window.sessionStorage.getItem('projects'));
         let newId = projectArray.length;
         const newProject = {
             'id': newId,
@@ -41,11 +39,11 @@ function addProject(e) {
         }
         
         projectArray.push(newProject);
-        window.localStorage.setItem('projects', JSON.stringify(projectArray));
+        window.sessionStorage.setItem('projects', JSON.stringify(projectArray));
         console.log("hola " + newId);
     }
-    btnAddProject.reset();
-    createCards(projectArray);
+    //btnAddProject.reset();
+    //createCards(projectArray);
 }
 
 // Agregamos funcionalidad al boton de enviar de perfil de proyecto
