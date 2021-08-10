@@ -44,7 +44,7 @@ body{
 }
 
 .modal-content{
-    background-color:yellowgreen;
+    background-color:rgba(84, 179, 169, 0.623);
     opacity: .95;
     padding: 0 20px;
     box-shadow: 1px 1px 5px yellowgreen;
@@ -54,7 +54,7 @@ body{
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    box-shadow: 1px 1px 5px yellowgreen ;
+    box-shadow: 1px 1px 5px rgba(84, 179, 169, 0.623) ;
     background-color: rgba(84, 179, 169, 0.623);
     background-blend-mode:luminosity;
 }
@@ -79,23 +79,14 @@ hr {
     text-shadow: 3px 3px 10px black;
     
 }
-/*esquinas*/
-.linver{
-    width: 35px;
-    height: 100%;
-    float: left;
-    background-color: rgba(84, 179, 169, 0.623);
-    border: 5px ridge silver;
-    border-radius: 2px;
- }
- .linver_1{
-    width: 35px;
-    height: 100%;
-    float: right;
-    background-color: rgba(84, 179, 169, 0.623);
-    border: 5px ridge silver;
-    border-radius: 2px;
- }
+.boton1{
+    border-radius: 12px;
+    background-color: white;
+    width: 250px;
+    }
+.nav-link_1,.foot-text{
+    color: white;
+}
 
 /*esquinas*/
 
