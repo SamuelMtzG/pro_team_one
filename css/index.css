@@ -1,5 +1,5 @@
 body{
-  color: beige;
+  color: white;
 }
 .boton1{
 border-radius: 12px;
@@ -58,7 +58,7 @@ padding-top: 10px;
 color: white;
 }
 .comentarios-img{
-background-color: yellowgreen;
+background-color: #665032;
 width: 80%;
 height: 100px;
 overflow: hidden;
@@ -69,7 +69,7 @@ padding-top: 10px;
 color: white;
 }
 .comentarios-img_1{
-background-color: rgb(205, 50, 128);
+background-color: #779C5D;
 width: 80%;
 height: 100px;
 overflow: hidden;
@@ -80,7 +80,7 @@ padding-top: 10px;
 color: white;
 }
 .comentarios-img_2{
-background-color: rgb(50, 169, 205);
+background-color: #2D1B70;
 width: 80%;
 height: 100px;
 overflow: hidden;
@@ -249,10 +249,6 @@ margin-top: -100px;
 .tab-content{
 height: 330px;
 }
-.comentarios-img{
-  width: 90px;
-  height: 90px;
-}
 .card-h6{
 color:rgb(134, 115, 7);
 }
@@ -274,7 +270,8 @@ text-shadow: 3px 3px 10px black;
 width: 500px;
 height: 500px;
 }
-div.carousel-caption{
+/*Cambios de miriam*/
+  div.carousel-caption{
     font-size:11px;
     background:#5a5a5a;
     color:white;
@@ -295,19 +292,19 @@ div.carousel-caption{
     right: 0px;
     left: 0px;
   }
-  .frente_2{
+.frente_2{
     background-image: url("../img/edu.jpg");
     color: #fff;
     display: flex;
     background-size: cover;/*Esto es para que la imagen no se repita*/
   }
-  .frente_3{
+.frente_3{
     background-image: url("../img/ambien.jpg");
     color: #fff;
     display: flex;
     background-size: cover;/*Esto es para que la imagen no se repita*/
   }
-  .frente_4{
+.frente_4{
     background-image: url("../img/anim.png");
     color: #fff;
     display: flex;
@@ -331,14 +328,10 @@ div.carousel-caption{
     font-size: 74px;
     padding-top: 20px;
 }
-.caritas{
-	position: relative;
-	margin-top: -100px;
-	}
-	.tab-content{
+.tab-content{
 	height: 330px;
 }
-.comentarios-img{
+.comentario-img{
     width: 90px;
     height: 90px;
 }
@@ -347,7 +340,7 @@ div.carousel-caption{
 }
 
 hr {
-  border: 2px solid rgb(192, 192, 192);
+  border: 2px solid rgb(19, 22, 192);
   box-shadow: 1px 1px 10px  black;
   margin: 0;
 }

@@ -15,7 +15,9 @@
 h5{
     text-align: center;
 }
-/*barra de elementos*/
+.boton-nuevoP{
+    text-align: center;
+}
 body {
 	background: linear-gradient(to white);
 }
@@ -70,5 +72,4 @@ body {
     border: 5px ridge silver;
     border-radius: 2px;
  }
-
 /*esquinas*/
