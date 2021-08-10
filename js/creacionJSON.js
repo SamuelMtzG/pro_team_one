@@ -42,7 +42,7 @@ function addProject(e) {
         window.sessionStorage.setItem('projects', JSON.stringify(projectArray));
         console.log("hola " + newId);
     }
-    //btnAddProject.reset();
+    btnAddProject.reset();
     //createCards(projectArray);
 }
 
