@@ -1,21 +1,27 @@
-#nav-adn{
-    background-color: rgb(255, 255, 255);
-    border-bottom: 5px solid rgb(10, 150, 10);
+*, *::after, *::before {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
 
+#nav-adn{
+    background-color: rgb(180, 166, 166);
+    border-bottom: 5px solid rgb(255, 255, 255);
 }
 
 
 a, a span{
-    color: rgb(0, 40, 0);
+
     margin-right: 15px;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.3rem;
-    font-weight: bolder;
+    font-weight: 600;
     transition: all .2s ease-in;
     backface-visibility: hidden;
 }
 
 a{
-    border-bottom:5px solid rgb(10, 150, 10);
+    /* border-bottom:5px solid rgb(10, 150, 10); */
     border-radius: 5px;
     line-height: 10px;
     padding-bottom: 5px;
@@ -23,6 +29,13 @@ a{
 
 #logo {
     border: none;
+    margin: 0;
+    padding: 0;
+}
+
+#logo>span{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
 }
 #logo:hover{
     background-color: white;
@@ -38,16 +51,16 @@ a:hover , a span:hover :not(:first-child){
 
 }
 
-.hero{
+/* .hero{
     height: 100vh;
     width: 100%;
     background-image:url("../img/hero.jpg");
     background-color:  rgba(194, 245, 173, 0.384);
-    background-size: cover;/*Esto es para que la imagen no se repita*/
+    background-size: cover;/*Esto es para que la imagen no se repita
     object-fit: contain;
     background-blend-mode: darken;
     box-shadow: 5px 5px 10px rgb(104, 99, 99);
-  }
+  } */
   
   .text-hero{
     display:flex;/* De esta linea para abajo es lo que necesitamos para centrar el texto del hero */
@@ -56,14 +69,16 @@ a:hover , a span:hover :not(:first-child){
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font: small-caps 700%/800% serif; /*tipo de letra*/
+    font: small-caps 700%/800% Arial; /*tipo de letra*/
+    backface-visibility: hidden;
   }
   
   h1{
-    color: #ffffbb;
-    text-shadow: -3px -3px 3px  rgb(0, 40, 0), 5px 5px 5px rgb(0, 40, 0);
+    color: rgb(192, 164, 37);
+    text-shadow: -3px -3px 3px  rgb(255, 255, 255), 5px 5px 5px rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 9rem;
-    font-weight: bolder;
+    font-weight: bold;
     /*display:flex;/* De esta linea para abajo es lo que necesitamos para centrar el texto del hero 
     height: 300px; 
     width: 100%;
@@ -73,11 +88,12 @@ a:hover , a span:hover :not(:first-child){
     font: small-caps 700%/800% serif; /*tipo de letra*/
   }
   h4{
-    color: #ffffbb;
-    text-shadow: -3px -3px 5px rgb(0, 40, 0), 3px 3px 5px rgb(0, 40, 0);
+    color: rgb(219, 187, 42);
+    text-shadow: -2px -2px 1px rgb(255, 255, 255), 5px 5px 5px rgb(0, 0, 0);
     font-size: 2.7rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
+    text-align: center;
     /*display:flex;/* De esta linea para abajo es lo que necesitamos para centrar el texto del hero 
     width: 100%;
     align-items: center;
@@ -118,16 +134,21 @@ video {
 
 h2{
     text-align: center;
-    color:#ffffbb;
-    text-shadow: 3px 3px 5px rgb(0, 40, 0);
+    color:#ffffff;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
     font-variant: all-petite-caps   300%/400%;/*tipo de letra*/
     font-weight: bold;
 }
 
+#integrantes {
+    color: rgb(255, 255, 255);
+    text-shadow: -1px -1px 1px  rgb(251, 255, 1), 5px 5px 5px rgb(0, 0, 0);
+}
+
 .parrafo_des{
     text-align: justify;
-    color: #ffffbb;
-    text-shadow: -3px -3px 5px rgb(0, 40, 0);
+    color: #ffffff;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
     font-size: 20px;
     margin-left: 50px; /* Esta linea y la de abajo sirven para centrar un poco el parrafo con ayuda de los margenes*/
     margin-right: 50px;
@@ -136,9 +157,21 @@ h2{
 section{/*Esto nos ayuda a separar un poco cada seccion*/
     padding-top: 30px;
 }
-.card{ /* Esta parte le dara un efecto glass a las card */
+
+#quienes-somos {
     color: rgb(0, 40, 0);
-    background-color: rgba(255, 255, 255, 0.466);
+    background-color: #779c5dd3;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 2px rgba(255,255,255,0.4) solid;
+    border-bottom: 2px rgba(40,40,40,0.35) solid;
+    border-right: 2px rgba(40,40,40,0.35) solid;
+}
+.card{ /* Esta parte le dara un efecto glass a las card */
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 5px black;
+    background-color: rgba(60, 165, 214, 0.856);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,7 +184,9 @@ section{/*Esto nos ayuda a separar un poco cada seccion*/
 }
 
 .card-text{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    text-shadow: 1px 1px 5px black;
 }
 
 .card-about-us{
@@ -205,16 +240,16 @@ section{/*Esto nos ayuda a separar un poco cada seccion*/
 }*/
 
 .card-h6{
-    color:rgb(0, 40, 0);
+    color:rgb(255, 255, 255);
+    text-shadow: 1px 1px 5px black;
 }
 
 
-.card-footer {
-    background-color: rgb(255, 255, 255);   
-    border-top: 5px solid rgb(10, 150, 10);
+.card-footer {  
+    border-top: 5px solid rgb(255, 255, 255);
 }
 .card-footer span {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 #foot-col {
@@ -223,7 +258,6 @@ section{/*Esto nos ayuda a separar un poco cada seccion*/
     justify-content: space-between;
     color: ivory;
     text-shadow: 3px 3px 10px black;
-    color: #ffffbb;
 }
 
 .d-block{
