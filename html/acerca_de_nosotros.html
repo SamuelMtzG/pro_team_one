@@ -12,17 +12,13 @@
 </head>
 
 <body>
-    <div class="bg-video">
-        <video autoplay loop muted>
-            <source src="../img/Canyon - 82863.mp4" type="video/mp4">
-            <!-- <source src="../img/dk5o1-nk5ri.webm" type="video/webm"> -->
-        </video>
-    </div>
+    
     <!--Barra de navegación-->
     <nav id="nav-adn" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top backface-visibility(hidden)" >
         <!--Logo y nombre de la red social-->
-        <a id="logo" class="navbar-brand" href="#">
+        <a id="logo" class="navbar-brand" href="../index.html">
             <!-- <img src="#" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+            <img id="img-logo-nav" src="../img/logo_erika-03.png">
             <span >OSAR</span>
         </a>
         <!--Botón para colapsar la barra de navegacion dependiendo de la resolución de la pantalla-->
@@ -47,10 +43,16 @@
     </nav>
     <!--Aqui termina barnav-->
     <section class="hero">
-        <div class="container text-hero">
+        <div class="container-fluid text-hero">
             <!--Esto hace que esta seccion tome todo el ancho de la pantalla-->
             <h1>OSAR</h1>
             <h4>EL MUNDO TIENE QUE CONOCER TU EMPRENDIMIENTO.</h3>
+        </div>
+        <div class="bg-video">
+            <video autoplay loop muted>
+                <source src="../img/Canyon - 82863.mp4" type="video/mp4">
+                <!-- <source src="../img/dk5o1-nk5ri.webm" type="video/webm"> -->
+            </video>
         </div>
     </section>
     <!--Aqui termina section hero-->
@@ -58,7 +60,7 @@
     <div class="container">
         <section class="description row">
             <article class="col-md-8" id="quienes-somos">
-                <h2 class="h2_des">¿QUIÉNES SOMOS?</h2>
+                <h2 id="h2_des" class="h2_des">¿QUIÉNES SOMOS?</h2>
                 <p class="parrafo_des">
                     OSAR es una red social de origen mexicano que busca apoyar a emprendedores, centros de acopio,
                     negocios, centros de rescate animal, entre otros. Reúne a personas con la misma mentalidad
@@ -68,7 +70,7 @@
                 </p>
             </article>
             <div class="col-md-4">
-                <img class="img_des" src="../img/img_inicio/Group 1loro2.svg" alt="Imagen logo sobre nosotros.">
+                <img class="img_des" src="../img/logo_erika-02.png" alt="Imagen logo sobre nosotros.">
             </div>
         </section>
         <!--Aqui termina section description-->

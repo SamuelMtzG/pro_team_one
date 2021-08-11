@@ -1,3 +1,14 @@
+:root{
+    --titulos-color: #e9a02f;
+    --card-integrantes-bg-color: #01acb6;
+    --card-acerca-de-bg-color:#3eb9a5;
+    --nav-bg-color: #2b2b2d;
+    --white-color-default: #ffffff;
+    --black-color-default: #000000;
+    
+
+}
+
 *, *::after, *::before {
     box-sizing: border-box;
     text-decoration: none;
@@ -5,8 +16,8 @@
 }
 
 #nav-adn{
-    background-color: rgb(180, 166, 166);
-    border-bottom: 5px solid rgb(255, 255, 255);
+    background-color: var(--nav-bg-color);
+    padding: 0 2%;
 }
 
 
@@ -16,7 +27,7 @@ a, a span{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.3rem;
     font-weight: 600;
-    transition: all .2s ease-in;
+    transition: all .1s ease-in;
     backface-visibility: hidden;
 }
 
@@ -27,6 +38,15 @@ a{
     padding-bottom: 5px;
 }
 
+#img-logo-nav{
+    height: 2.5rem;
+    width: 2.5rem;
+    background: url(../img/logo_erika-03.png);
+    position: relative;
+    transform: translateY(-15%);
+    margin-right: 4%;
+}
+
 #logo {
     border: none;
     margin: 0;
@@ -35,32 +55,16 @@ a{
 
 #logo>span{
     font-size: 2rem;
-    color: rgb(255, 255, 255);
-}
-#logo:hover{
-    background-color: white;
+    color: var(--white-color-default);
 }
 
 
-
-a:hover , a span:hover :not(:first-child){
-    color: rgb(255, 255, 255);
+a:hover , a span:hover{
     transform: scale(1.1);
-    background-color: black;
     border: none;
-
 }
 
-/* .hero{
-    height: 100vh;
-    width: 100%;
-    background-image:url("../img/hero.jpg");
-    background-color:  rgba(194, 245, 173, 0.384);
-    background-size: cover;/*Esto es para que la imagen no se repita
-    object-fit: contain;
-    background-blend-mode: darken;
-    box-shadow: 5px 5px 10px rgb(104, 99, 99);
-  } */
+
   
   .text-hero{
     display:flex;/* De esta linea para abajo es lo que necesitamos para centrar el texto del hero */
@@ -74,22 +78,16 @@ a:hover , a span:hover :not(:first-child){
   }
   
   h1{
-    color: rgb(255,255,255);
-    text-shadow: -3px -3px 2px  rgb(187, 178, 57), 5px 5px 5px rgb(0, 0, 0);
+    color: var(--titulos-color);
+    text-shadow: -3px -3px 2px  var(--white-color-default), 5px 5px 5px var(--black-color-default);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 9rem;
     font-weight: bold;
-    /*display:flex;/* De esta linea para abajo es lo que necesitamos para centrar el texto del hero 
-    height: 300px; 
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font: small-caps 700%/800% serif; /*tipo de letra*/
+  
   }
   h4{
-    color: rgb(255,255,255);
-    text-shadow: -2px -2px 2px  rgb(187, 178, 57), 5px 5px 5px rgb(0, 0, 0);
+    color: var(--titulos-color);
+    text-shadow: -2px -2px 2px  var(--white-color-default), 5px 5px 5px var(--black-color-default);
     font-size: 2.7rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
@@ -104,11 +102,10 @@ a:hover , a span:hover :not(:first-child){
 .img_des{
     height:250px;
     width:300px;
-    filter: drop-shadow(15px 15px 10px rgb(0, 40, 0))
 }
 
 body{
-    background-color:  rgba(66, 159, 0, 0.253);
+    background-color:  var(--white-color-default);
     width: 100%;
     height: 100vh;
     
@@ -117,38 +114,37 @@ body{
 
 video { 
    
-    position: fixed;    
+    position: absolute;    
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%); 
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
     z-index: -100;
-    
     overflow: hidden;
-    object-fit: contain;
+    object-fit: cover;
   
   } /* Esta parte es la que pone el video de fondo */
 
-h2{
-    text-align: center;
-    color:#ffffff;
+#h2_des {
+    color: white;
+    margin-bottom: 5%;
     text-shadow: 3px 3px 5px rgb(0, 0, 0);
-    font-variant: all-petite-caps   300%/400%;/*tipo de letra*/
+}
+
+.h2_des,h2#integrantes{
+    text-align: center;
+    color:var(--titulos-color);
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-variant: all-petite-caps   300%/400%;/*tipo de letra*/ 
     font-weight: bold;
 }
 
-#integrantes {
-    color: rgb(255, 255, 255);
-    text-shadow: -1px -1px 1px  rgb(251, 255, 1), 5px 5px 5px rgb(0, 0, 0);
-}
 
 .parrafo_des{
     text-align: justify;
     color: #ffffff;
-    text-shadow: 1px 1px 5px rgb(0, 0, 0);
+    text-shadow: 1px 1px 5px var(--black-color-default);
     font-size: 20px;
     margin-left: 50px; /* Esta linea y la de abajo sirven para centrar un poco el parrafo con ayuda de los margenes*/
     margin-right: 50px;
@@ -158,21 +154,26 @@ section{/*Esto nos ayuda a separar un poco cada seccion*/
     padding-top: 30px;
 }
 
+.description {
+    width: 100%;
+}
+
 #quienes-somos {
     color: rgb(0, 40, 0);
-    background-color: rgba(60, 165, 214, 0.856);
-    gap: 20px;
+    background-color: var(--card-acerca-de-bg-color);
+    padding: 1.8rem .4rem;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
     border: 2px rgba(255,255,255,0.4) solid;
     border-bottom: 2px rgba(40,40,40,0.35) solid;
     border-right: 2px rgba(40,40,40,0.35) solid;
+    margin-right: 0;
+    margin-right: 0;
 }
 .card{ /* Esta parte le dara un efecto glass a las card */
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 5px black;
-    background-color: #779c5dd3;
-    
+    background-color: var(--card-integrantes-bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -219,26 +220,6 @@ section{/*Esto nos ayuda a separar un poco cada seccion*/
     width: 100%;
     height: 100%;
 }
-/*#samuel_m-Card {
-    background: #a133a1;
-}
-#miriam-Card{
-    background: #c125ff8e;
-}
-#samL-card{
-    background-color: rgba(45, 87, 44, 0.2); 
-}
-#erika-Card{
-    background: #4568DC; 
-    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  
-    background: linear-gradient(to right, #B06AB3, #4568DC); 
-}
-#elias-Card{
-    background: #e9d362;  
-    background: -webkit-linear-gradient(to right, #333333, #e9d362); 
-    background: linear-gradient(to right, #333333, #e9d362); 
-    
-}*/
 
 .card-h6{
     color:rgb(255, 255, 255);
