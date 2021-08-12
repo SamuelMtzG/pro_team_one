@@ -1,13 +1,14 @@
 .card{
-    background-color: rgba(232, 238, 248, 0.986);
+    background-color: #9cbb5d;
     min-height: 700px;
     max-height: 700px;
 }
 
 .btn{
-    background-color: rgba(148, 157, 243, 0.74);
+    background-color: #01adb6d3;
     border-radius: 10px;
 }
+
 .card-img-top{
     width: 100%;
     height: 300px;
@@ -26,7 +27,7 @@ body {
 }
 .nav_2 div button {
 	background-color: white;
-	border: 2px solid yellowgreen;
+	border: 2px solid #3eb9a5;
 	letter-spacing: 0em;
 	width: 10em;
 	height: 4.5em;
@@ -42,7 +43,7 @@ body {
 	position: absolute;
 	width: 1.5em;
 	height: inherit;
-	background-color: yellowgreen;
+	background-color: #01adb6bb;
 	border-radius: 50%;
 	top: 0;
 	left: -0.75em;
@@ -55,21 +56,26 @@ body {
 .nav_2-it{ 
    justify-items: right;
 }/*barra de elementos*/
-/*esquinas*/
-.linver{
-    width: 35px;
-    height: 100%;
-    float: left;
-    background-color: rgba(84, 179, 169, 0.623);
-    border: 5px ridge silver;
-    border-radius: 2px;
- }
- .linver_1{
-    width: 35px;
-    height: 100%;
-    float: right;
-    background-color: rgba(84, 179, 169, 0.623);
-    border: 5px ridge silver;
-    border-radius: 2px;
- }
-/*esquinas*/
+
+hr {
+    border: 2px solid #e9a02f;
+    box-shadow: 1px 1px 10px  #ffc266;
+    margin: 0;
+}
+#foot-col {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color:rgb(255, 255, 255);
+    text-shadow: 3px 3px 10px black;
+    
+}
+
+h5{
+    color: #ffffff;
+}
+
+h3{
+    padding-top: 20px;
+    color: #e9a02f;
+}
