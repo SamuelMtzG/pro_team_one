@@ -340,8 +340,8 @@ height: 500px;
 }
 
 hr {
-  border: 2px solid rgb(19, 22, 192);
-  box-shadow: 1px 1px 10px  black;
+  border: 2px solid #e9a02f;
+  box-shadow: 1px 1px 10px  #ffc266;
   margin: 0;
 }
 #foot-col {

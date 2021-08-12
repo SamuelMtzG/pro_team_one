@@ -60,3 +60,16 @@ input[type]:focus{
 .frase{
     color: white;
 }
+hr {
+    border: 2px solid #e9a02f;
+    box-shadow: 1px 1px 10px  #ffc266;
+    margin: 0;
+}
+
+#foot-col {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: ivory;
+    /* text-shadow: 3px 3px 10px black; */
+}

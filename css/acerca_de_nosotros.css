@@ -41,7 +41,7 @@ a{
 #img-logo-nav{
     height: 2.5rem;
     width: 2.5rem;
-    background: url(../img/logo_erika-03.png);
+    background: url(../img/Isotipo_Osar.png);
     position: relative;
     transform: translateY(-15%);
     margin-right: 4%;
@@ -222,6 +222,11 @@ section{/*Esto nos ayuda a separar un poco cada seccion*/
 
 .card-footer span {
     color: rgb(255, 255, 255);
+}
+hr {
+    border: 2px solid #e9a02f;
+    box-shadow: 1px 1px 10px  #ffc266;
+    margin: 0;
 }
 
 #foot-col {
