@@ -95,6 +95,7 @@ section{/*Esto nos ayuda a separar un poco cada seccion*/
 
 .card-about-us{
     cursor: pointer;/*Esta parte hace que el cursor cambie cuando se posiciona sobre las cards*/
+    object-fit: cover;
 }
 
 .cards-about-us:hover{

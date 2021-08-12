@@ -8,33 +8,36 @@
     <title>Perfil Individual del Proyecto</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/nuevo_proyecto.css">
+    <script src="https://kit.fontawesome.com/e5dec21d13.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../img/Isotipo_Osar.png">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-            <!--Logo y nombre de la red social-->
-            <a class="navbar-brand" href="#">
-                <img src="../img/fenix.png" width="30" height="30" class="d-inline-block align-top" alt="">
-                <span>OSAR</span>
+        <nav class="row navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <a class="col-3 navbar-brand" href="../index.html">
+                <img src="../img/Isotipo_Osar.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                <span>OSAR</span>  
             </a>
-            <!--Botón para colapsar la barra de navegacion dependiendo de la resolución de la pantalla-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerBarraNav"
                 aria-controls="navbarTogglerBarraNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <!--Div con nuestras opciones.-->
-            <div class="collapse navbar-collapse" id="navbarTogglerBarraNav">
-                <ul class="navbar-nav ml-auto text-right">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Inicio<span class="sr-only">(current)</span></a>
+            <div class=" col-9 collapse navbar-collapse" id="navbarTogglerBarraNav">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+                    <li class="mr-lg-5 nav-item active">
+                        <a class="nav-link" href="./lista_items.html"><i class="fas fa-home fa-lg" style= "color: #01acb6"> Inicio</i> <span class="sr-only">(current)</span></a>
+                    </li>
+                    <form class="ml-lg-5 mr-lg-5 form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                        <button class="btn btn-primary my-2 my-sm-0" id="btn-buscar" type="submit">Buscar</button>
+                    </form>
+                    <li class="ml-lg-5 mr-lg-5 nav-item">
+                        <a class="nav-link" href="./nuevo_proyecto.html"><i class="fas fa-plus-square fa-lg" style= "color: #01acb6"> Nuevo</i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./contactanos.html">Contáctanos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./acerca_de_nosotros.html">Acerca de Nosotros</a>
+                        <a class="nav-link " href="./lista_items.html"><i class="fas fa-user fa-lg" style= "color: #01acb6"> Perfil</i></a>
                     </li>
                 </ul>
             </div>
@@ -45,19 +48,18 @@
         <div class="container">
             <div class="row">
                 <div class="col w-75">
-                    <h1 class="h1 text-light">Creación de Proyecto</h1>
+                    <h3>Creación de Proyecto</h3>
                 </div>
             </div>
-
+            <br>
+            <br>
             <!-- Aquí empieza el cuerpo del form -->
             <form action="#" method="POST" id="form-add-project">
                 <div class="form-row">
                     <div class="form-group col-md-6 text-dark">
                         <label for="project_name">Nombre del Proyecto: </label>
                         <input type="text" title="Escribe solo letras" class="form-control " id="project_name"
-                            name="proyecto_nombre" required placeholder="Escribe el nombre de tu proyecto" pattern="[A-Za-z ]{3,50}"
-                            >
-
+                            name="proyecto_nombre" required placeholder="Escribe el nombre de tu proyecto" pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]{3,50}" required>
                         <br>
                         <!-- Aquí pondré una imagen provisional -->
                         <div class="form-group d-flex justify-content-center">
@@ -71,19 +73,19 @@
                             <label for="leader">Líder de proyecto:</label>
                             <input type="text" title="Escribe solo letras" class="form-control " id="leader"
                                 name="nombre" required placeholder="Escribe tu nombre completo"
-                                pattern="[A-Za-z ]{3,50}">
+                                pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]{3,50}" required>
                         </div>
 
                         <!-- Este div es para el input donde el usuario escribe su nombre -->
                         <div class="form-group text-dark">
                             <label for="begin_date">Fecha de inicio:</label>
-                            <input type="date" class="form-control" id="begin_date" name="fecha_inicio">
+                            <input type="date" class="form-control" id="begin_date" name="fecha_inicio" required pattern="[0-9]{2}[0-9]{2}-[0-9]{4}" min="1980-01-01">
                         </div>
 
                         <!-- Este div es para el input donde el usuario escribe su nombre -->
                         <div class="form-group text-dark">
                             <label for="end_date">Fecha de término:</label>
-                            <input type="date" class="form-control" id="end_date" name="fecha_termino">
+                            <input type="date" class="form-control" id="end_date" name="fecha_termino" pattern="[0-9]{2}[0-9]{2}-[0-9]{4}">
                         </div>
 
                         <!-- Este div es para el textarea donde el usuario escribe su mensaje -->
@@ -109,7 +111,7 @@
             <!-- Fin del botón para ir a la página de lista_items.html -->
         </div>
     </main>
-
+    <hr>
     <footer>
         <div class="card-footer text-muted bg-dark ">
             <div class="row" id="foot-row">

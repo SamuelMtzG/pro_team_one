@@ -17,7 +17,7 @@ h1{
   text-align: center;
   font-size: 50px;
   padding-top: 20px;
-  color: rgb(151, 129, 29);
+  color: #E9A02F;
   text-shadow: 1px 1px 1px rgb(6, 17, 20);
 }
 .text{
@@ -31,9 +31,9 @@ font-size: 30px;
 padding-top: 20px;
 }
 .test1 {
-white-space: nowrap;
-width: 80%;
-height: 100px;
+/*white-space: nowrap;*/
+width:fit-content;
+height:fit-content;
 overflow: hidden;
 text-overflow: clip;
 background-color: rgba(84, 179, 169, 0.623);
@@ -340,8 +340,8 @@ height: 500px;
 }
 
 hr {
-  border: 2px solid rgb(19, 22, 192);
-  box-shadow: 1px 1px 10px  black;
+  border: 2px solid #e9a02f;
+  box-shadow: 1px 1px 10px  #ffc266;
   margin: 0;
 }
 #foot-col {
