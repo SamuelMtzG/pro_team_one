@@ -39,14 +39,14 @@ promise
 
             let card = /* Esto lo debemos de cambiar para que salgan los datos que nosotros queremos*/ `
             <div class="col-md-4" style="margin: 15px 0"> 
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="${product.image}" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">${product.title}</h5>
-                    <p class="card-text">${product.description}</p>
-                    <a href="detail.html?id=${product.id}" class="btn btn-primary">See details</a>
-                </div>
-            </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="${product.image}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">${product.title}</h5>
+                        <p class="card-text">${product.description}</p>
+                        <a href="detail.html?id=${product.id}" class="btn btn-primary">See details</a>
+                    </div>
+                 </div>
             </div>
             `
             let item = `
