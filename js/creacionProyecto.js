@@ -1,39 +1,3 @@
-//Aqui estan las variables del DOM
-/*const $inputNombreLeader = document.getElementById('project_name');
-const $inputNombreProject = document.getElementById('leader');
-const $fechaInicio = document.getElementById('begin_date');
-const $fechaFin = document.getElementById('end_date');
-const $description = document.getElementById('description');
-const $btnAddProduct = document.getElementById('btn-contacto-submit');*/
-
-
-//Aqui se crea el objeto con los productos
-
-//let objetoProductos = [];
-
-//Aqui se agregan los eventos
-/* $btnAddProduct.addEventListener('click', agregaProducto);
-$inputNombreLeader.addEventListener('blur', obtenerDatosInput);
-$inputNombreProject.addEventListener('blur', obtenerDatosInput);
-$fechaInicio.addEventListener('blur', obtenerDatosInput);
-$fechaFin.addEventListener('blur', obtenerDatosInput);
-$description.addEventListener('blur', obtenerDatosInput);
-
-//Aqui van las funciones
-function obtenerProductos() {
-    window.sessionStorage
-}
-
-function agregaProducto() {
-    console.log(obtenerDatosInput());
-    window.sessionStorage.setItem('nuevo-proyecto', JSON.stringify(obtenerDatosInput()));  
-}
-
-function obtenerDatosInput(e) {
-    e.preventDefault();
-    let tmp = {[e.target.getAttribute('id')]: e.target.value};
-    objetoProductos.push(tmp);
-} */
 const items = {
     'projects': [{
         'id': 0,
@@ -144,7 +108,7 @@ function createCards(projects) {
     projects.forEach(function (project) {
 
 
-        let card = /* Esto lo debemos de cambiar para que salgan los datos que nosotros queremos*/ `
+        let card = `
         <div class="col-md-4" style="margin: 15px 0"> 
         <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="${project.projectImg}" alt="Card image cap">
@@ -158,13 +122,9 @@ function createCards(projects) {
             </div>
         </div>
         </div>
-        `
-        /*let item = `
-            <li>${project.projectName}}</li>
-        `;*/
+        `;
 
         plantillaFinal = plantillaFinal + card;
-        //listaFinal += item;
 
     })
     ancla.innerHTML = plantillaFinal;
