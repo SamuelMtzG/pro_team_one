@@ -1,32 +1,32 @@
 .content{
     color: black;
-    font: small-caps 100%/200% serif; /*tipo de letra*/
     text-align: center;
     align-items: center;
     justify-content: center;
+    font: small-caps 100%/200% serif; /*tipo de letra*/
 }
 .content h1 {
     font-size: 2.2em;
-} 
+}
+.container{
+    padding-bottom: 0%;
+    width: 100%;
+    left: auto;
+    right: auto;
+}
 .lead{
     color: black;
-    font: small-caps 100%/190% serif; /*tipo de letra*/
     text-align: center;
     align-items: center;
     justify-content: center;
 }
 .form-group{
     color: black;
-    font: small-caps 100%/190% serif; /*tipo de letra*/
     text-align: left;
     align-items: center;
     justify-content: center;
 }
 body{
-    /*background-color: rgb(151, 129, 29);
-    background-color: rgba(84, 179, 169, 0.623);
-    background-image: url("../img/fondo3.png");
-    background-blend-mode:luminosity;    */
     background-color: white;
 }
 
@@ -44,10 +44,11 @@ body{
 }
 
 .modal-content{
-    background-color:rgba(84, 179, 169, 0.623);
+    background-color:26;
+    background: linear-gradient(to right, #01acb6, #3eb9a5);
     opacity: .95;
     padding: 0 20px;
-    box-shadow: 1px 1px 5px yellowgreen;
+    box-shadow: 1px 1px 5px #3eb9a5;
 }
 
 .user-img img{
@@ -65,11 +66,14 @@ body{
     border: 0;
     border-radius: 5px;
 }
-
+#emailHelp{
+    color: black;
+}
 hr {
-    border: 2px solid black;
-    box-shadow: 1px 1px 10px  black;
+    /*border: 1px solid white;*/
+    box-shadow: 1px 1px 10px white;
     margin: 0;
+    width: 80px;
 }
 #foot-col {
     display: flex;
@@ -79,11 +83,6 @@ hr {
     text-shadow: 3px 3px 10px black;
     
 }
-.boton1{
-    border-radius: 12px;
-    background-color: white;
-    width: 250px;
-    }
 .nav-link_1,.foot-text{
     color: white;
 }
