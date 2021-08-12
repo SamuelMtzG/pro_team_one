@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head> 
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta http-equiv="Content-Type" content="text/html"; charset="utf-8;&iacute" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contáctanos</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
@@ -30,19 +31,13 @@
             </button>
             <!--Div con nuestras opciones.-->
             <div class="collapse navbar-collapse" id="navbarTogglerBarraNav">
-                <ul class="navbar-nav ml-auto text-center ">
-                    <li class="nav-item active" >
-                        <a class="nav-link" aling="justify-content-center" href="./html/acerca_de_nosotros.html">Buscar</a>
-                    </li>
-                    <button class="boton1"></button>
-                   </ul>
                 <ul class="navbar-nav ml-auto text-right">
                     <li class="nav-item active"><!--cambiar dirreción cuando se cree el registro-->
-                        <a class="nav-link" href="./pag.html">Iniciar sesión</a>
+                        <a class="nav-link_1" href="./acerca_de_nosotros.html">Acerca de nosotros</a>
                     </li>
-                    <li class="nav-item active"><!--cambiar dirreción cuando se cree el registro-->
+                    <!--<li class="nav-item active">cambiar dirreción cuando se cree el registro
                         <a class="nav-link" href="./html/registro.html">Registrarse</a>
-                    </li> 
+                    </li> -->
                     <li id="id-sun" class="btn-mode sun activ">
                        <i class="fas fa-sun"></i>
                     </li>
@@ -62,8 +57,8 @@
     <!-- Usé la etiqueta br para agregar espacio entre el párrafo de arriba y el formulario -->
     <br>
     </div>
-    <div class="container bg_form">
-        <div class="container col-8 main-section">
+    <div class="container" >
+        <div class="container  main-section">
             <div class="modal-content ">
                 <div class="row justify-content-center">
                 <div class="user-img">
@@ -83,7 +78,7 @@
                         <!-- Este div es para el input donde el usuario escribe su nombre -->
                         <div class="form-group">
                             <label for="name">Nombre:</label>
-                            <input type="text" title="Escribe solo letras" class="form-control " id="name" name="nombre" required placeholder="Escribe tu nombre completo" pattern="[A-Za-z]{1,15}">
+                            <input type="text" title="Escribe solo letras" class="form-control " id="name" name="nombre" required placeholder="Escribe tu nombre completo" pattern="[A-Za-z]{&eacute &aacute &iacute &oacute &uacute &ntilde &agrave &agrave &ograve}{1,15}">
                         </div>
                         <!-- Este div es para el input donde el usuario escribe su correo electrónico -->
                         <div class="form-group">
@@ -114,23 +109,25 @@
     </div>
     <!-- fin de la etiqueta div .container -->
     <br/>
-    <hr>
+    
    <!--inicia footer-->
     <div class="card-footer text-muted bg-dark">
         <div class="row" id="foot-row">
             <div class="col col-sm-col" id="foot-col">
-                <span class="foot-text"><div>
+                <span class="foot-text">
                     <ul class="navbar-nav ml-auto text-left">
                         <li class="nav-item active">
                             <a class="nav-link_1" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link_1" href="./html/contactanos.html">Contáctanos</a>
+                            <a class="nav-link_1" href="./contactanos.html">Contáctanos</a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link_1" href="./acerca_de_nosotros.html">Acerca de Nosotros</a>
                         </li>
-                    </ul></div><!-- nuestras opciones.--></span>
+                    </ul></div><!-- nuestras opciones.-->
+                </span>
+                <div class="col col-sm-col" id="foot-col">
                 <span class="foot-text">OSAR &copy; 2021</span>
                 <span class="foot-text">MÉXICO, CDMX.</span>
             </div>
