@@ -1,17 +1,17 @@
 body{
-    background-image: url("../img/emprendimiento.jpg");
+    /*background-image: url("../img/emprendimiento.jpg");*/
     height: 120vh;
     background-size: cover;
     background-position: center;
 }
-.body{
+.body{ 
     display: -ms-flexbox;
     display: flex;
     padding-top: 40px;
     padding-bottom: 40px;
 }
 .titulo{
-    color: rgb(4, 136, 15);
+    color: white;
 }
 .formulario{
     width: 100%;
@@ -20,7 +20,7 @@ body{
     max-height: 620px;
     padding: 15px;
     margin: auto;
-    background-color: rgba(0,0,0,0.9);
+    background-color: #01049ebe;
 }
 .formulario-label{
     position: relative;
@@ -51,18 +51,17 @@ body{
     padding-top: .15rem;
     padding-bottom: .2715rem;
     font-size: 8x;
-    color: rgb(4, 136, 15);
 }
 input[type]:focus{
-    border-color: rgb(0, 255, 21);
-    box-shadow: 5px 5px 5px rgb(0, 255, 21);
+    border-color: black;
+    box-shadow: 5px 5px 5px rgba(46, 48, 46, 0.356);
 }
 .frase{
     color: white;
 }
 hr {
-    border: 2px solid #e9a02f;
-    box-shadow: 1px 1px 10px  #ffc266;
+    border: 2px solid #01049ebe;
+    box-shadow: 1px 1px 10px  #01049ebe;
     margin: 0;
 }
 
