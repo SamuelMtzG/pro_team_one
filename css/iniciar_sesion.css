@@ -60,15 +60,13 @@ input[type]:focus{
     color: white;
 }
 hr {
-<<<<<<< HEAD
-  border: 2px solid #e9a02f;
+
+  /*border: 2px solid #e9a02f;
   box-shadow: 1px 1px 10px  #ffc266;
-  margin: 0;
-=======
+  margin: 0;*/
     border: 2px solid #01049ebe;
     box-shadow: 1px 1px 10px  #01049ebe;
     margin: 0;
->>>>>>> 5c039f16123d629d66d67c5e6a3bb606e5a94fa1
 }
 #foot-col {
   display: flex;

@@ -67,7 +67,6 @@
             </div>
         </div>
     </section>
-    </div>
     <div class="col">
         <section class="Temas">
             <div class="col">
@@ -128,7 +127,7 @@
             </div>
         </section>
     </div>
-    </div><br /> <br />
+    <br /> <br />
     <div class="test1">
         <p>"OSAR es como el hogar para mentes creativas que busca apoyo de personas que cree, </p>
         <p>respeta y apoya la idea de la persona"</p>
@@ -201,91 +200,29 @@
             </div>
         </div>
     </div> <!-- card -->
-    </div>
+    
     <div class="test2 ml-auto">
         <p>¿Porque elegir a OSAR?</p>
     </div>
+    </br>
     <!--Seccion de comentarios-->
-    <section>
-            <div class="tab">
-            <button class="tablinks" onclick="openOption(event, 'London')">London</button>
-            <button class="tablinks" onclick="openOption(event, 'Paris')">Paris</button>
-            <button class="tablinks" onclick="openOption(event, 'Tokyo')">Tokyo</button>
-            </div>
+    <div class="tab col-12" >
+        <button class="tablinks" onclick="openOption(event, 'Razones')">Razones</button>
+        <button class="tablinks" onclick="openOption(event, 'Apoyo')">Apoyo</button>
+        <button class="tablinks" onclick="openOption(event, 'Seguridad')">Seguridad</button>
+    </div>
 
-            <div id="London" class="tabcontent">
-            <h3>London</h3>
-            <p>London is the capital city of England.</p>
-            </div>
+    <div id="Razones" class="tabcontent">
+        <p style="color: black">Encuentras y ayudas a las ideas de las personas.</p>
+    </div>
 
-            <div id="Paris" class="tabcontent">
-            <h3>Paris</h3>
-            <p>Paris is the capital of France.</p> 
-            </div>
+    <div id="Apoyo" class="tabcontent">
+        <p style="color: black">Tendras apoyo económico o voluntario en las ideas que propongas</p> 
+    </div>
 
-            <div id="Tokyo" class="tabcontent">
-            <h3>Tokyo</h3>
-            <p>Tokyo is the capital of Japan.</p>
-            </div>
-            
-        <div class="container mt-5">
-
-            <!-- condoritos e infos -->
-            <div class="tab-content">
-                <!-- elemento -->
-                <div class="tab-pane active" id="home" role="tabpanel">
-                    <div class="row align-items-center ">
-                        <div class="comentarios-img col-md-8 ">
-                            <P>Encuentras y ayudas a las ideas de las personas </P>
-                        </div>
-                    </div>
-                </div><!-- fin elemento -->
-
-                <!-- elemento -->
-                <div class="tab-pane" id="home2" role="tabpanel">
-                    <div class="row align-items-center ">
-                        <div class="comentarios-img_1 col-md-8 ">
-                            <P>Tendras apoyo económico o voluntario en las ideas que propongas </P>
-                        </div>
-                        <div class="col-md-7 mb-md-4">
-                        </div>
-                    </div>
-                </div><!-- fin elemento -->
-                <!-- elemento -->
-                <div class="tab-pane" id="home3" role="tabpanel">
-                    <div class="row align-items-center ">
-                        <div class="comentarios-img_2 col-md-8 ">
-                            <P>Tus datos estarán siempre seguros</P>
-                        </div>
-                        <div class="col-md-8 mb-md-5">
-                        </div>
-                    </div>
-                </div><!-- fin elemento -->
-            </div><!-- fin condoritos e infos -->
-            <!-- nav -->
-            <div class="row">
-                <div class="offset-lg-4 col-lg-8">
-                    <ul class="nav nav-tabs caritas" role="tablist">
-                        <li class="nav-item col-lg-3">
-                            <a class="nav-link" data-toggle="tab" href="#home" role="tab">
-                                <div class="comentarios-img">Razones</div>
-                            </a>
-                        </li>
-                        <li class="nav-item  col-lg-3">
-                            <a class="nav-link" data-toggle="tab" href="#home2" role="tab">
-                                <div class="comentarios-img_1">Apoyo</div>
-                            </a>
-                        </li>
-                        <li class="nav-item  col-lg-3">
-                            <a class="nav-link" data-toggle="tab" href="#home3" role="tab">
-                                <div class="comentarios-img_2">Seguridad</div>
-                            </a>
-                        </li>
-                    </ul><!-- fin nav -->
-                </div>
-            </div>
-        </div>
-    </section>
+    <div id="Seguridad" class="tabcontent">
+        <p style="color: black;">Tus datos estarán siempre seguros.</p>
+    </div>        
     <!--Seccion de comentarios-->
     <!--Seccion de comentarios-->
     <section>
@@ -441,7 +378,7 @@
             console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
         }
 	// ]]>
-    function openOption(evt, cityName) {
+    function openOption(evt, optionName) {
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
@@ -451,7 +388,7 @@
         for (i = 0; i < tablinks.length; i++) {
             tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
-        document.getElementById(cityName).style.display = "block";
+        document.getElementById(optionName).style.display = "block";
         evt.currentTarget.className += " active";
         }
     </script>
