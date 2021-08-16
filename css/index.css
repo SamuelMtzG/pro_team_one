@@ -15,10 +15,9 @@ width: 250px;
 
 h1{
   text-align: center;
-  font-size: 50px;
+  font-size: 55px;
   padding-top: 20px;
-  color: #E9A02F;
-  text-shadow: 1px 1px 1px rgb(6, 17, 20);
+  color: #e9a02f;
 }
 .text{
   text-align: center;
@@ -32,27 +31,27 @@ padding-top: 20px;
 }
 .test1 {
 /*white-space: nowrap;*/
-width:fit-content;
-height:fit-content;
+width:80%;
+height:180px;
 overflow: hidden;
 text-overflow: clip;
-background-color: rgba(84, 179, 169, 0.623);
+background-color: #3eb9a5;
 text-align: center;
 color: white;
-font-size: 20px;
-padding-top: 10px;
+font-size: 25px;
+padding-top: 20px;
 }
 .test2 {
 white-space: nowrap;
 width: 80%;
-height: 100px;
+height: 180px;
 overflow: hidden;
 text-overflow: clip;
-background-color: rgba(84, 179, 169, 0.623);
+background-color: #3eb9a5;
 text-align: center;
 color: white;
-font-size: 30px;
-padding-top: 10px;
+font-size: 25px;
+padding-top: 0px;
 }
 .nav-link_1{
 color: white;
@@ -238,7 +237,7 @@ div.carousel-caption{
 }
 hr {
   border: 2px solid #e9a02f;
-  box-shadow: 1px 1px 10px  #ffc266;
+  box-shadow: 1px 1px 10px  #e9a02f;
   margin: 0;
 }
 #foot-col {
