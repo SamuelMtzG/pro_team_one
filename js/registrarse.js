@@ -83,7 +83,8 @@ function validarCampoSalir(e) {
 }
 
 function validaNombre(e) {
-    if(e.target.value){
+    let regExpForName = /^[A-Za-záéíóúÁÉÍÓÚñ]{1,65}/i;
+    if(regExpForName.test(e.target.value)){
         e.target.classList.remove('is-invalid'); 
         e.target.classList.add('is-valid');
     } else {
