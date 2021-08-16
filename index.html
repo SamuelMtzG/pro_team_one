@@ -58,7 +58,7 @@
                 <!--<div class="col-md-4">
                     <img class="img-fluid" src="./img/226367050_971806913672308_2249899465120508815_n.jpg">
                 </div>-->
-                <br/>
+                <br />
                 <div class="row p-0 m-0">
                     <div class="col-8 col-md-8">
                         <p>En OSAR encontrarás temas interesantes, en los cuales puedes tanto aportar como recibir
@@ -68,7 +68,7 @@
             </div>
         </div>
     </section>
-    <br/>
+    <br />
     <div class="col">
         <section class="Temas">
             <div class="col">
@@ -202,25 +202,27 @@
             </div>
         </div>
     </div> <!-- card -->
-    
-    <div class="test2 ml-auto">
-        <p>¿Porque elegir a OSAR?</p>
-        <button class="tablinks" onclick="openOption(event, 'Razones')">Razones</button>
-        <button class="tablinks" onclick="openOption(event, 'Apoyo')">Apoyo</button>
-        <button class="tablinks" onclick="openOption(event, 'Seguridad')">Seguridad</button>
-   
-    <div id="Razones" class="tabcontent">
-        <p style="color: black">Encuentras y ayudas a las ideas de las personas.</p>
-    </div>
 
-    <div id="Apoyo" class="tabcontent">
-        <p style="color: black">Tendras apoyo económico o voluntario en las ideas que propongas</p> 
-    </div>
+    <div class="container">
+        <div class="test2 ml-auto">
+            <p>¿Porque elegir a OSAR?</p>
+            <button class="tablinks" onclick="openOption(event, 'Razones')">Razones</button>
+            <button class="tablinks" onclick="openOption(event, 'Apoyo')">Apoyo</button>
+            <button class="tablinks" onclick="openOption(event, 'Seguridad')">Seguridad</button>
 
-    <div id="Seguridad" class="tabcontent">
-        <p style="color: black;">Tus datos estarán siempre seguros.</p>
+            <div id="Razones" class="tabcontent">
+                <p style="color: black">Encuentras y ayudas a las ideas de las personas.</p>
+            </div>
+
+            <div id="Apoyo" class="tabcontent">
+                <p style="color: black">Tendras apoyo económico o voluntario en las ideas que propongas</p>
+            </div>
+
+            <div id="Seguridad" class="tabcontent">
+                <p style="color: black;">Tus datos estarán siempre seguros.</p>
+            </div>
+        </div>
     </div>
- </div>
     </br>
     <!--Seccion de comentarios
     <div class="tab col-12" >
@@ -239,7 +241,7 @@
 
     <div id="Seguridad" class="tabcontent">
         <p style="color: black;">Tus datos estarán siempre seguros.</p>
-    </div> -->       
+    </div> -->
     <!--Seccion de comentarios-->
     <!--Seccion de comentarios-->
     <section>
@@ -394,19 +396,19 @@
         else {
             console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
         }
-	// ]]>
-    function openOption(evt, optionName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(optionName).style.display = "block";
-        evt.currentTarget.className += " active";
+        // ]]>
+        function openOption(evt, optionName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(optionName).style.display = "block";
+            evt.currentTarget.className += " active";
         }
     </script>
 </body>
