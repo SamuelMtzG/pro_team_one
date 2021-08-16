@@ -42,9 +42,8 @@ font-size: 25px;
 padding-top: 20px;
 }
 .test2 {
-white-space: nowrap;
 width: 80%;
-height: 180px;
+height: auto;
 overflow: hidden;
 text-overflow: clip;
 background-color: #3eb9a5;
@@ -319,4 +318,18 @@ hr {
 	.tab-content{
 	height: 330px;
 	}
+}
+
+/* Aquí agregué un media query para pantallas pequeñas y se vea mejor */
+@media only screen and (max-width: 500px) {
+    .test2 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .tablinks {
+        margin: 5px;
+        width: fit-content;
+    }
 }
