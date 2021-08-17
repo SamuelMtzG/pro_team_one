@@ -67,6 +67,7 @@ a:hover , a span:hover{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    font: small-caps 700%/800% Arial;
     backface-visibility: hidden;
   }
   
@@ -75,7 +76,7 @@ a:hover , a span:hover{
     text-shadow: /* -3px -3px 2px  var(--white-color-default), */ 5px 5px 5px var(--black-color-default);
     font-size: calc(.8em + 1vw);
     font-weight: bold;
-  }
+    }
   h4{
     color: var(--titulos-color);
     text-shadow: /* -2px -2px 2px  var(--white-color-default), */ 3px 3px 2px var(--black-color-default);
@@ -245,11 +246,11 @@ hr {
 
 @media (min-width: 600px) {
     h1 {
-        font-size: calc(4.5em + 1vw);
+        font-size: calc(1.5em + 1vw);
     }
 
     h4{
-        font-size: calc(.5em + 1vw);
+        font-size: calc(.2em + 1vw);
     }
   }
 
