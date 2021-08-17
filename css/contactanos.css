@@ -70,10 +70,9 @@ body{
     color: black;
 }
 hr {
-    /*border: 1px solid white;*/
-    box-shadow: 1px 1px 10px white;
+    border: 2px solid #e9a02f;
+    box-shadow: 1px 1px 10px  #e9a02f;
     margin: 0;
-    width: 80px;
 }
 #foot-col {
     display: flex;
@@ -117,4 +116,12 @@ hr {
     background-color:black;
     color:#ffcd5c !important;
   }
-  
+  a, a span{
+
+    margin-right: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: all .1s ease-in;
+    backface-visibility: hidden;
+}
