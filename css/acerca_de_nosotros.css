@@ -22,13 +22,7 @@
 
 
 a, a span{
-
     margin-right: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.3rem;
-    font-weight: 600;
-    transition: all .1s ease-in;
-    backface-visibility: hidden;
 }
 
 a{
@@ -39,7 +33,7 @@ a{
 }
 
 #img-logo-nav{
-    height: 2.5rem;
+    height: 2.3rem;
     width: 2.5rem;
     background: url(../img/Isotipo_Osar.png);
     position: relative;
@@ -54,7 +48,7 @@ a{
 }
 
 #logo>span{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--white-color-default);
 }
 
@@ -73,22 +67,20 @@ a:hover , a span:hover{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font: small-caps 700%/800% Arial; /*tipo de letra*/
+    font: small-caps 700%/800% Arial;
     backface-visibility: hidden;
   }
   
   h1{
     color: var(--titulos-color);
     text-shadow: /* -3px -3px 2px  var(--white-color-default), */ 5px 5px 5px var(--black-color-default);
-    font-family: Arial, Helvetica, sans-serif;
     font-size: calc(.8em + 1vw);
     font-weight: bold;
-  }
+    }
   h4{
     color: var(--titulos-color);
     text-shadow: /* -2px -2px 2px  var(--white-color-default), */ 3px 3px 2px var(--black-color-default);
     font-size: calc(.15em + 1vw);
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     text-align: center;
 } 
@@ -130,7 +122,6 @@ video {
 .h2_des,h2#integrantes{
     text-align: center;
     color:var(--titulos-color);
-    font-family: Arial, Helvetica, sans-serif;
     /* font-variant: all-petite-caps   300%/400%;/*tipo de letra*/ 
     font-weight: bold;
 }
