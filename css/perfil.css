@@ -32,3 +32,17 @@ h3{
     color: #e9a02f;
     font-size: 1.5em;
 }
+
+hr {
+    border: 2px solid #e9a02f;
+    box-shadow: 1px 1px 10px  #ffc266;
+    margin: 0;
+}
+#foot-col {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color:rgb(255, 255, 255);
+    text-shadow: 3px 3px 10px black;
+    
+}
