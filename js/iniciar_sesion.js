@@ -27,9 +27,7 @@ function validarFormulario(e){
 function login(){
     let user = document.getElementById("email");
     let password = document.getElementById("password");
-    if(localStorage.getItem("user") == user.value && localStorage.getItem("password") == password.value){
-        alert('Datos correctos');
-        
+    if(localStorage.getItem("user") == user.value && localStorage.getItem("password") == password.value){    
         window.location.href="../html/lista_items.html";        
     }else{
         alert('Usuario o contraseña incorrectas');
