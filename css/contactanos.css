@@ -45,18 +45,18 @@ body{
 
 .modal-content{
     background-color:26;
-    background: linear-gradient(to right, #01acb6, #3eb9a5);
+    background: linear-gradient(to right, #3eb9a4be, #3eb9a4be);
     opacity: .95;
     padding: 0 20px;
-    box-shadow: 1px 1px 5px #3eb9a5;
+    box-shadow: 1px 1px 5px #3eb9a4be;;
 }
 
 .user-img img{
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    box-shadow: 1px 1px 5px rgba(84, 179, 169, 0.623) ;
-    background-color: rgba(84, 179, 169, 0.623);
+    box-shadow: 1px 1px 5px #3eb9a4be; 
+    background-color: #3eb9a4be;
     background-blend-mode:luminosity;
 }
 
@@ -70,10 +70,9 @@ body{
     color: black;
 }
 hr {
-    /*border: 1px solid white;*/
-    box-shadow: 1px 1px 10px white;
+    border: 2px solid #e9a02f;
+    box-shadow: 1px 1px 10px  #e9a02f;
     margin: 0;
-    width: 80px;
 }
 #foot-col {
     display: flex;
@@ -117,4 +116,6 @@ hr {
     background-color:black;
     color:#ffcd5c !important;
   }
-  
+  a, a span{
+    margin-right: 15px;
+}
