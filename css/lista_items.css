@@ -79,3 +79,8 @@ h3{
     padding-top: 20px;
     color: #e9a02f;
 }
+
+.card-body > p:nth-child(5){
+    overflow-y: auto;
+    height: 140px;
+}
