@@ -1,3 +1,5 @@
+
+
 body{
   color: white;
 }
@@ -128,7 +130,7 @@ color: white;
   font-size: 2rem;
 }
 .frente {
-  background-image: url("../img/tec.jpg");
+  background-image: url("../img/Index_card_cultura.jpeg");
   color: #fff;
   display: flex;
   background-size: cover;/*Esto es para que la imagen no se repita*/
@@ -199,8 +201,9 @@ div.carousel-caption{
   background-size: cover;/*Esto es para que la imagen no se repita*/
 }
 .frente_4{
-  background-image: url("../img/anim.png");
+  background-image: url("../img/Index_card_proteccionAnimal.jpg");
   color: #fff;
+  background-position: center;
   display: flex;
   background-size: cover;/*Esto es para que la imagen no se repita*/
 }
