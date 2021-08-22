@@ -22,12 +22,13 @@ img{
     text-align: center;
     padding: 0px;
     margin: 0px;
-    border: 6px #9cbb5d double;
+    border: 6px #3eb9a5 double;
 }
 .btn{
-    background-color: #3eb9a5;
-    border: #01adb6;
+    background-color: #e9a02f;
+    border: #e9a02f;
     font-family: 'Lato', sans-serif;
+    border-radius: 10px;
 }
 a{
     color: white;
