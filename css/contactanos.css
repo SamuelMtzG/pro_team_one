@@ -51,7 +51,7 @@ body{
 .modal-content{
     background-color: beige;
     padding: 0 20px;
-
+    border: 0;
 }
 
 .user-img img{
@@ -103,19 +103,16 @@ hr {
     text-align: center;
     line-height: 30px;
   }
-  .btn-mode.sun{
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-right: 1px solid transparent;
-  }
-  .btn-mode.moon{
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-  }
+
   .activ{
     background-color:black;
     color:#ffcd5c !important;
   }
   a, a span{
     margin-right: 15px;
+}
+
+#btn-contacto-submit{
+    background-color: #3eb9a5;
+    border: #01adb6;
 }
