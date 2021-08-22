@@ -168,7 +168,7 @@ function addUser(){
         }
 
         userArray.push(newUser);
-        window.localStorage.setItem('users', JSON.stringify(userArray));
+        window.sessionStorage.setItem('users', JSON.stringify(userArray));
     }
     else {
         const userArray = JSON.parse(window.sessionStorage.getItem('users'));
