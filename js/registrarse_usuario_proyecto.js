@@ -1,5 +1,5 @@
 //Aqui voy a recorger los datos del formulario cuando se cargue
-window.addEventListener('DOMContentLoaded', () => {document.getElementsByClassName('formulario')[0].getElementsByTagName('div')});
+window.addEventListener('DOMContentLoaded',()=> {document.getElementById('registro-form').addEventListener('submit',validarFormulario);});
 
 //Recoge los inputs del formulario
 const $inputsFormulario =Array.from(document.getElementsByClassName('formulario')[0].getElementsByTagName('input')); ;
@@ -138,47 +138,61 @@ function validaConfirmacionEmail(e) {
         message.innerHTML = "Ingresar el mismo email ."
     }
 }
+function validarFormulario(e){
+    e.preventDefault();
+    let name =document.getElementById('name');
+    if(name.length == 0){
+        alert('algo fallo');
+    }
+    addUser();
+}
 
 function addUser(){
     // Obtenemos los valores del formulario
-    let projectName = document.getElementById('name').value;
-    let leader = document.getElementById('age').value;
-    let begin = document.getElementById('email').value;
-    let end = document.getElementById('password').value;
-    let description = document.getElementById('tipoPersona').value;
+    let name = document.getElementById('name').value;
+    let age = document.getElementById('age').value;
+    let tipoPersona = document.querySelector('input[name=tipoPersona]:checked').value;
+    let email =document.getElementById('email').value;
+    let password = document.getElementById('password').value;
     let tipoUsuario = "founding";
-    if (window.sessionStorage.getItem('projects') === null) {
-        const projectArray = [];
-        const newProject = {
+    if (window.sessionStorage.getItem('users') === null) {
+        const userArray = [];
+        const newUser = {
             'id': 0,
-            'projectName': projectName,
-            'projectImg': projectImg,
-            'leader': leader,
-            'beginDate': begin,
-            'endDate': end,
-            'description': description
+            'name': name,
+            'age': age,
+            'tipoPersona': tipoPersona,
+            'email': email,
+            'password': password,
+            'tipoUsuario': tipoUsuario
         }
 
-        projectArray.push(newProject);
-        window.localStorage.setItem('projects', JSON.stringify(projectArray));
+        userArray.push(newUser);
+        window.localStorage.setItem('users', JSON.stringify(userArray));
     }
     else {
-        const projectArray = JSON.parse(window.sessionStorage.getItem('projects'));
-        let newId = projectArray.length;
-        const newProject = {
+        const userArray = JSON.parse(window.sessionStorage.getItem('users'));
+        let newId = userArray.length;
+        const newUser = {
             'id': newId,
-            'projectName': projectName,
-            'projectImg': projectImg,
-            'leader': leader,
-            'beginDate': begin,
-            'endDate': end,
-            'description': description
+            'name': name,
+            'age': age,
+            'tipoPersona': tipoPersona,
+            'email': email,
+            'password': password,
+            'tipoUsuario': tipoUsuario
         }
         
-        projectArray.push(newProject);
-        window.sessionStorage.setItem('projects', JSON.stringify(projectArray));
+        userArray.push(newUser);
+        window.sessionStorage.setItem('users', JSON.stringify(userArray));
     }
-    document.getElementById("form-add-project").reset();//Reiniciamos los valores del formulario
-
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'cuenta creada ' +name  ,
+        showConfirmButton: false,
+        timer: 1500
+      })
+    document.getElementById("registro-form").reset();//Reiniciamos los valores del formulario
 }
 
