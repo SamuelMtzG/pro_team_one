@@ -3,11 +3,16 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    font: small-caps 100%/200% serif; /*tipo de letra*/
 }
 .content h1 {
     font-size: 2.2em;
+    font-family: 'Rubik', sans-serif;
 }
+
+p, label, input{
+    font-family: 'Lato', sans-serif;
+}
+
 .container{
     padding-bottom: 0%;
     width: 100%;
@@ -44,20 +49,15 @@ body{
 }
 
 .modal-content{
-    background-color:26;
-    background: linear-gradient(to right, #3eb9a4be, #3eb9a4be);
-    opacity: .95;
+    background-color: beige;
     padding: 0 20px;
-    box-shadow: 1px 1px 5px #3eb9a4be;;
+
 }
 
 .user-img img{
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    box-shadow: 1px 1px 5px #3eb9a4be; 
-    background-color: #3eb9a4be;
-    background-blend-mode:luminosity;
 }
 
 .form-group input{
