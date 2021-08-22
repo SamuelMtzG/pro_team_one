@@ -32,9 +32,9 @@ img{
 a{
     color: white;
     font-family: 'Lato', sans-serif;
+    text-decoration: none;
 }
 hr{
     border: 1px solid #e9a02f;
-    box-shadow: 1px 1px 1px  #e9a02f;
     margin: 0;
 }
