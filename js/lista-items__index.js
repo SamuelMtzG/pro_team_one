@@ -61,35 +61,7 @@ const items = {
         'beginDate': '2021-08-09',
         'endDate': '2021-10-09',
         'description': 'Maecenas lectus dolor, bibendum ac ligula at, fringilla facilisis sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.'
-    },
-    {
-        'id': 7,
-        'projectName': 'Ecológica Maya',
-        'projectImg': 'https://diarioresponsable.com/images/opinion/consejos%20para%20integrar%20la%20educaci%C3%B3n%20ecol%C3%B3gica%20en%20las%20aulas%20-%20diarioresponsable_5977967976.jpg',
-        'leader': 'Tanya Santiago',
-        'beginDate': '2021-08-09',
-        'endDate': '2021-10-09',
-        'description': 'Maecenas lectus dolor, bibendum ac ligula at, fringilla facilisis sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.'
-    },
-    {
-        'id': 8,
-        'projectName': 'Tecnologías Papantla',
-        'projectImg': 'https://www.latino-news.com/wp-content/uploads/2019/01/tecnologia.png',
-        'leader': 'Tanya Santiago',
-        'beginDate': '2021-08-09',
-        'endDate': '2021-10-09',
-        'description': 'Maecenas lectus dolor, bibendum ac ligula at, fringilla facilisis sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.'
-    },
-    {
-        'id': 9,
-        'projectName': 'Tiempo de perreo',
-        'projectImg': 'https://image.shutterstock.com/image-photo/attractive-girl-dancing-twerk-iat-260nw-524413186.jpg',
-        'leader': 'Laura Aline Martínez',
-        'beginDate': '2021-08-09',
-        'endDate': '2021-10-09',
-        'description': 'Maecenas lectus dolor, bibendum ac ligula at, fringilla facilisis sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.'
-    }
-    ]
+    },]
 };
 
 if (window.sessionStorage.getItem('projects') === null) {
@@ -110,7 +82,7 @@ function createCards(projects) {
 
 
         let card = 
-        `<div class="col">
+        `<div class="col mb-4">
               <div class="card h-100">
                 <img src="${project.projectImg}" class="card-img-top" alt="...">
                 <div class="card-body">

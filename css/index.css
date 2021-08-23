@@ -138,6 +138,15 @@ i{
   color: rgb(192, 178, 178);
 }
 
+.card img {
+  height: 15rem;
+}
+
+.card p {
+  overflow-y: auto;
+  height: 6rem;
+}
+
 .card-footer a:first-child i {
   margin-right: 15%;
 }
