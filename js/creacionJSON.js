@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', () => {document.getElementById('form
 
 //Agregamos las funciones para validar el formulario
 
-function validarFormulario(e) {
+function validarFormulario(e) { 
     e.preventDefault(); 
     //Aqui se recogen los valores una vez se envie el formulario
     let projectName = document.getElementById('project_name').value;
