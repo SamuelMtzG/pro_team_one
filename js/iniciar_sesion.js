@@ -1,6 +1,20 @@
 //Asignacion de cuenta valida en local storage
-localStorage.setItem("user","eliasfv25@gmail.com");
-localStorage.setItem("password","12345678");
+const iUsers ={
+    'users' :[{
+            'email': 'eliasfv25@gmail.com',
+            'password': '12345678',
+            'tipoUsuario': 'inversor'
+        },
+        {
+            'email': 'angeelias@gmail.com',
+            'password': '12345678',
+            'tipoUsuario': 'founding'
+        }
+    ]
+};
+if (window.localStorage.getItem('users') === null) {
+    window.localStorage.setItem('users', JSON.stringify(iUsers.users));
+}
 //Capturamos la carga del formulario para su validacion con js
 window.addEventListener('DOMContentLoaded',()=> {document.getElementById('form-login').addEventListener('submit',validarFormulario);});
 
@@ -63,22 +77,29 @@ function validarFormulario(e){
         return;
     }
     
-
-    login();
+    const users = JSON.parse(window.localStorage.getItem('users'));
+    login(users);
 }
 
-function login(){
-    let user = document.getElementById("email");
-    let password = document.getElementById("password");
+function login(users){
+    let formUser = document.getElementById("email");
+    let formPassword = document.getElementById("password");
     let message = document.querySelector('.message');
-    if(localStorage.getItem("user") == user.value && localStorage.getItem("password") == password.value){    
-        message.innerHTML = `<div class="spinner-border text-success" role="status">
-                                <span class="sr-only">Loading...</span>
-                            </div>`
-        window.location.href="../html/lista_items.html";        
-    }else{
-        message.innerHTML = "Usuario o Contraseña invalidos."
-    }
+    users.forEach(function(user){
+        console.log(user.email);
+        if(user.email == formUser.value && user.password == formPassword.value){    
+            message.innerHTML = `<div class="spinner-border text-success" role="status">
+                                    <span class="sr-only">Loading...</span>    
+                                </div>`
+            if(user.tipoUsuario == "founding"){
+                window.location.href="../html/founding_profile.html";        
+            } else if(user.tipoUsuario == "inversor"){
+                window.location.href="../html/inversor_profile.html";        
+            }
+        }else{
+            message.innerHTML = "Usuario o contrasaña invaliddos."
+        }
+    });
 }
 function validaEmail(e) {
     //Aqui traemos el patron para validar el email
