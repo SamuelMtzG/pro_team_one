@@ -17,6 +17,10 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-title);
 }
@@ -28,7 +32,7 @@ a, p, span {
 
 nav{
   background-color: var(--white-color-default);
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid rgb(212, 175, 55);
 }
 
 nav span, nav a {
@@ -42,6 +46,11 @@ nav a.nav-link:hover {
   color: var(--titulos-color);
   background-color: #5a5a5a22;
   border-radius: 10px;
+  transform: scale(1.05);
+}
+
+nav a.nav-link:valid {
+  background-color: #5a5a5a;
 }
 
 .navbar-toggler {
@@ -392,6 +401,18 @@ div.carousel-caption{
     left: 0px;
   }
   /*cards*/
+
+#btn-lista{
+  outline: none;
+  border:0;
+}
+
+#btn-lista:hover{
+    background-color: var(--green-color-light);
+    outline: none;
+    border:0;
+}
+
 .saludo_bienvenida{
     text-align: center;
     font-size: 74px;
@@ -430,18 +451,13 @@ hr {
   justify-content: flex-start;
 }
 
-/*.botones{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}*/
-
-
-
-.comentario-img{
-  width: 90px;
-  height: 90px;
+.coment-item a{
+  color: black;
+  font-size: 2rem;
 }
+
+
+
 @media (min-width: 992px) {	
 	.tab-content{
 	height: 330px;
