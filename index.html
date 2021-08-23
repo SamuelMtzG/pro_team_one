@@ -10,30 +10,30 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="shortcut icon" href="../img/Isotipo_Osar.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header id="contact_us">
         <!--Barra de navegación-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <nav class="navbar navbar-expand-lg sticky-top">
             <!--Logo y nombre de la red social-->
             <a class="navbar-brand" href="./index.html">
                 <img src="./img/Isotipo_Osar.png" width="30" height="30" class="d-inline-block align-top" alt="">
                 <span>OSAR</span>
             </a>
             <!--Botón para colapsar la barra de navegacion dependiendo de la resolución de la pantalla-->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerBarraNav"
+            <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarTogglerBarraNav"
                 aria-controls="navbarTogglerBarraNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!--Div con nuestras opciones.-->
             <div class="collapse navbar-collapse" id="navbarTogglerBarraNav">
-                <ul class="navbar-nav ml-auto text-center">
-                    <li class="nav-item ">
-                        <a class="nav-link" href="./html/acerca_de_nosotros.html">Buscar</a>
-                    </li>
-                    <button class="boton1"></button>
-                </ul>
                 <ul class="navbar-nav ml-auto text-right">
                     <li class="nav-item active">
                         <!--cambiar dirreción cuando se cree el registro-->
@@ -50,30 +50,38 @@
     </header>
     <!--contenido del body del index-->
     <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h1>Bienvenidos a OSAR</h1>
-                </div>
-                <!--<div class="col-md-4">
-                    <img class="img-fluid" src="./img/226367050_971806913672308_2249899465120508815_n.jpg">
-                </div>-->
-                <br />
-                <div class="row p-0 m-0">
-                    <div class="col-8 col-md-8">
-                        <p>En OSAR encontrarás temas interesantes, en los cuales puedes tanto aportar como recibir
-                            ayuda. Además de conocer a personas con los mismos intereses que tú.</p>
-                    </div>
+        <div class="container-fluid hero">
+
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Bienvenidos a OSAR</h1>
+            </div>
+            <br />
+            <div class="row p-0 m-0">
+                <div class="col-8 col-md-8">
+                    <p>En OSAR encontrarás temas interesantes, en los cuales puedes tanto aportar como recibir
+                        ayuda. Además de conocer a personas con los mismos intereses que tú.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <div class="container-fluid pasos">
+        <img src="./img/Pasos.png" alt="pasos_a_seguir">
+    </div>
     <br />
     <div class="col">
         <section class="Temas">
             <div class="col">
                 <div class="row">
-                    <h3>Temas que encontrarás con nosotros.</h3>
+                    <h3 class="title">Temas que encontrarás con nosotros.</h3>
                 </div>
             </div>
             <br />
@@ -87,7 +95,7 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="./img/Index_Cultura.jpeg" class="d-block w-100" alt="...">
+                            <img src="./img/cultura_index.png" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <span>
                                     <h5>CULTURA</h5>
@@ -96,21 +104,21 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./img/Index_MedioAmbiente.jpeg" class="d-block w-100" alt="...">
+                            <img src="./img/medioAmbiente.png" class="d-block w-100" alt="..." style="width: 100vw;">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>MEDIO AMBIENTE</h5>
                                 <p>Únete a brigadas.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./img/science-1182713_1920.jpg" class="d-block w-100" alt="...">
+                            <img src="./img/ciencia.png" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>EDUCACIÓN</h5>
                                 <p>Aprende nuevos temas.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./img/Index_ProteccionAnimal.jpeg" class="d-block w-100" alt="...">
+                            <img src="./img/animales.png" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>PROTECCIÓN ANIMAL</h5>
                                 <p>Apoya a centros de acopio.</p>
@@ -131,9 +139,7 @@
     </div>
     <br /> <br />
     <div class="test1">
-        <p>"OSAR es como el hogar para mentes creativas que buscan apoyo de personas que creen, </p>
-        <p>respetan y apoya la idea de las personas"</p>
-        <div class="test1_0"></div>
+        <p>"OSAR es como el hogar para mentes creativas que buscan apoyo de personas que creen, respetan y apoya la idea de las personas" </p>
     </div>
     <div class="container">
         <div class="row">
@@ -204,12 +210,12 @@
         </div>
     </div> <!-- card -->
 
-    <div class="container">
-        <div class="test2 ml-auto" style="margin: 10px 0 0 10px;">
-            <p>¿Por qué elegir a OSAR?</p>
-            <button class="tablinks" onclick="openOption(event, 'Razones')">Razones</button>
-            <button class="tablinks" onclick="openOption(event, 'Apoyo')">Apoyo</button>
-            <button class="tablinks" onclick="openOption(event, 'Seguridad')">Seguridad</button>
+    <div class="container-fluid right">
+        <div class="test2 " style="margin: 10px 0 0 10px;">
+            <h2>¿Por qué elegir a OSAR?</h2>
+            <a class="tablinks" onclick="openOption(event, 'Razones')">Razones</a>
+            <a class="tablinks" onclick="openOption(event, 'Apoyo')">Apoyo</a>
+            <a class="tablinks" onclick="openOption(event, 'Seguridad')">Seguridad</a>
 
             <div id="Razones" class="tabcontent">
                 <p style="color:white">Encuentras y ayudas a las ideas de las personas.</p>
