@@ -25,6 +25,7 @@ a, p, span {
   font-family: var(--font-texto-gral);
 }
 
+
 nav{
   background-color: var(--white-color-default);
   border-bottom: 2px solid black;
@@ -37,7 +38,7 @@ nav span, nav a {
   color: var(--black-color-default);
 }
 
- nav a.nav-link:hover {
+nav a.nav-link:hover {
   color: var(--titulos-color);
   background-color: #5a5a5a22;
   border-radius: 10px;
@@ -55,18 +56,6 @@ nav span, nav a {
   object-fit: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.pasos img {
-  width: 100%;
-}
-
-
-.row{
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  color: var(--black-color-default);
 }
 
 div.carousel-caption {
@@ -99,6 +88,28 @@ h3{
   color: var(--titulos-color);
   }
 
+
+.pasos img {
+  width: 100%;
+}
+
+.que-es p, .help__text {
+  font-size: 2rem;
+  font-weight: var(--black-color-default);
+}
+
+.help__text {
+  margin-top: 6%;
+}
+
+.row{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: var(--black-color-default);
+}
+
+
 .test1 {
 /*white-space: nowrap;*/
 width:60%;
@@ -121,6 +132,27 @@ margin: 8rem 0;
   top: 42%;
   transform: translateY(-50%);
 }
+
+i{
+  font-size: 2.3rem;
+  color: rgb(192, 178, 178);
+}
+
+.card-footer a:first-child i {
+  margin-right: 15%;
+}
+.card-footer a:last-child i {
+  margin-left: 15%;
+}
+.card-footer a:first-child i:hover {
+  color: var(--card-integrantes-bg-color);
+}
+.card-footer a:last-child i:hover {
+  color: var(--card-integrantes-bg-color);
+}
+
+
+
 
 
 .right{
