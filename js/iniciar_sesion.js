@@ -86,19 +86,20 @@ function login(users){
     let formPassword = document.getElementById("password");
     let message = document.querySelector('.message');
     users.forEach(function(user){
-        console.log(user.email);
-        if(user.email == formUser.value && user.password == formPassword.value){    
+        if((user.email != formUser.value) && (user.password != formPassword.value)){
+            message.innerHTML = "Usuario o contrasaña invaliddos."                     
+        }else if((user.email == formUser.value) && (user.password == formPassword.value) && (user.tipoUsuario === "founding")){    
             message.innerHTML = `<div class="spinner-border text-success" role="status">
-                                    <span class="sr-only">Loading...</span>    
-                                </div>`
-            if(user.tipoUsuario == "founding"){
-                window.location.href="../html/founding_profile.html";        
-            } else if(user.tipoUsuario == "inversor"){
-                window.location.href="../html/inversor_profile.html";        
-            }
-        }else{
-            message.innerHTML = "Usuario o contrasaña invaliddos."
+               <span class="sr-only">Loading...</span>    
+            </div>`
+            window.location.href="../html/founding_profile.html";
+        }else if((user.email == formUser.value) && (user.password == formPassword.value) && (user.tipoUsuario === "inversor")){    
+            message.innerHTML = `<div class="spinner-border text-success" role="status">
+               <span class="sr-only">Loading...</span>    
+            </div>`
+            window.location.href="../html/inversor_profile.html";
         }
+            
     });
 }
 function validaEmail(e) {
