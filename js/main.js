@@ -100,7 +100,9 @@ function validaConfirmacionEmail(e) {
     }else {
         e.target.classList.add('is-invalid');
     }
-}
+ }
+      
+
 
 function sendMail() {
     const $nombre = document.getElementById('name');
