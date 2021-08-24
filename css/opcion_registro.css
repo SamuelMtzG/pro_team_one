@@ -1,8 +1,5 @@
 
 #hero{
-    padding: 0px;
-    border: 0px;
-    margin: 0px;
     font-family: 'Rubik', sans-serif;
     text-align: center;
     color: white;
@@ -12,17 +9,21 @@ h1{
     margin: 0px;
 }
 img{
-    width: 15rem;
-    height: 15rem;
+    width: 80%;
+    height: 75%;
     padding: 0%;
     border: 0rem;
     margin: 0%;
 }
+
 #img1, #img2{
     text-align: center;
-    padding: 0px;
+    padding:0%;
     margin: 0px;
-    border: 6px #3eb9a5 double;
+}
+.fondo1,.fondo2{
+    background-color: beige;
+    height: 25em;
 }
 .btn{
     background-color: #e9a02f;
@@ -30,12 +31,15 @@ img{
     font-family: 'Lato', sans-serif;
     border-radius: 10px;
 }
+.btn:hover{
+    background-color: #9cbb5d;
+    border: #9cbb5d;
+}
 a{
     color: white;
     font-family: 'Lato', sans-serif;
     text-decoration: none;
 }
 hr{
-    border: 1px solid #e9a02f;
-    margin: 0;
+    border: 2px solid #e9a02f;
 }
