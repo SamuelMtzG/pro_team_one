@@ -20,7 +20,7 @@ body{
 .text{
     color: var(--black-color);
     font-family: 'Lato', sans-serif;
-    font-size: calc(.8em + 1vw);
+    font-size: calc(.61em + 1vw);
 }
 #bg{
     background-color: beige;
@@ -61,16 +61,16 @@ body{
     color: #6c6c9b;
 }
 input[type]:focus{
-    border-color: #e9a02f;
-    box-shadow: 3px 3px 3px #e9a02f;
+    border-color: var(--orange-color);
+    box-shadow: 3px 3px 3px var(--orange-color);
 }
 
 #registrarse{
     background-color: var(--orange-color);
-    border: var(--blue-color);
+    border: var(--orange-color);
 }
 hr {
-    border: 2px solid #e9a02f;
+    border: 2px solid var(--orange-color);
     box-shadow: 1px 1px 10px  #ffc266;
     margin: 0;
 }
@@ -80,7 +80,7 @@ hr {
     flex-direction: row;
     justify-content: space-between;
     color: rgb(255, 255, 255);
-    text-shadow: 3px 3px 10px black;
+    text-shadow: 3px 3px 10px var(--black-color);
     color: #ffffbb;
 }
 

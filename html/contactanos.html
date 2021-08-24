@@ -6,7 +6,7 @@
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
     <meta http-equiv="Content-Type" content="text/html"; charset="utf-8;&iacute" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contáctanos</title>
+    <title>Contáctanos | OSAR</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -73,11 +73,11 @@
                     equipo estará encantado de ayudarte!
                 </p>
                 <div class="row justify-content-center">
-                    <form action="javascript:sendMail();" method="POST">
+                    <form action="javascript:sendMail();" method="POST" class="formulario">
                         <!-- Este div es para el input donde el usuario escribe su nombre -->
                         <div class="form-group">
                             <label for="name">Nombre:</label>
-                            <input type="text" title="Escribe solo letras" class="form-control " id="name" name="nombre" required placeholder="Escribe tu nombre completo" pattern="[A-Za-z]{&eacute &aacute &iacute &oacute &uacute &ntilde &agrave &agrave &ograve}{1,40}">
+                            <input type="text" title="Escribe solo letras" class="form-control " id="name" name="nombre" required placeholder="Escribe tu nombre completo" pattern="[A-Za-z]{&eacute &aacute &iacute &oacute &uacute &ntilde &agrave &agrave &ograve}{3,40}">
                         </div>
                         <!-- Este div es para el input donde el usuario escribe su correo electrónico -->
                         <div class="form-group">
@@ -88,7 +88,7 @@
                         <!-- Este div es para el input donde el usuario escribe su teléfono celular -->
                         <div class="form-group">
                             <label for="phone">Teléfono celular:</label>
-                            <input type="tel" minlength="10" maxlength="10" min="0" class="form-control " id="phone" name="telefono" required placeholder="Escribe tu número de celular" pattern="\([0-9]){10}" >
+                            <input type="tel" minlength="10" maxlength="10" min="0"  pattern="[0-9]{10}" class="form-control " id="phone" name="telefono" required placeholder="Escribe tu número de celular">
                         </div>
                         <!-- Este div es para el textarea donde el usuario escribe su mensaje -->
                         <div class="form-group">

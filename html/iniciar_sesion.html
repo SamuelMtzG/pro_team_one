@@ -9,7 +9,11 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/iniciar_sesion.css">
     <link rel="shortcut icon" href="../img/Isotipo_Osar.png">
-    <title>Iniciar sesión</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <title>Iniciar sesión | OSAR</title>
 </head>
 
 <body>
@@ -43,44 +47,48 @@
         </nav><br />
         <!--Aqui termina barnav-->
     </header>
-    <div class="body">
-        <form method="POST" class="formulario rounded px-5" id="form-login">
-            <div class="text-center mb-4">
-                <!--<img class="mb-4" src="../img/Imagotipo_Osar2.png" alt="Logo de OSAR" width="200" height="200" />-->
-                <img class="mb-4" src="../img/Isotipo_Osar.png" alt="Logo de OSAR" width="200" height="200" />
-                <h1 class="titulo mb-3 font-weight-bold">OSAR</h1>
-                <p class="text-light">Inicie sesion para acceder a nuestro contenido.</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <form method="POST" class="formulario rounded px-5" id="form-login">
+                    <div class="text-center mb-4">
+                        <!--<img class="mb-4" src="../img/Imagotipo_Osar2.png" alt="Logo de OSAR" width="200" height="200" />-->
+                        <img class="mb-4" src="../img/Imagotipo_Osar.png" alt="Logo de OSAR" width="200" height="200" id="bg" />
+                        <p class="text">Inicie sesión para acceder a nuestro contenido.</p>
+                    </div>
+                    <div class="formulario-label">
+                        <label for="email" class="text">Usuario</label>
+                        <input type="email" id="email" class="form-control" placeholder="Ingrese su usuario" required autofocus>
+                    </div>
+                    <div class="formulario-label">
+                        <label for="password" class="text">Contraseña</label>
+                        <input type="password" id="password" class="form-control" placeholder="Ingrese su contraseña" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="text">¿Primera vez en OSAR?
+                            <a href="./opcion_registro.html" class="text">Registrate</a>
+                        </label>
+                    </div>
+                    <button id="login" class="btn btn-danger btn-block">Iniciar sesion</button>
+                    <p class="message pt-4 text-danger text"></p>
+                </form>
             </div>
-            <div class="formulario-label">
-                <input type="email" id="email" class="form-control" placeholder="Ingrese su usuario" required autofocus>
-                <label for="email">Ingrese su usuario</label>
-            </div>
-            <div class="formulario-label">
-                <input type="password" id="password" class="form-control" placeholder="Ingrese su contraseña" required>
-                <label for="password">Ingrese su contraseña</label>
-            </div>
-            <div class="mb-3">
-                <label class="frase">¿Primera vez en OSAR?
-                    <a href="./registrarse.html">Registrate</a>
-                </label>
-            </div>
-            <button id="login" class="btn btn-danger btn-block">Iniciar sesion</button>
-            <p class="message pt-4 text-danger"></p>
-        </form>
-    <br/>
+        </div> 
     </div>
     <br/>
     <hr>
-    <div class="card-footer text-muted bg-dark">
-        <div class="row" id="foot-row">
-            <div class="col col-sm-col" id="foot-col">
-                <span class="foot-text">ATRÉVETE A EMPRENDER</span>
-                <span class="foot-text">OSAR &copy; 2021</span>
-                <span class="foot-text">MÉXICO, CDMX.</span>
+    <footer>
+        <div class="card-footer text-muted bg-dark">
+            <div class="row" id="foot-row">
+                <div class="col col-sm-col" id="foot-col">
+                    <span class="foot-text">ATRÉVETE A EMPRENDER</span>
+                    <span class="foot-text">OSAR &copy; 2021</span>
+                    <span class="foot-text">MÉXICO, CDMX.</span>
+                </div>
             </div>
-        </div>
-    </div>
-
+        </div>    
+    </footer>
+    
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
