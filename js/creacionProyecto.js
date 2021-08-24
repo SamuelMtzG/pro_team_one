@@ -25,7 +25,7 @@ const items = {
         'beginDate': '2021-08-09',
         'endDate': '2021-10-09',
         'description': 'Maecenas lectus dolor, bibendum ac ligula at, fringilla facilisis sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.'
-    },
+    }, 
     {
         'id': 3,
         'projectName': 'Centro de rescate animal "Siker"',
