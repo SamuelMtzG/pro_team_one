@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,10 +13,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/registrarse_usuario_proyecto.css">
     <link rel="shortcut icon" href="../img/Isotipo_Osar.png">
-    <title>Registrarse Inversor| OSAR</title>
+    <title>OSAR | Registro Usuario</title>
 </head>
+
 <body>
-        <!--Barra de navegación-->
+    <!--Barra de navegación-->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
             <!--Logo y nombre de la red social-->
@@ -43,45 +45,54 @@
                 </ul>
             </div>
         </nav><br />
-    </header> <!--Aqui termina barnav-->
-    <div class= "container">
+    </header>
+    <!--Aqui termina barnav-->
+    <div class="container">
         <div class="row">
             <div class="col-12">
                 <form class="formulario register-form rounded px-5" id="registro-form">
                     <div class="text-center mb-4">
-                        <img class="mb-4" id="bg" src="../img/Imagotipo_Osar.png" alt="Logo de OSAR" width="200" height="200" />
-                        <p class="text">Cree una nueva cuenta a continuación en OSAR para conseguir una inversión</p>
+                        <img class="mb-4" id="bg" src="../img/Imagotipo_Osar.png" alt="Logo de OSAR" width="200"
+                            height="200" />
+                        <p class="text">Cree una nueva cuenta a continuación en OSAR para iniciar un proyecto</p>
                     </div>
                     <div class="formulario-label">
                         <label for="name" class="text">Nombre completo</label><br>
-                        <input type="text" title="Escribe solo letras" id="name" class="form-control" placeholder="Escribe tu nombre completo" required pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]{3,50}">
+                        <input type="text" title="Escribe solo letras" id="name" class="form-control"
+                            placeholder="Escribe tu nombre completo" required pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]{3,50}">
                     </div>
                     <div class="formulario-label">
                         <label for="agregar" class="text">Edad</label>
-                        <input type="number"  title="Edad minima 18 años" id="age" class="form-control" placeholder="Escribe tu edad" min="18" max="110" required>
+                        <input type="number" title="Edad minima 18 años" id="age" class="form-control"
+                            placeholder="Escribe tu edad" min="18" max="110" required>
                     </div>
                     <div class="formulario-label">
                         <label for="tipoDePersona" class="text"> Tipo de Persona</label><br>
                         <div class="form-check-inline">
-                            <input class="form-check-input" type="radio" name="tipoPersona" id="personaFisica" value="persona  física" checked>
+                            <input class="form-check-input" type="radio" name="tipoPersona" id="personaFisica"
+                                value="persona  física" checked>
                             <label class="form-check-label text" for="personaFisica">Persona física</label>
                         </div>
                         <div class="form-check-inline">
-                            <input class="form-check-input text" type="radio" name="tipoPersona" id="personaMoral" value="persona moral">
+                            <input class="form-check-input text" type="radio" name="tipoPersona" id="personaMoral"
+                                value="persona moral">
                             <label class="form-check-label text" for="personaMoral">Persona moral</label>
                         </div>
                     </div>
                     <div class="formulario-label">
                         <label for="email" class="text">Correo electronico</label>
-                        <input type="email" id="email" class="form-control" placeholder="Escribe un correo electronico" required>
+                        <input type="email" id="email" class="form-control" placeholder="Escribe un correo electronico"
+                            required>
                     </div>
                     <div class="formulario-label">
                         <label for="email_2" class="text">Confirma tu correo electronico</label>
-                        <input type="email" id="email-2" class="form-control" placeholder="Confirma tu correo electronico" required>
+                        <input type="email" id="email-2" class="form-control"
+                            placeholder="Confirma tu correo electronico" required>
                     </div>
                     <div class="formulario-label">
                         <label for="password" class="text">Contraseña</label>
-                        <input type="password" id="password" class="form-control" placeholder="Escribe una contraseña" required>
+                        <input type="password" id="password" class="form-control" placeholder="Escribe una contraseña"
+                            required>
                     </div>
                     <div class="mb-3">
                         <label class="text">¿Ya tienes una cuenta OSAR?
@@ -96,7 +107,7 @@
         </div>
     </div>
     <br />
-    <hr/>
+    <hr />
     <div class="card-footer text-muted bg-dark">
         <div class="row" id="foot-row">
             <div class="col col-sm-col" id="foot-col">
@@ -117,4 +128,5 @@
     <script src="../js/registrarse_usuario_proyecto.js" type="text/javascript    "></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
+
 </html>
