@@ -1,20 +1,74 @@
-body{
-  color: white;
+:root{
+  --titulos-color: #e9a02f;
+  --card-integrantes-bg-color: #01adb6;
+  --card-acerca-de-bg-color:#3eb9a5;
+  --nav-bg-color: #2b2b2d;
+  --white-color-default: #ffffff;
+  --black-color-default: #000000;
+  --green-color-light: #9cbb5d;
+
+  /*Tipos de letras*/
+  --font-texto-gral:'Lato', sans-serif;
+  --font-title: 'Rubik', sans-serif;
 }
-.boton1{
-border-radius: 12px;
-background-color: white;
-width: 250px;
+*,*::after,*::before{
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
-button,.tabcontent{
-  color:white;
-  background-color:#e9a02f;
+
+a {
+  text-decoration: none;
 }
-.row{
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  color: black;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-title);
+}
+
+a, p, span {
+  font-family: var(--font-texto-gral);
+}
+
+
+nav{
+  background-color: var(--white-color-default);
+  border-bottom: 2px solid rgb(212, 175, 55);
+}
+
+nav span, nav a {
+  font-family: var(--font-texto-gral);
+  font-weight: bolder;
+  font-size: 1.3rem;
+  color: var(--black-color-default);
+}
+
+nav a.nav-link:hover {
+  color: var(--titulos-color);
+  background-color: #5a5a5a22;
+  border-radius: 10px;
+  transform: scale(1.05);
+}
+
+nav a.nav-link:valid {
+  background-color: #5a5a5a;
+}
+
+.navbar-toggler {
+  border: 1px solid var(--black-color-default);
+}
+
+.hero{
+  height: 100vh;
+  width: 100%;
+  background-image: url(../img/HeroIndex.png);
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+div.carousel-caption {
+  background: #5a5a5aaa!important;
 }
 
 h1{
@@ -24,43 +78,150 @@ h1{
   color: #e9a02f;
 }
 .text{
+  font-family: var(--font-texto-gral);
   text-align: center;
   font-size: 20px;
   padding-top: 10px;
 }
-h3{
+h3.title{
 text-align: center;
-font-size: 30px;
+font-size: 3rem;
 padding-top: 20px;
+color: var(--titulos-color);
 }
+
+h3{
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 20px;
+  color: var(--titulos-color);
+  }
+
+
+.pasos img {
+  width: 100%;
+}
+
+.que-es p, .help__text {
+  font-size: 2rem;
+  font-weight: var(--black-color-default);
+}
+
+.help__text {
+  margin-top: 6%;
+}
+
+.row{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: var(--black-color-default);
+}
+
+
 .test1 {
 /*white-space: nowrap;*/
-width:80%;
+width:60%;
 height:180px;
+position: relative;
+left: 50%;
+transform: translateX(-50%);
 overflow: hidden;
 text-overflow: clip;
-background-color: #3eb9a5;
+background-color: var(--titulos-color);
 text-align: center;
 color: white;
 font-size: 25px;
 padding-top: 20px;
+margin: 8rem 0;
 }
-.test1_0{
-width:100%;
-height:180px;
-background-color:#e9a02f;
+
+.test1 p {
+  position: relative;
+  top: 42%;
+  transform: translateY(-50%);
 }
+
+i{
+  font-size: 2.3rem;
+  color: rgb(192, 178, 178);
+}
+
+.card img {
+  height: 15rem;
+}
+
+.card p {
+  overflow-y: auto;
+  height: 6rem;
+}
+
+.card-footer a:first-child i {
+  margin-right: 15%;
+}
+.card-footer a:last-child i {
+  margin-left: 15%;
+}
+.card-footer a:first-child i:hover {
+  color: var(--card-integrantes-bg-color);
+}
+.card-footer a:last-child i:hover {
+  color: var(--card-integrantes-bg-color);
+}
+
+
+
+
+
+.right{
+margin: 8rem 0;
+}
+
 .test2 {
 /*white-space: nowrap;*/
-width: 80%;
-height: auto;
-overflow: hidden;
+width: 60%;
+height:180px;
+position: relative;
+left: 50%;
+transform: translateX(-50%);
+height:auto;
 text-overflow: clip;
-background-color: #3eb9a5;
+background-color: var(--titulos-color);
 text-align: center;
 color: white;
 font-size: 25px;
 padding-top: 10px;
+padding-bottom: 10px;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #646464;
+}
+
+/* Style the buttons inside the tab */
+.tablinks {
+  cursor: pointer;
+  color: white;
+  border-bottom: 2px solid var(--white-color-default);
+  margin: 0 4rem;
+}
+
+
+
+.tablinks:hover {
+  text-decoration: none;
+  color: var(--card-integrantes-bg-color);
+  border-bottom: 2px solid var(--card-integrantes-bg-color);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
 }
 .nav-link_1{
 color: white;
@@ -128,7 +289,7 @@ color: white;
   font-size: 2rem;
 }
 .frente {
-  background-image: url("../img/tec.jpg");
+  background-image: url("../img/Index_card_cultura.jpeg");
   color: #fff;
   display: flex;
   background-size: cover;/*Esto es para que la imagen no se repita*/
@@ -199,8 +360,9 @@ div.carousel-caption{
   background-size: cover;/*Esto es para que la imagen no se repita*/
 }
 .frente_4{
-  background-image: url("../img/anim.png");
+  background-image: url("../img/Index_card_proteccionAnimal.jpg");
   color: #fff;
+  background-position: center;
   display: flex;
   background-size: cover;/*Esto es para que la imagen no se repita*/
 }
@@ -239,6 +401,18 @@ div.carousel-caption{
     left: 0px;
   }
   /*cards*/
+
+#btn-lista{
+  outline: none;
+  border:0;
+}
+
+#btn-lista:hover{
+    background-color: var(--green-color-light);
+    outline: none;
+    border:0;
+}
+
 .saludo_bienvenida{
     text-align: center;
     font-size: 74px;
@@ -277,53 +451,13 @@ hr {
   justify-content: flex-start;
 }
 
-/*.botones{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}*/
-
-
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #646464;
+.coment-item a{
+  color: black;
+  font-size: 2rem;
 }
 
-/* Style the buttons inside the tab */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
-}
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
 
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-}
-.comentario-img{
-  width: 90px;
-  height: 90px;
-}
 @media (min-width: 992px) {	
 	.tab-content{
 	height: 330px;

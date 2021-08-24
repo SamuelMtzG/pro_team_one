@@ -10,31 +10,40 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="shortcut icon" href="../img/Isotipo_Osar.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <header id="contact_us">
         <!--Barra de navegación-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <nav class="navbar navbar-expand-lg sticky-top">
             <!--Logo y nombre de la red social-->
             <a class="navbar-brand" href="./index.html">
                 <img src="./img/Isotipo_Osar.png" width="30" height="30" class="d-inline-block align-top" alt="">
                 <span>OSAR</span>
             </a>
             <!--Botón para colapsar la barra de navegacion dependiendo de la resolución de la pantalla-->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerBarraNav"
+            <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarTogglerBarraNav"
                 aria-controls="navbarTogglerBarraNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!--Div con nuestras opciones.-->
             <div class="collapse navbar-collapse" id="navbarTogglerBarraNav">
-                <ul class="navbar-nav ml-auto text-center">
-                    <li class="nav-item ">
-                        <a class="nav-link" href="./html/acerca_de_nosotros.html">Buscar</a>
-                    </li>
-                    <button class="boton1"></button>
-                </ul>
                 <ul class="navbar-nav ml-auto text-right">
+                    <li class="nav-item active">
+                        <!--cambiar dirreción cuando se cree el registro-->
+                        <a class="nav-link" href="./html/contactanos.html">Contáctanos</a>
+                    </li>
+                    <li class="nav-item active">
+                        <!--cambiar dirreción cuando se cree el registro-->
+                        <a class="nav-link" href="./html/acerca_de_nosotros.html">Acerca de Nosotros</a>
+                    </li>
                     <li class="nav-item active">
                         <!--cambiar dirreción cuando se cree el registro-->
                         <a class="nav-link" href="./html/iniciar_sesion.html">Iniciar sesión</a>
@@ -50,30 +59,65 @@
     </header>
     <!--contenido del body del index-->
     <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h1>Bienvenidos a OSAR</h1>
-                </div>
-                <!--<div class="col-md-4">
-                    <img class="img-fluid" src="./img/226367050_971806913672308_2249899465120508815_n.jpg">
-                </div>-->
-                <br />
-                <div class="row p-0 m-0">
-                    <div class="col-8 col-md-8">
-                        <p>En OSAR encontrarás temas interesantes, en los cuales puedes tanto aportar como recibir
-                            ayuda. Además de conocer a personas con los mismos intereses que tú.</p>
-                    </div>
+        <div class="container-fluid hero">
+
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Bienvenidos a OSAR</h1>
+            </div>
+            <br />
+            <div class="row p-0 m-0">
+                <div class="col-8 col-md-8 que-es">
+                    <p>En OSAR encontrarás un espacio donde podras encontrar o lanzar proyectos, en los cuales puedes tanto aportar como recibir ayuda. Además de conocer a personas con los mismos intereses que tú.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <br><br><br><br><br><br>
+    <div class="container-fluid help">
+        <div class="row">
+            <div class="col-md-6 help__title">
+                <h3>¿Buscas apoyo para una idea o proyecto que tienes en mente?</h3>
+            </div>
+            
+            <div class="row p-0 m-0">
+                <div class="col-8 col-md-8 pasos-1 help__text">
+                    <p>En osar puedes encontrar una comunidad de personas dispuestas a apoyarte</p>
+                </div>
+                <img src="./img/Pasos.png" alt="pasos_a_seguir">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 help__title">
+                <h3>¿Quieres brindar tu ayuda?</h3>
+            </div>
+            <br><br><br><br><br>
+            <div class="row p-0 m-0">
+                <div class="col-8 col-md-8 pasos-1 help__text">
+                    <p>Puedes hacerlo de varias maneras, busca la que mejor se adapte a tus posibilidades</p>
+                </div>
+                <img src="./img/Pasos2.png" alt="pasos_a_seguir">
+            </div>
+        </div>
+    </div>
+
     <br />
     <div class="col">
         <section class="Temas">
             <div class="col">
                 <div class="row">
-                    <h3>Temas que encontrarás con nosotros.</h3>
+                    <h3 class="title">Temas que encontrarás con nosotros.</h3>
                 </div>
             </div>
             <br />
@@ -87,30 +131,30 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="./img/programming-1873854_1920.png" class="d-block w-100" alt="...">
+                            <img src="./img/cultura_index.png" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <span>
-                                    <h5>TECNOLOGÍA</h5>
-                                    <p>Sube y participa en proyectos.</p>
+                                    <h5>CULTURA</h5>
+                                    <p>CONOCE Y APOYA NUESTRA DIVERSIDAD ÉTNICA</p>
                                 </span>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./img/environmental-protection-3341942_1920.jpg" class="d-block w-100" alt="...">
+                            <img src="./img/medioAmbiente.png" class="d-block w-100" alt="..." style="width: 100vw;">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>MEDIO AMBIENTE</h5>
                                 <p>Únete a brigadas.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./img/science-1182713_1920.jpg" class="d-block w-100" alt="...">
+                            <img src="./img/ciencia.png" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>EDUCACIÓN</h5>
                                 <p>Aprende nuevos temas.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./img/friends-5424382_1920.jpg" class="d-block w-100" alt="...">
+                            <img src="./img/animales.png" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>PROTECCIÓN ANIMAL</h5>
                                 <p>Apoya a centros de acopio.</p>
@@ -131,31 +175,40 @@
     </div>
     <br /> <br />
     <div class="test1">
-        <p>"OSAR es como el hogar para mentes creativas que buscan apoyo de personas que creen, </p>
-        <p>respetan y apoya la idea de las personas"</p>
-        <div class="test1_0"></div>
+        <p>"OSAR es como el hogar para mentes creativas que buscan apoyo de personas que creen, respetan y apoya la idea de las personas" </p>
     </div>
     <div class="container">
         <div class="row">
-            <h3>Proyectos que encontraras</h3>
+            <h3>Proyectos que encontrarás</h3>
         </div>
         <br />
-        <div class="row">
-            <p>¡Si aun no encuentras quien apoye tu idea está es tu oportunidad!</p>
-        </div>
+        
     </div>
     <br />
+    
+    <div class="container">
+        <div class="container row row-cols-1 row-cols-xl-3 g-4 card-deck" id="lista-items">
+           
+          </div> <!-- Aqui esta el listado de proyectos -->
+          <button id="btn-lista" type="button" class="btn btn-secondary btn-lg btn-block">VER MÁS</button>
+    </div>
+        
+
+    <br><br><br><br><br><br><br><br><br><br>
+    <div class="row help__text">
+        <h3>¡Si aun no encuentras quien apoye tu idea está es tu oportunidad!</h3>
+    </div>
     <div class="container-fluid">
         <div class="row no-gutters">
             <div class="col-md-5">
                 <div class="flip-container">
                     <div class="card_1">
                         <div class="frente">
-                            <span>TECNOLOGÍA</span>
+                            <span>CULTURA</span>
                         </div>
                         <div class="revez">
-                            <h3>TECNOLOGÍA</h3>
-                            <p>Encontraras proyectos de personas interesadas en encontrar tus aportes</p>
+                            <h3>CULTURA</h3>
+                            <p>Encontrarás proyectos de personas interesadas en encontrar tus aportes</p>
                         </div>
                     </div>
                 </div>
@@ -204,12 +257,12 @@
         </div>
     </div> <!-- card -->
 
-    <div class="container">
-        <div class="test2 ml-auto" style="margin: 10px 0 0 10px;">
-            <p>¿Por qué elegir a OSAR?</p>
-            <button class="tablinks" onclick="openOption(event, 'Razones')">Razones</button>
-            <button class="tablinks" onclick="openOption(event, 'Apoyo')">Apoyo</button>
-            <button class="tablinks" onclick="openOption(event, 'Seguridad')">Seguridad</button>
+    <div class="container-fluid ">
+        <div class="test2 " style="margin: 10px 0 0 10px;">
+            <h2>¿Por qué elegir a OSAR?</h2>
+            <a class="tablinks" onclick="openOption(event, 'Razones')">Razones</a>
+            <a class="tablinks" onclick="openOption(event, 'Apoyo')">Apoyo</a>
+            <a class="tablinks" onclick="openOption(event, 'Seguridad')">Seguridad</a>
 
             <div id="Razones" class="tabcontent">
                 <p style="color:white">Encuentras y ayudas a las ideas de las personas.</p>
@@ -247,17 +300,17 @@
     <!--Seccion de comentarios-->
     <section>
         <div class="container mt-5">
-            <h3 class="text-center" style="color:black">Palabras de nuestra comunidad</h3>
+            <h3 class="text-center">Palabras de nuestra comunidad</h3>
             <br>
             <!-- condoritos e infos -->
             <div class="tab-content">
                 <!-- elemento -->
                 <div class="tab-pane active" id="comentario" role="tabpanel">
                     <div class="row align-items-center">
-                        <div class="col-md-4 mb-md-3 mb-lg-0">
+                        <!-- <div class="col-md-4 mb-md-3 mb-lg-0">
                             <img src="./img/miri.jpg" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-md-8 mb-md-5">
+                        </div> -->
+                        <div class="col-md-8 mb-md-5 help__text">
                             <h4 class="lead">Comentario:</h4>
                             <h2><b>Miriam Diego</b></h2>
                             <p>Lo que empezó como una recolección de dinero entre amigos, está cambiando la forma en la
@@ -269,10 +322,10 @@
                 <!-- elemento -->
                 <div class="tab-pane" id="comentario2" role="tabpanel">
                     <div class="row align-items-center ">
-                        <div class="col-md-4 mb-md-3 mb-lg-0">
+                        <!-- <div class="col-md-4 mb-md-3 mb-lg-0">
                             <img src="./img/erikaDiaz.jpg" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-md-8 mb-md-5">
+                        </div> -->
+                        <div class="col-md-8 mb-md-5 help__text">
                             <h4 class="lead">Comentario:</h4>
                             <h2><b>Erika Diaz</b></h2>
                             <p>La donación es un acto de activismo. No es donar por donar, es donar para construir y
@@ -283,10 +336,10 @@
                 <!-- elemento -->
                 <div class="tab-pane" id="comentario3" role="tabpanel">
                     <div class="row align-items-center ">
-                        <div class="col-md-4 mb-md-3 mb-lg-0">
+                        <!-- <div class="col-md-4 mb-md-3 mb-lg-0">
                             <img src="./img/ELIAS.jpeg" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-md-8 mb-md-5">
+                        </div> -->
+                        <div class="col-md-8 mb-md-5 help__text">
                             <h4 class="lead">Comentario:</h4>
                             <h2><b>Elias Flores</b></h2>
                             <p>Agradezco inmensamente y de corazón a quienes, con espíritu cooperativo, han impulsado la
@@ -301,19 +354,19 @@
                 <div class="row">
                     <div class="offset-lg-4 col-lg-8">
                         <ul class="nav nav-tabs caritas" role="tablist">
-                            <li class="nav-item">
+                            <li class="nav-item coment-item">
                                 <a class="nav-link active" data-toggle="tab" href="#comentario" role="tab">
-                                    <img class="comentario-img" src="./img/miri.jpg" alt="">
+                                    1
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item coment-item">
                                 <a class="nav-link" data-toggle="tab" href="#comentario2" role="tab">
-                                    <img class="comentario-img" src="./img/erikaDiaz.jpg" alt="">
+                                    2
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item coment-item">
                                 <a class="nav-link" data-toggle="tab" href="#comentario3" role="tab">
-                                    <img class="comentario-img" src="./img/ELIAS.jpeg" alt="">
+                                    3
                                 </a>
                             </li>
                         </ul><!-- fin nav -->
@@ -361,57 +414,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./js/lista-items__index.js" type="text/javascript"></script>
+
     <!-- Code injected by live-server -->
-    <script type="text/javascript">
-        // <![CDATA[  <-- For SVG support
-        if ('WebSocket' in window) {
-            (function () {
-                function refreshCSS() {
-                    var sheets = [].slice.call(document.getElementsByTagName("link"));
-                    var head = document.getElementsByTagName("head")[0];
-                    for (var i = 0; i < sheets.length; ++i) {
-                        var elem = sheets[i];
-                        var parent = elem.parentElement || head;
-                        parent.removeChild(elem);
-                        var rel = elem.rel;
-                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-                        }
-                        parent.appendChild(elem);
-                    }
-                }
-                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-                var address = protocol + window.location.host + window.location.pathname + '/ws';
-                var socket = new WebSocket(address);
-                socket.onmessage = function (msg) {
-                    if (msg.data == 'reload') window.location.reload();
-                    else if (msg.data == 'refreshcss') refreshCSS();
-                };
-                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                    console.log('Live reload enabled.');
-                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-                }
-            })();
-        }
-        else {
-            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-        }
-        // ]]>
-        function openOption(evt, optionName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(optionName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-    </script>
 </body>
 
 </html>

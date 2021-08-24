@@ -113,6 +113,7 @@ hr {
 }
 
 #btn-contacto-submit{
-    background-color: #3eb9a5;
-    border: #01adb6;
+    background-color: #e9a02f;
+    border: #e9a02f;
+    border-radius: 10px;
 }
