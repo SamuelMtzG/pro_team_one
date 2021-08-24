@@ -9,16 +9,51 @@
 }
 .descripcion{
     text-align: justify;
+    font-family: 'Lato', sans-serif;
+}
+.usuario{
+    font-family: 'Lato', sans-serif;
 }
 .titulo1{
     text-align: center;
+    color: #e9a02f;
+    font-family: 'Rubik', sans-serif;
 }
 .proyectos{
     background-color: beige;
 }
+.alto{
+    padding-top: 25px;
+}
 .misProyectos{
     margin: 15px;
 }
-.boton-nuevoP{
+.btn{
     text-align: center;
+    background-color: #e9a02f;
+    border: #e9a02f;
+    font-family: 'Lato', sans-serif;
+    border-radius: 10px;
+}
+.btn:hover{
+    background-color: #9cbb5d;
+    border: #9cbb5d;
+}
+.card-title,.card-footer{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+.card-text{
+    font-family: 'Lato', sans-serif;
+}
+.card img {
+    height: 15rem;
+}
+.card-footer {
+    padding: .75rem 1.25rem;
+    background-color: rgba(0,0,0,.03);
+    border-top: 1px solid rgba(0,0,0,.125);
+}
+.card-footer a:last-child i{
+    margin-left: 15%;
 }

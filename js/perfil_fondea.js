@@ -35,25 +35,22 @@ function createCards(projects) {
     projects.forEach(function (project) {
 
 
-        let card = `
-        <div class="col-md-5" style="margin: 15px 0"> 
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="${project.projectImg}" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">${project.projectName}</h5>
-                <p class="card-text">Líder de proyecto: ${project.leader}</p>
-                <p class="card-text">Fecha de inicio: ${project.beginDate}</p>
-                <p class="card-text">Fecha de conclusión: ${project.endDate}</p>
-                <p class="card-text">${project.description}</p>
-                <a href="#" class="btn btn-primary">See details</a>
-            </div>
+        let card = `<div class="col-sm-11 col-md-11 col-lg-5 col-xl-5 alto">
+        <div class="card h-100">
+          <img src="${project.projectImg}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">${project.projectName}</h5>
+            <p class="card-text">${project.description}</p>
+          </div>
+          <div class="card-footer">
+              <a href=""><i class="fas fa-money-bill"></i></a> <a href=""><i class="fas fa-heart"></i></a>
+          </div>
         </div>
-        </div>
-        `;
+  </div>`;
 
         plantillaFinal = plantillaFinal + card;
 
     })
     ancla.innerHTML = plantillaFinal;
 
-}// createCards
+}
