@@ -13,21 +13,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/registrarse_usuario_proyecto.css">
     <link rel="shortcut icon" href="../img/Isotipo_Osar.png">
-    <title>OSAR | Registro Usuario</title>
+    <title>OSAR | Registro Inversor</title>
 </head>
 
 <body>
     <!--Barra de navegación-->
-    <header id="contact_us">
-        <!--Barra de navegación-->
-        <nav class="navbar navbar-expand-lg sticky-top">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
             <!--Logo y nombre de la red social-->
             <a class="navbar-brand" href="../index.html">
                 <img src="../img/Isotipo_Osar.png" width="30" height="30" class="d-inline-block align-top" alt="">
                 <span>OSAR</span>
             </a>
             <!--Botón para colapsar la barra de navegacion dependiendo de la resolución de la pantalla-->
-            <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarTogglerBarraNav"
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerBarraNav"
                 aria-controls="navbarTogglerBarraNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -35,40 +34,32 @@
             <div class="collapse navbar-collapse" id="navbarTogglerBarraNav">
                 <ul class="navbar-nav ml-auto text-right">
                     <li class="nav-item active">
-                        <!--cambiar dirreción cuando se cree el registro-->
+                        <a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="./contactanos.html">Contáctanos</a>
                     </li>
-                    <li class="nav-item active">
-                        <!--cambiar dirreción cuando se cree el registro-->
+                    <li class="nav-item ">
                         <a class="nav-link" href="./acerca_de_nosotros.html">Acerca de Nosotros</a>
-                    </li>
-                    <li class="nav-item active">
-                        <!--cambiar dirreción cuando se cree el registro-->
-                        <a class="nav-link" href="./iniciar_sesion.html">Iniciar sesión</a>
-                    </li>
-                    <li class="nav-item active">
-                        <!--cambiar dirreción cuando se cree el registro-->
-                        <a class="nav-link" href="../html/opcion_registro.html">Registrarse</a>
                     </li>
                 </ul>
             </div>
-        </nav>
-        <!--Aqui termina barnav-->
+        </nav><br />
     </header>
-    <br>
-    <div class= "container">
+    <!--Aqui termina barnav-->
+    <div class="container">
         <div class="row">
             <div class="col-12">
                 <form class="formulario register-form rounded px-5" id="registro-form">
                     <div class="text-center mb-4">
                         <img class="mb-4" id="bg" src="../img/Imagotipo_Osar.png" alt="Logo de OSAR" width="200"
                             height="200" />
-                        <p class="text">Cree una nueva cuenta a continuación en OSAR para iniciar un proyecto</p>
+                        <p class="text">Cree una nueva cuenta a continuación en OSAR para impulsar un proyecto</p>
                     </div>
                     <div class="formulario-label">
-                        <label for="name" class="text">Nombre completo</label><br>
+                        <label for="name" class="text">Nombre u organización</label><br>
                         <input type="text" title="Escribe solo letras" id="name" class="form-control"
-                            placeholder="Escribe tu nombre completo" required pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]{3,50}">
+                            placeholder="Escribe tu nombre u organización" required pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]{3,50}">
                     </div>
                     <div class="formulario-label">
                         <label for="agregar" class="text">Edad</label>
@@ -76,7 +67,7 @@
                             placeholder="Escribe tu edad" min="18" max="110" required>
                     </div>
                     <div class="formulario-label">
-                        <label for="tipoDePersona" class="text"> Tipo de Persona</label><br>
+                        <label for="tipoDePersona" class="text">Tipo de Persona</label><br>
                         <div class="form-check-inline">
                             <input class="form-check-input" type="radio" name="tipoPersona" id="personaFisica"
                                 value="persona  física" checked>
@@ -89,14 +80,14 @@
                         </div>
                     </div>
                     <div class="formulario-label">
-                        <label for="email" class="text">Correo electronico</label>
-                        <input type="email" id="email" class="form-control" placeholder="Escribe un correo electronico"
+                        <label for="email" class="text">Correo electrónico</label>
+                        <input type="email" id="email" class="form-control" placeholder="Escribe tu correo electrónico"
                             required>
                     </div>
                     <div class="formulario-label">
-                        <label for="email_2" class="text">Confirma tu correo electronico</label>
+                        <label for="email_2" class="text">Confirma tu correo electrónico</label>
                         <input type="email" id="email-2" class="form-control"
-                            placeholder="Confirma tu correo electronico" required>
+                            placeholder="Confirma tu correo electrónico" required>
                     </div>
                     <div class="formulario-label">
                         <label for="password" class="text">Contraseña</label>

@@ -1,0 +1,24 @@
+.avatar{
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+}
+.datos{
+    background-color: #3eb9a5;
+    text-align: center;
+}
+.descripcion{
+    text-align: justify;
+}
+.titulo1{
+    text-align: center;
+}
+.proyectos{
+    background-color: beige;
+}
+.misProyectos{
+    margin: 15px;
+}
+.boton-nuevoP{
+    text-align: center;
+}
