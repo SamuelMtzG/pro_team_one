@@ -1,5 +1,5 @@
 //Aqui voy a recorger los datos del formulario cuando se cargue
-window.addEventListener('DOMContentLoaded', () => {document.getElementsByClassName('formulario')[0].getElementsByTagName('div')});
+window.addEventListener('DOMContentLoaded',()=> {document.getElementById('registro-form').addEventListener('submit',validarFormulario);});
 
 //Recoge los inputs del formulario
 const $inputsFormulario =Array.from(document.getElementsByClassName('formulario')[0].getElementsByTagName('input')); ;
@@ -11,7 +11,7 @@ $inputsFormulario.forEach(input => {
 
 });
 
-
+let message = document.querySelector('.message');
 
 
 
@@ -29,6 +29,9 @@ function validarCampoEntrar(e) {
     let nameFormInput = e.target.getAttribute('id');
 
     switch (nameFormInput) {
+        case 'organization':
+            validarOrganizacion(e);
+            break;
         case 'name':
             validaNombre(e);
             break;
@@ -56,6 +59,9 @@ function validarCampoSalir(e) {
     let nameFormInput = e.target.getAttribute('id');
 
     switch (nameFormInput) {
+        case 'organization':
+            validarOrganizacion(e);
+            break;
         case 'name':
             validaNombre(e);
             break;
@@ -82,13 +88,27 @@ function validarCampoSalir(e) {
     } */
 }
 
+function validarOrganizacion(e) {
+    let regExpForOrg = /^[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]{1,80}$/i;
+    if(regExpForOrg.test(e.target.value)){
+        e.target.classList.remove('is-invalid'); 
+        e.target.classList.add('is-valid');
+        message.innerHTML =""
+    } else {
+        e.target.classList.add('is-invalid');
+        message.innerHTML = "Organización inválida."
+    }
+}
+
 function validaNombre(e) {
-    let regExpForName = /^[A-Za-záéíóúÁÉÍÓÚñ]{1,65}$/i;
+    let regExpForName = /^[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]{1,80}$/i;
     if(regExpForName.test(e.target.value)){
         e.target.classList.remove('is-invalid'); 
         e.target.classList.add('is-valid');
+        message.innerHTML =""
     } else {
         e.target.classList.add('is-invalid');
+        message.innerHTML = "Nombre completo invalido."
     }
 }
 
@@ -96,8 +116,10 @@ function validaEdad(e) {
     if(e.target.value >= 18 && e.target.value < 110 ){
         e.target.classList.remove('is-invalid'); 
         e.target.classList.add('is-valid');
+        message.innerHTML =""
     } else {
         e.target.classList.add('is-invalid');
+        message.innerHTML = "Edad invalida."
     }
 }
 function validaEmail(e) {
@@ -110,8 +132,10 @@ function validaEmail(e) {
         e.target.classList.remove('is-invalid'); 
         e.target.classList.add('is-valid');
         email = e.target.value;
+        message.innerHTML =""
     }  else {        
         e.target.classList.add('is-invalid');
+        message.innerHTML = "Email invalido."
     }
 }
 function validaContraseña(e) {
@@ -126,7 +150,69 @@ function validaConfirmacionEmail(e) {
     if (e.target.value && e.target.value == email) {
         e.target.classList.remove('is-invalid'); 
         e.target.classList.add('is-valid');
+        message.innerHTML =""
     }else {
         e.target.classList.add('is-invalid');
+        message.innerHTML = "Ingresar el mismo email ."
     }
+}
+function validarFormulario(e){
+    e.preventDefault();
+    let name =document.getElementById('name');
+    if(name.length == 0){
+        alert('algo fallo');
+    }
+    addUser();
+}
+
+function addUser(){
+    // Obtenemos los valores del formulario
+    let organization = document.getElementById('organization').value;
+    let name = document.getElementById('name').value;
+    let age = document.getElementById('age').value;
+    let tipoPersona = document.querySelector('input[name=tipoPersona]:checked').value;
+    let email =document.getElementById('email').value;
+    let password = document.getElementById('password').value;
+    let tipoUsuario = "founding";
+    if (window.localStorage.getItem('users') === null) {
+        const userArray = [];
+        const newUser = {
+            'id': 0,
+            'organization': organization,
+            'name': name,
+            'age': age,
+            'tipoPersona': tipoPersona,
+            'email': email,
+            'password': password,
+            'tipoUsuario': tipoUsuario
+        }
+
+        userArray.push(newUser);
+        window.localStorage.setItem('users', JSON.stringify(userArray));
+    }
+    else {
+        const userArray = JSON.parse(window.localStorage.getItem('users'));
+        let newId = userArray.length;
+        const newUser = {
+            'id': newId,
+            'name': name,
+            'age': age,
+            'tipoPersona': tipoPersona,
+            'email': email,
+            'password': password,
+            'tipoUsuario': tipoUsuario
+        }
+        
+        userArray.push(newUser);
+        window.localStorage.setItem('users', JSON.stringify(userArray));
+    }
+    Swal.fire({
+        position: 'top-center',
+        icon: 'success',
+        title: 'cuenta creada ' +name  ,
+        showConfirmButton: false,
+        timer: 1500
+      })
+    document.getElementById("registro-form").reset();//Reiniciamos los valores del formulario
+    window.location.href="../html/inversor_profile.html";
 }
