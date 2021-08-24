@@ -10,38 +10,52 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/acerca_de_nosotros.css">
     <link rel="shortcut icon" href="../img/Isotipo_Osar.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    
-    <!--Barra de navegación-->
-    <nav id="nav-adn" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top backface-visibility(hidden)" >
-        <!--Logo y nombre de la red social-->
-        <a id="logo" class="navbar-brand" href="../index.html">
-            <!-- <img src="#" width="30" height="30" class="d-inline-block align-top" alt=""> -->
-            <img id="img-logo-nav" src="../img/Isotipo_Osar.png">
-            <span >OSAR</span>
-        </a> 
-        <!--Botón para colapsar la barra de navegacion dependiendo de la resolución de la pantalla-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerBarraNav"
-            aria-controls="navbarTogglerBarraNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!--Div con nuestras opciones.-->
-        <div class="collapse navbar-collapse" id="navbarTogglerBarraNav">
-            <ul class="navbar-nav ml-auto text-right">
-                <li class="nav-item">
-                    <a class="nav-link active" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="./contactanos.html">Contáctanos</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="./acerca_de_nosotros.html">Acerca de Nosotros</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <header id="contact_us">
+        <!--Barra de navegación-->
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <!--Logo y nombre de la red social-->
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/Isotipo_Osar.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                <span>OSAR</span>
+            </a>
+            <!--Botón para colapsar la barra de navegacion dependiendo de la resolución de la pantalla-->
+            <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarTogglerBarraNav"
+                aria-controls="navbarTogglerBarraNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Div con nuestras opciones.-->
+            <div class="collapse navbar-collapse" id="navbarTogglerBarraNav">
+                <ul class="navbar-nav ml-auto text-right">
+                    <li class="nav-item active">
+                        <!--cambiar dirreción cuando se cree el registro-->
+                        <a class="nav-link" href="./contactanos.html">Contáctanos</a>
+                    </li>
+                    <li class="nav-item active">
+                        <!--cambiar dirreción cuando se cree el registro-->
+                        <a class="nav-link" href="./acerca_de_nosotros.html">Acerca de Nosotros</a>
+                    </li>
+                    <li class="nav-item active">
+                        <!--cambiar dirreción cuando se cree el registro-->
+                        <a class="nav-link" href="./iniciar_sesion.html">Iniciar sesión</a>
+                    </li>
+                    <li class="nav-item active">
+                        <!--cambiar dirreción cuando se cree el registro-->
+                        <a class="nav-link" href="./opcion_registro.html">Registrarse</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--Aqui termina barnav-->
+    </header>
     <!--Aqui termina barnav-->
     <section class="hero">
         <div class="container-fluid text-hero">

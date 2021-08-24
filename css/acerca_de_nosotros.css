@@ -3,63 +3,43 @@
     --card-integrantes-bg-color: #9cbb5d;
     --card-acerca-de-bg-color:#9cbb5d;
     --nav-bg-color: #2b2b2d;
-    --white-color-defaul:black;
+    --white-color-default:#ffffff;
     --black-color-default: #000000;
-    
+    --font-texto-gral:'Lato', sans-serif;
+    --font-title: 'Rubik', sans-serif;
 
 }
-
 *, *::after, *::before {
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
 }
-
-#nav-adn{
-    background-color: var(--nav-bg-color);
-    padding: 0 2%;
-}
-
-
-a, a span{
-    margin-right: 15px;
-}
-
-a{
-    /* border-bottom:5px solid rgb(10, 150, 10); */
-    border-radius: 5px;
-    line-height: 10px;
-    padding-bottom: 5px;
-}
-
-#img-logo-nav{
-    height: 2.3rem;
-    width: 2.5rem;
-    background: url(../img/Isotipo_Osar.png);
-    position: relative;
-    transform: translateY(-15%);
-    margin-right: 4%;
-}
-
-#logo {
-    border: none;
-    margin: 0;
-    padding: 0;
-}
-
-#logo>span{
-    font-size: 1.5rem;
-    color: var(--white-color-default);
-}
-
-
-a:hover , a span:hover{
-    transform: scale(1.1);
-    border: none;
-}
-
-
+nav{
+    background-color: var(--white-color-default);
+    border-bottom: 2px solid rgb(212, 175, 55);
+  }
   
+  nav span, nav a {
+    font-family: var(--font-texto-gral);
+    font-weight: bolder;
+    font-size: 1.3rem;
+    color: var(--black-color-default);
+  }
+  
+  nav a.nav-link:hover {
+    color: var(--titulos-color);
+    background-color: #5a5a5a22;
+    border-radius: 10px;
+    transform: scale(1.05);
+  }
+  
+  nav a.nav-link:valid {
+    background-color: #5a5a5a;
+  }
+  
+  .navbar-toggler {
+    border: 1px solid var(--black-color-default);
+  }
   .text-hero{
     display:flex;/* De esta linea para abajo es lo que necesitamos para centrar el texto del hero */
     height: 90vh; 
