@@ -52,11 +52,13 @@ nav{
 }
 .usuario{
     font-family: 'Lato', sans-serif;
+    font-weight: bold;
 }
 .titulo1{
     text-align: center;
     color: #e9a02f;
     font-family: 'Rubik', sans-serif;
+    font-weight: bold;
 }
 .proyectos{
     background-color: beige;
