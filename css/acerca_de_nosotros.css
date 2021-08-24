@@ -213,9 +213,9 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    color: ivory;
-    /* text-shadow: 3px 3px 10px black; */
-}
+    color: var(--black-color-default);
+  
+  }
 
 .d-block{
     width: 500px;
@@ -249,4 +249,24 @@ hr {
         margin-left: 0px;
     }
 }
-
+.card-footer{
+    border-top: 2px solid var(--titulos-color);
+    background-color: var(--white-color-default);
+  }
+  
+  #fot-nav {
+    width: 30rem;
+  }
+  
+  #fot-nav a{
+    font-size: 1rem;
+    margin-right: 10%;
+    color: var(--black-color-default);
+  }
+  
+  #fot-nav a:hover{
+    color: var(--titulos-color);
+    border-radius: 10px;
+    transform: scale(1.05);
+  }
+  

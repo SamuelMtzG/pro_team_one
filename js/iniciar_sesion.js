@@ -92,7 +92,7 @@ function login(users){
             message.innerHTML = `<div class="spinner-border text-success" role="status">
                <span class="sr-only">Loading...</span>    
             </div>`
-            window.location.href="../html/founding_profile.html";
+            window.location.href="../html/perfil_fondea.html";
         }else if((user.email == formUser.value) && (user.password == formPassword.value) && (user.tipoUsuario === "inversor")){    
             message.innerHTML = `<div class="spinner-border text-success" role="status">
                <span class="sr-only">Loading...</span>    
