@@ -82,3 +82,30 @@ a{
 hr{
     border: 2px solid #e9a02f;
 }
+#foot-col {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--black-color);
+
+}
+.card-footer{
+  border-top: 2px solid var(--orange-color);
+  background-color: var(--white-color);
+}
+
+#fot-nav {
+  width: 30rem;
+}
+
+#fot-nav a{
+  font-size: 1rem;
+  margin-right: 10%;
+  color: var(--black-color);
+}
+
+#fot-nav a:hover{
+  color: var(--orange-color);
+  border-radius: 10px;
+  transform: scale(1.05);
+}

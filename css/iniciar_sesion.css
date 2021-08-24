@@ -94,18 +94,33 @@ input[type]:focus{
     background-color: var(--orange-color);
     border: var(--blue-color);
 }
-hr {
-    border: 2px solid var(--orange-color);
-    box-shadow: 1px 1px 10px  var(--orange-color);
-    margin: 0;
-}
-#foot-col {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  color: ivory;
-  text-shadow: 3px 3px 10px black;
-}
 .message{
     text-align: center;
 }
+#foot-col {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--black-color);
+  
+  }
+.card-footer{
+    border-top: 2px solid var(--orange-color);
+    background-color: var(--white-color);
+  }
+  
+  #fot-nav {
+    width: 30rem;
+  }
+  
+  #fot-nav a{
+    font-size: 1rem;
+    margin-right: 10%;
+    color: var(--black-color);
+  }
+  
+  #fot-nav a:hover{
+    color: var(--orange-color);
+    border-radius: 10px;
+    transform: scale(1.05);
+  }

@@ -107,23 +107,6 @@ body{
 #emailHelp{
     color: black;
 }
-hr {
-    border: 2px solid #e9a02f;
-    box-shadow: 1px 1px 10px  #e9a02f;
-    margin: 0;
-}
-#foot-col {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color:black;
-    text-shadow: 3px 3px 10px black;
-    
-}
-.nav-link_1,.foot-text{
-    color: white;
-}
-
 /*esquinas*/
 
 /*boton dark mood*/
@@ -154,4 +137,31 @@ hr {
     background-color: #e9a02f;
     border: #e9a02f;
     border-radius: 10px;
+}
+#foot-col {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--black-color);
+
+}
+.card-footer{
+  border-top: 2px solid var(--orange-color);
+  background-color: var(--white-color);
+}
+
+#fot-nav {
+  width: 30rem;
+}
+
+#fot-nav a{
+  font-size: 1rem;
+  margin-right: 10%;
+  color: var(--black-color);
+}
+
+#fot-nav a:hover{
+  color: var(--orange-color);
+  border-radius: 10px;
+  transform: scale(1.05);
 }
