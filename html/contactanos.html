@@ -6,10 +6,13 @@
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
     <meta http-equiv="Content-Type" content="text/html"; charset="utf-8;&iacute" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contáctanos</title>
+    <title>Contáctanos | OSAR</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Rubik:wght@300&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <link rel="stylesheet" href="../css/contactanos.css" id="theme">
     <link rel="shortcut icon" href="../img/Isotipo_Osar.png">
@@ -54,12 +57,12 @@
     <!-- Usé la etiqueta br para agregar espacio entre el párrafo de arriba y el formulario -->
     <br>
     </div>
-    <div class="container" >
+    <div class="container col-xl-7 col-lg-7" >
         <div class="container  main-section">
             <div class="modal-content ">
                 <div class="row justify-content-center">
                 <div class="user-img">
-                    <img src="../img/cantactanos.png" />
+                    <img src="../img/contactanos_1.png" />
                 </div></div>
                 <div class="row justify-content-center">
                 <div class="content">
@@ -70,23 +73,22 @@
                     equipo estará encantado de ayudarte!
                 </p>
                 <div class="row justify-content-center">
-                    <!-- Usé .w-50 para que el formulario ocupe el 50% de ancho que tiene la row -->
-                    <form class="w-50" action="javascript:sendMail();" method="POST">
+                    <form action="javascript:sendMail();" method="POST" class="formulario">
                         <!-- Este div es para el input donde el usuario escribe su nombre -->
                         <div class="form-group">
                             <label for="name">Nombre:</label>
-                            <input type="text" title="Escribe solo letras" class="form-control " id="name" name="nombre" required placeholder="Escribe tu nombre completo" pattern="[A-Za-z]{&eacute &aacute &iacute &oacute &uacute &ntilde &agrave &agrave &ograve}{1,65}">
+                            <input type="text" title="Escribe solo letras" class="form-control " id="name" name="nombre" required placeholder="Escribe tu nombre completo" pattern="[A-Za-z]{&eacute &aacute &iacute &oacute &uacute &ntilde &agrave &agrave &ograve}{3,40}">
                         </div>
                         <!-- Este div es para el input donde el usuario escribe su correo electrónico -->
                         <div class="form-group">
                             <label for="email">Correo electrónico:</label>
                             <input type="email" class="form-control " id="email" aria-describedby="emailHelp" name="correo-electronico" required placeholder="example@some.com">
-                            <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu correo electrónico con nadie más</small>
+                            <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu correo electrónico con nadie más.</small>
                         </div>
                         <!-- Este div es para el input donde el usuario escribe su teléfono celular -->
                         <div class="form-group">
                             <label for="phone">Teléfono celular:</label>
-                            <input type="tel" minlength="10" maxlength="10" min="0" class="form-control " id="phone" name="telefono" required placeholder="Escriibe tu numero telefonico">
+                            <input type="tel" minlength="10" maxlength="10" min="0"  pattern="[0-9]{10}" class="form-control " id="phone" name="telefono" required placeholder="Escribe tu número de celular">
                         </div>
                         <!-- Este div es para el textarea donde el usuario escribe su mensaje -->
                         <div class="form-group">
@@ -94,7 +96,7 @@
                             <textarea class="form-control" id="message" rows="3" name="mensaje" required></textarea>
                         </div>
                         <!-- Botón para enviar la información del formulario al servidor (eso creo xd) -->
-                        <input id="btn-contacto-submit"class="btn btn-primary" type="submit" value="Enviar">
+                        <input id="btn-contacto-submit"class="btn btn-primary btn-lg btn-block" type="submit" value="Enviar">
                         <!-- Espacios extra para agregar entre el fondo de la página y el botón de "Enviar" -->
                         <br>
                         <br>
