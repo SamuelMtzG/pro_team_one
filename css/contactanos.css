@@ -1,3 +1,41 @@
+:root{
+    --orange-color: #e9a02f;
+    --blue-color: #01adb6;
+    --aqua-color:#3eb9a5;
+    --green-color: #9cbb5d;
+    --gray-color: #2b2b2d;
+    --white-color: #ffffff;
+    --black-color: #000000;
+     /*Tipos de letras*/
+  --font-texto-gral:'Lato', sans-serif;
+  --font-title: 'Rubik', sans-serif;
+}
+nav{
+    background-color: var(--white-color);
+    border-bottom: 2px solid rgb(212, 175, 55);
+  }
+  
+  nav span, nav a {
+    font-family: var(--font-texto-gral);
+    font-weight: bolder;
+    font-size: 1.3rem;
+    color: var(--black-color);
+  }
+  
+  nav a.nav-link:hover {
+    color: var(--orange-color);
+    background-color: #5a5a5a22;
+    border-radius: 10px;
+    transform: scale(1.05);
+  }
+  
+  nav a.nav-link:valid {
+    background-color: #5a5a5a;
+  }
+  
+  .navbar-toggler {
+    border: 1px solid var(--black-color);
+  }
 .content{
     color: black;
     text-align: center;
@@ -69,23 +107,6 @@ body{
 #emailHelp{
     color: black;
 }
-hr {
-    border: 2px solid #e9a02f;
-    box-shadow: 1px 1px 10px  #e9a02f;
-    margin: 0;
-}
-#foot-col {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color:black;
-    text-shadow: 3px 3px 10px black;
-    
-}
-.nav-link_1,.foot-text{
-    color: white;
-}
-
 /*esquinas*/
 
 /*boton dark mood*/
@@ -116,4 +137,31 @@ hr {
     background-color: #e9a02f;
     border: #e9a02f;
     border-radius: 10px;
+}
+#foot-col {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--black-color);
+
+}
+.card-footer{
+  border-top: 2px solid var(--orange-color);
+  background-color: var(--white-color);
+}
+
+#fot-nav {
+  width: 30rem;
+}
+
+#fot-nav a{
+  font-size: 1rem;
+  margin-right: 10%;
+  color: var(--black-color);
+}
+
+#fot-nav a:hover{
+  color: var(--orange-color);
+  border-radius: 10px;
+  transform: scale(1.05);
 }

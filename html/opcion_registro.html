@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,22 +13,80 @@
     <title>Registrarse | OSAR</title>
 </head>
 <body>
-    <div class="container-fluid" id="hero">
-        <h1>¿Qué quieres hacer?</h1>
-    </div>
-    <hr>
-    <br>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-11 col-md-5 col-lg-6 col-xl-6" id="img1">
-                <img src="../img/inversor.png">
-                <div class="w-100"></div>
-                <a href="#"><button type="button" class="btn btn-primary btn-lg">Invertir en empresa</button></a>
+    <!--Barra de navegación-->
+    <header id="contact_us">
+        <!--Barra de navegación-->
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <!--Logo y nombre de la red social-->
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/Isotipo_Osar.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                <span>OSAR</span>
+            </a>
+            <!--Botón para colapsar la barra de navegacion dependiendo de la resolución de la pantalla-->
+            <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarTogglerBarraNav"
+                aria-controls="navbarTogglerBarraNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Div con nuestras opciones.-->
+            <div class="collapse navbar-collapse" id="navbarTogglerBarraNav">
+                <ul class="navbar-nav ml-auto text-right">
+                    <li class="nav-item active">
+                        <!--cambiar dirreción cuando se cree el registro-->
+                        <a class="nav-link" href="./contactanos.html">Contáctanos</a>
+                    </li>
+                    <li class="nav-item active">
+                        <!--cambiar dirreción cuando se cree el registro-->
+                        <a class="nav-link" href="./acerca_de_nosotros.html">Acerca de Nosotros</a>
+                    </li>
+                    <li class="nav-item active">
+                        <!--cambiar dirreción cuando se cree el registro-->
+                        <a class="nav-link" href="./iniciar_sesion.html">Iniciar sesión</a>
+                    </li>
+                    <li class="nav-item active">
+                        <!--cambiar dirreción cuando se cree el registro-->
+                        <a class="nav-link" href="../html/opcion_registro.html">Registrarse</a>
+                    </li>
+                </ul>
             </div>
-            <div class="col-sm-11 col-md-5 col-lg-6 col-xl-6" id="img2">
-                <img src="../img/ayuda.png">
+        </nav>
+        <!--Aqui termina barnav-->
+    </header>
+    <br>
+    <div class="container" id="hero">
+        <br>
+        <h1>¿Qué quieres hacer?</h1>
+        <hr>
+    </div>
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-11 col-md-6 col-lg-6 col-xl-6 fondo1" id="img1">
+                <br>
+                <img src="../img/inversor.png" class="img">
                 <div class="w-100"></div>
-                <a href="registrarse_usuario_proyecto.html"><button type="button" class="btn btn-primary btn-lg">Conseguir inversión</button></a>
+                <br>
+                <a href="./registro_inversor.html"><button type="button" class="btn btn-primary btn-lg">Invertir en empresa</button></a>
+            </div>
+            <div class="col-sm-11 col-md-6 col-lg-6 col-xl-6 fondo2" id="img2">
+                <br>
+                <img src="../img/ayuda.png" class="img">
+                <div class="w-100"></div>
+                <br>
+                <a href="./registrarse_usuario_proyecto.html"><button type="button" class="btn btn-primary btn-lg">Conseguir inversión</button></a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="card-footer">
+        <div class="row" id="foot-row">
+            <div class="col col-sm-col" id="foot-col">
+                    <div id="fot-nav">
+                       <a class="nav-link_1" href="../index.html">Inicio</a>
+                       <a class="nav-link_1" href="../html/contactanos.html">Contáctanos</a>
+                        <a class="nav-link_1" href="../html/acerca_de_nosotros.html">Acerca de Nosotros</a>
+                    </div><!-- nuestras opciones.-->
+                <span class="foot-text" style="color: black;">OSAR &copy; 2021</span>
+                <span class="foot-text" style="color: black;">MÉXICO, CDMX.</span>
             </div>
         </div>
     </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 
 <head> 
     <meta charset="UTF-8">
@@ -17,16 +17,17 @@
 </head>
 
 <body>
+      <!--Barra de navegación-->
     <header id="contact_us">
         <!--Barra de navegación-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <nav class="navbar navbar-expand-lg sticky-top">
             <!--Logo y nombre de la red social-->
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="../index.html">
                 <img src="../img/Isotipo_Osar.png" width="30" height="30" class="d-inline-block align-top" alt="">
                 <span>OSAR</span>
             </a>
             <!--Botón para colapsar la barra de navegacion dependiendo de la resolución de la pantalla-->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerBarraNav"
+            <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarTogglerBarraNav"
                 aria-controls="navbarTogglerBarraNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -34,19 +35,27 @@
             <div class="collapse navbar-collapse" id="navbarTogglerBarraNav">
                 <ul class="navbar-nav ml-auto text-right">
                     <li class="nav-item active">
-                        <a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
+                        <!--cambiar dirreción cuando se cree el registro-->
                         <a class="nav-link" href="./contactanos.html">Contáctanos</a>
                     </li>
-                    <li class="nav-item ">
+                    <li class="nav-item active">
+                        <!--cambiar dirreción cuando se cree el registro-->
                         <a class="nav-link" href="./acerca_de_nosotros.html">Acerca de Nosotros</a>
+                    </li>
+                    <li class="nav-item active">
+                        <!--cambiar dirreción cuando se cree el registro-->
+                        <a class="nav-link" href="./iniciar_sesion.html">Iniciar sesión</a>
+                    </li>
+                    <li class="nav-item active">
+                        <!--cambiar dirreción cuando se cree el registro-->
+                        <a class="nav-link" href="../html/opcion_registro.html">Registrarse</a>
                     </li>
                 </ul>
             </div>
-        </nav><br />
+        </nav>
         <!--Aqui termina barnav-->
     </header>
+    <br>
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -76,18 +85,19 @@
         </div> 
     </div>
     <br/>
-    <hr>
-    <footer>
-        <div class="card-footer text-muted bg-dark">
-            <div class="row" id="foot-row">
-                <div class="col col-sm-col" id="foot-col">
-                    <span class="foot-text">ATRÉVETE A EMPRENDER</span>
-                    <span class="foot-text">OSAR &copy; 2021</span>
-                    <span class="foot-text">MÉXICO, CDMX.</span>
-                </div>
+    <div class="card-footer">
+        <div class="row" id="foot-row">
+            <div class="col col-sm-col" id="foot-col">
+                    <div id="fot-nav">
+                       <a class="nav-link_1" href="../index.html">Inicio</a>
+                       <a class="nav-link_1" href="../html/contactanos.html">Contáctanos</a>
+                        <a class="nav-link_1" href="../html/acerca_de_nosotros.html">Acerca de Nosotros</a>
+                    </div><!-- nuestras opciones.-->
+                <span class="foot-text" style="color: black;">OSAR &copy; 2021</span>
+                <span class="foot-text" style="color: black;">MÉXICO, CDMX.</span>
             </div>
-        </div>    
-    </footer>
+        </div>
+    </div>
     
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
