@@ -43,13 +43,15 @@ nav{
     text-align: center;
     color: white;
     background-color:#9cbb5d;
+    border-bottom: 4px solid var(--orange-color);
+    padding: .7rem 0;
 }
 h1{
     margin: 0px;
 }
 .img{
     width: 80%;
-    height: 75%;
+    height: 100%;
     padding: 0%;
     border: 0rem;
     margin: 0%;
@@ -82,9 +84,9 @@ a{
     color: white;
     font-family: 'Lato', sans-serif;
 }
-hr{
-    border: 2px solid #e9a02f;
-}
+
+
+
 #foot-col {
   display: flex;
   flex-direction: row;
