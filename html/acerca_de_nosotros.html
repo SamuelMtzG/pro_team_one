@@ -1,47 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acerca de nosotros</title>
+    <title>Acerca de nosotros | OSAR</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/acerca_de_nosotros.css">
     <link rel="shortcut icon" href="../img/Isotipo_Osar.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    
-    <!--Barra de navegación-->
-    <nav id="nav-adn" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top backface-visibility(hidden)" >
-        <!--Logo y nombre de la red social-->
-        <a id="logo" class="navbar-brand" href="../index.html">
-            <!-- <img src="#" width="30" height="30" class="d-inline-block align-top" alt=""> -->
-            <img id="img-logo-nav" src="../img/Isotipo_Osar.png">
-            <span >OSAR</span>
-        </a>
-        <!--Botón para colapsar la barra de navegacion dependiendo de la resolución de la pantalla-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerBarraNav"
-            aria-controls="navbarTogglerBarraNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!--Div con nuestras opciones.-->
-        <div class="collapse navbar-collapse" id="navbarTogglerBarraNav">
-            <ul class="navbar-nav ml-auto text-right">
-                <li class="nav-item">
-                    <a class="nav-link active" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="./contactanos.html">Contáctanos</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="./acerca_de_nosotros.html">Acerca de Nosotros</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <header id="contact_us">
+        <!--Barra de navegación-->
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <!--Logo y nombre de la red social-->
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/Isotipo_Osar.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                <span>OSAR</span>
+            </a>
+            <!--Botón para colapsar la barra de navegacion dependiendo de la resolución de la pantalla-->
+            <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarTogglerBarraNav"
+                aria-controls="navbarTogglerBarraNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Div con nuestras opciones.-->
+            <div class="collapse navbar-collapse" id="navbarTogglerBarraNav">
+                <ul class="navbar-nav ml-auto text-right">
+                    <li class="nav-item active">
+                        <!--cambiar dirreción cuando se cree el registro-->
+                        <a class="nav-link" href="./contactanos.html">Contáctanos</a>
+                    </li>
+                    <li class="nav-item active">
+                        <!--cambiar dirreción cuando se cree el registro-->
+                        <a class="nav-link" href="./acerca_de_nosotros.html">Acerca de Nosotros</a>
+                    </li>
+                    <li class="nav-item active">
+                        <!--cambiar dirreción cuando se cree el registro-->
+                        <a class="nav-link" href="./iniciar_sesion.html">Iniciar sesión</a>
+                    </li>
+                    <li class="nav-item active">
+                        <!--cambiar dirreción cuando se cree el registro-->
+                        <a class="nav-link" href="./opcion_registro.html">Registrarse</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--Aqui termina barnav-->
+    </header>
     <!--Aqui termina barnav-->
     <section class="hero">
         <div class="container-fluid text-hero">
@@ -51,7 +65,7 @@
         </div>
         <div class="bg-video">
             <video autoplay loop muted>
-                <source src="../img/Canyon - 82863.mp4" type="video/mp4">
+                <source src="../img/pexels-rodnae-productions-7551577.webm" type="video/mp4">
                 <!-- <source src="../img/dk5o1-nk5ri.webm" type="video/webm"> -->
             </video>
         </div>
@@ -63,11 +77,11 @@
             <article class="col-md-8" id="quienes-somos">
                 <h2 id="h2_des" class="h2_des">¿QUIÉNES SOMOS?</h2>
                 <p class="parrafo_des">
-                    OSAR es una red social de origen mexicano que busca apoyar a emprendedores, centros de acopio,
-                    negocios, centros de rescate animal, entre otros. Reúne a personas con la misma mentalidad
-                    y visión para que formen parte de tú proyecto.<br>
-                    ¿Tienes un proyecto en mente, pero aún no coincides con las personas indicadas para llevarlo a cabo? 
-                    en OSAR seguro las encontrarás.<br> 
+                    OSAR es una red social de origen mexicano, en donde puedes expresar tus proyectos, en los cuales decidiras 
+                    si quieres recibir apoyo monetario o apoyo con tiempo. Si eres patrocinador o quieres apoyar tendras la oportunidad de 
+                    escoger el proyecto que mas te interese para ayudar a personas que necesiten tu apoyo.<br>
+                    <br/>
+                ¡Atrevete a ser parte de esta red social! 
                 </p>
             </article>
             <div class="col-md-4">
@@ -95,8 +109,8 @@
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="card-title">Samuel Martinez García</h5>
-                                <p class="card-text">Hola, mi nombre es Samuel y me encanta programar, el desarrollo Front-End,
-                                    leer, jugar videojuegos y aprender cosas nuevas.
+                                <p class="card-text">Me encanta programar, me enfoco mas al desarrollo Front-End,también
+                                    leo, juego videojuegos y quiero aprender nuevas cosas.
                                 </p>
                                 <h6 class="card-h6">Front Developer</h6>
                             </div>
@@ -106,7 +120,7 @@
                 <div class="card mb-3 cards-about-us" style="max-width: 540px;" id="miriam-Card">
                     <div class="row no-gutters">
                         <div class="col-md-4">
-                            <img src="../img/miri.jpg" alt="foto">
+                            <img src="../img/miriam.png" style="display: flex; justify-content: center;" alt="foto">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
@@ -143,7 +157,7 @@
                         <div class="col-md-8">
                             <div class="card-body" >
                                 <h5 class="card-title">Erika Diaz Buceta</h5>
-                                <p class="card-text">Hola, mi nombre es Erika, tengo 24 años y soy desarrolladora web.
+                                <p class="card-text">Tengo 24 años, soy desarrolladora web.
                                     Me gusta el arte, la naturaleza y la tecnología.</p>
                                 <h6 class="card-h6">Desarrolladora FullStack Junior.</h6>
                             </div>
@@ -156,12 +170,12 @@
                 <div class="card mb-3 cards-about-us" id="elias-Card" style="max-width: 540px;">
                     <div class="row no-gutters">
                         <div class="col-md-4" style="display: flex; justify-content: center;">
-                            <img src="../img/ELIAS.jpeg" alt="ELIAS">
+                            <img src="../img/Elias.png" alt="ELIAS">
                         </div>
                         <div class="col-md-8" >
                             <div class="card-body">
                                 <h5 class="card-title">Elias Flores Vazquez</h5>
-                                <p class="card-text">Hola, soy desarrollador Full Stack Developer. Apasionado de la vida, la tecnología, el cine y la música. </p>
+                                <p class="card-text">Soy desarrollador Full Stack Developer. Apasionado de la vida, la tecnología, el cine y la música. </p>
                                 <h6 class="card-h6">Scrum Master Jr.</h6>
                             </div>
                         </div>
@@ -172,16 +186,19 @@
         </section>
         <!--Aqui termina section integrantes -->
     </div>
-    <!--Este es el div que cierra el container de section integrantes-->
-    <hr>
-    <div class="card-footer text-muted bg-dark">
+    <!--Este es el div que cierra el container de section integrantes-->  
+    <div class="card-footer">
         <div class="row" id="foot-row">
             <div class="col col-sm-col" id="foot-col">
-                <span class="foot-text">ATRÉVETE A EMPRENDER</span>
-                <span class="foot-text">OSAR &copy; 2021</span>
-                <span class="foot-text">MÉXICO, CDMX.</span>
+                    <div id="fot-nav">
+                       <a class="nav-link_1" href="./index.html">Inicio</a>
+                       <a class="nav-link_1" href="../html/contactanos.html">Contáctanos</a>
+                        <a class="nav-link_1" href="../html/acerca_de_nosotros.html">Acerca de Nosotros</a>
+                    </div><!-- nuestras opciones.-->
+                <span class="foot-text" style="color: black;">OSAR &copy; 2021</span>
+                <span class="foot-text" style="color: black;">MÉXICO, CDMX.</span>
             </div>
-        </div>        
+        </div>
     </div>
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

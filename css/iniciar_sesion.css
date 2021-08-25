@@ -1,26 +1,73 @@
+:root{
+    --orange-color: #e9a02f;
+    --blue-color: #01adb6;
+    --aqua-color:#3eb9a5;
+    --green-color: #9cbb5d;
+    --gray-color: #2b2b2d;
+    --white-color: #ffffff;
+    --black-color: #000000;
+     /*Tipos de letras*/
+  --font-texto-gral:'Lato', sans-serif;
+  --font-title: 'Rubik', sans-serif;
+}
+nav{
+    background-color: var(--white-color);
+    border-bottom: 2px solid rgb(212, 175, 55);
+  }
+  
+  nav span, nav a {
+    font-family: var(--font-texto-gral);
+    font-weight: bolder;
+    font-size: 1.3rem;
+    color: var(--black-color);
+  }
+  
+  nav a.nav-link:hover {
+    color: var(--orange-color);
+    background-color: #5a5a5a22;
+    border-radius: 10px;
+    transform: scale(1.05);
+  }
+  
+  nav a.nav-link:valid {
+    background-color: #5a5a5a;
+  }
+  
+  .navbar-toggler {
+    border: 1px solid var(--black-color);
+  }
 body{
-    /*background-image: url("../img/emprendimiento.jpg");*/
-    height: 120vh;
-    background-size: cover;
-    background-position: center;
+    background-color: var(--white-color);
 } 
-.body{ 
+.titulo{
+    color: var(--orange-color);
+    font-family: 'Rubik', sans-serif;
+    text-align:  center;
+    font-size: calc(1.9em + 1vw);
+}
+.text{
+    color: var(--black-color);
+    font-family: 'Lato', sans-serif;
+    font-size: calc(.8em + 1vw);
+}
+#bg{
+    background-color: beige;
+    opacity: .5;
+}
+.body{
     display: -ms-flexbox;
     display: flex;
     padding-top: 40px;
     padding-bottom: 40px;
 }
-.titulo{
-    color:#e9a02f;
-}
 .formulario{
     width: 100%;
-    max-width: 420px;
+    max-width: 600px;
     height: 100%;
-    max-height: 650px;
+    max-height: auto;
     padding: 15px;
     margin: auto;
-    background-color:  #3eb9a4be;
+    background-color: beige;
 }
 .formulario-label{
     position: relative;
@@ -29,19 +76,6 @@ body{
 .formulario-label >input, .formulario-label >label{
     height: 3rem;
     padding: .75rem;
-}
-.formulario-label >label{
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    margin-bottom: 0;
-    pointer-events: none;
-    cursor: text;
-    border: 1px solid transparent;
-    border-radius: .25rem;
-    transition: all .15 ease-in-out;
 }
 .formulario-label input:not(:placeholder-shown){
     padding-top: 1.25rem;
@@ -56,25 +90,37 @@ input[type]:focus{
     border-color: black;
     box-shadow: 5px 5px 5px rgba(46, 48, 46, 0.356);
 }
-.frase{
-    color: white;
-}
-hr {
-
-  /*border: 2px solid #e9a02f;
-  box-shadow: 1px 1px 10px  #ffc266;
-  margin: 0;*/
-    border: 2px solid #e9a02f;
-    box-shadow: 1px 1px 10px  #e9a02f;
-    margin: 0;
-}
-#foot-col {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  color: ivory;
-  text-shadow: 3px 3px 10px black;
+#login{
+    background-color: var(--orange-color);
+    border: var(--blue-color);
 }
 .message{
     text-align: center;
 }
+#foot-col {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--black-color);
+  
+  }
+.card-footer{
+    border-top: 2px solid var(--orange-color);
+    background-color: var(--white-color);
+  }
+  
+  #fot-nav {
+    width: 30rem;
+  }
+  
+  #fot-nav a{
+    font-size: 1rem;
+    margin-right: 10%;
+    color: var(--black-color);
+  }
+  
+  #fot-nav a:hover{
+    color: var(--orange-color);
+    border-radius: 10px;
+    transform: scale(1.05);
+  }
