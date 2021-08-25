@@ -68,16 +68,19 @@ h1{
     background-color: #e9a02f;
     border: #e9a02f;
     font-family: 'Lato', sans-serif;
+    color: white;
     border-radius: 10px;
+
 }
 .btn:hover{
     background-color: #9cbb5d;
     border: #9cbb5d;
+    text-decoration: none;
 }
+
 a{
     color: white;
     font-family: 'Lato', sans-serif;
-    text-decoration: none;
 }
 hr{
     border: 2px solid #e9a02f;
