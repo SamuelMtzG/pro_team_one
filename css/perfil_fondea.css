@@ -4,10 +4,10 @@
     border-radius: 50%;
 }
 .datos{
-    background-color: #3eb9a5;
+    background-color: rgba(236, 243, 247, 0.726);
     text-align: center;
 }
-.descripcion{
+.tipoP, .c_e{
     text-align: justify;
     font-family: 'Lato', sans-serif;
 }
@@ -32,6 +32,7 @@
 }
 .btn{
     text-align: center;
+    font-weight: bold;
     background-color: #e9a02f;
     border: #e9a02f;
     font-family: 'Lato', sans-serif;
