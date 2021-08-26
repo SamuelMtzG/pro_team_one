@@ -67,19 +67,31 @@ h1{
     height: 25em;
 }
 .btn{
+    outline: none;
     background-color: #e9a02f;
-    border: #e9a02f;
     font-family: 'Lato', sans-serif;
     color: white;
     border-radius: 10px;
+    border: none;
 
 }
 .btn:hover{
     background-color: #9cbb5d;
-    border: #9cbb5d;
     text-decoration: none;
 }
 
+.btn:active{
+  outline: none;
+  background-color: #7a9249;
+  text-decoration: none;
+  transform: scale(.9);
+}
+
+.btn:focus{
+  outline: none;
+  border: 0;
+}
+  
 a{
     color: white;
     font-family: 'Lato', sans-serif;

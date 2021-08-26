@@ -70,11 +70,16 @@ nav a.nav-link:valid {
 .hero{
   height: 100vh;
   width: 100%;
-  background-image: url(../img/HeroIndex.png);
+  /* background-image: url(../img/HeroIndex.png);
   background-size: cover;
   object-fit: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-position: top;
+  background-repeat: no-repeat; */
+}
+
+.hero img {
+  height: 100%;
+  width: 100%;
 }
 
 div.carousel-caption {
