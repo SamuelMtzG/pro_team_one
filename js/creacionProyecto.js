@@ -82,7 +82,7 @@ function createCards(projects) {
                 <p class="card-text"><strong>Fecha de inicio:</strong> ${project.beginDate}</p>
                 <p class="card-text"><strong>Fecha de conclusión:</strong> ${project.endDate}</p>
                 <p class="card-text description">${project.description}</p>
-                <a href="#" class="btn ">See details</a>
+                <a href="#" class="btn ">Ver Detalles</a>
             </div>
         </div>
         </div>
