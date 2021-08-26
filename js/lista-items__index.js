@@ -50,60 +50,52 @@ function openOption(evt, optionName) {
 
 
 const items = {
-    'projects': [{
-        'id': 0,
-        'projectName': 'StormPet',
-        'projectImg': 'https://www.collinsdictionary.com/images/full/storm_167600330.jpg',
-        'leader': 'Elias Flores',
-        'beginDate': '2021-08-09',
-        'endDate': '2021-10-09',
-        'description': 'Maecenas lectus dolor, bibendum ac ligula at, fringilla facilisis sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.'
-    },
-    {
-        'id': 1,
-        'projectName': 'TecnoGaming',
-        'projectImg': 'https://img.blogs.es/campusomenhp/wp-content/uploads/2020/04/Abre_gaming.jpeg',
-        'leader': 'Alexis Garcia',
-        'beginDate': '2021-08-09',
-        'endDate': '2021-10-09',
-        'description': 'Maecenas lectus dolor, bibendum ac ligula at, fringilla facilisis sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.'
-    },
-    {
-        'id': 2,
-        'projectName': 'EcoAztecas',
-        'projectImg': 'https://www.socialhizo.com/images/edad_antigua/aztecas/organizacion-politica-y-militar/azteca.jpg',
-        'leader': 'Miriam Jimenez',
-        'beginDate': '2021-08-09',
-        'endDate': '2021-10-09',
-        'description': 'Maecenas lectus dolor, bibendum ac ligula at, fringilla facilisis sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.'
-    },
-    {
-        'id': 3,
-        'projectName': 'Centro de rescate animal "Siker"',
-        'projectImg': 'https://www.hogarmania.com/archivos/202011/cosas-donar-refugio-animales-portada-668x400x80xX-1.jpg',
-        'leader': 'Erika Díaz',
-        'beginDate': '2021-08-09',
-        'endDate': '2021-10-09',
-        'description': 'Maecenas lectus dolor, bibendum ac ligula at, fringilla facilisis sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.'
-    },
-    {
-        'id': 4,
-        'projectName': 'Reciclando Residuos',
-        'projectImg': 'https://twenergy.com/wp-content/uploads/2019/02/guia-reciclar-1280x720.jpg',
-        'leader': 'Samuel Martínez',
-        'beginDate': '2021-08-09',
-        'endDate': '2021-10-09',
-        'description': 'Maecenas lectus dolor, bibendum ac ligula at, fringilla facilisis sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.'
-    },
-    {
-        'id': 5,
-        'projectName': "Rufino al rescate",
-        'projectImg': 'https://cloudfront-us-east-1.images.arcpublishing.com/eluniverso/F6IFLUUKR5D6FNRBK6ID6CFSQI.jpg',
-        'leader': 'Juan Carlos Valencia',
-        'beginDate': '2021-08-09',
-        'endDate': '2021-10-09',
-        'description': 'Maecenas lectus dolor, bibendum ac ligula at, fringilla facilisis sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.'
-    },]
+    'projects': [
+        {
+            'id': 1,
+            'projectName': 'Adopta',
+            'projectImg': 'https://sanmigueldeallende.gob.mx/wp-content/uploads/2020/10/WhatsApp-Image-2020-10-07-at-11.15.05.jpeg',
+            'leader': 'Adoptame México',
+            'beginDate': '30-08-2021',
+            'endDate': '31-09-2021',
+            'description': 'Buscamos a personas que nos apoyen con donativos o adoptando perritos y gatitos. Si requires más información sigue nuesta pagina de facebook "Adóptame México"'
+        },
+        {
+            'id': 3,
+            'projectName': 'Al Rescate',
+            'projectImg': 'https://www.hogarmania.com/archivos/202011/cosas-donar-refugio-animales-portada-668x400x80xX-1.jpg',
+            'leader': 'Erika Díaz',
+            'beginDate': '2021-08-09',
+            'endDate': '2021-10-09',
+            'description': 'Te invitamos a donar para que mas animalitos que viven en situación de calle puedan tener un hogar, también puedes adoptar visitandonos en Cuautepec Barrio bajo a un lado del Deportivo Juventino Rosas'
+        },
+        {
+            'id': 4,
+            'projectName': 'Reciclando Residuos',
+            'projectImg': 'https://twenergy.com/wp-content/uploads/2019/02/guia-reciclar-1280x720.jpg',
+            'leader': 'Samuel Martínez',
+            'beginDate': '2021-08-30',
+            'endDate': '2021-10-1',
+            'description': 'Se parte de el cambio ecológico para una mejor ciudad, si quieres ser parte de esta campaña deveras presentarte con ropa comoda, bolsas de basura y una gran actitud, te esperamos en estación hidalgo. '
+        },
+        {
+            'id': 6,
+            'projectName': "Rufino al rescate",
+            'projectImg': 'https://cloudfront-us-east-1.images.arcpublishing.com/eluniverso/F6IFLUUKR5D6FNRBK6ID6CFSQI.jpg',
+            'leader': 'Juan Carlos Valencia',
+            'beginDate': '2021-08-09',
+            'endDate': '2021-10-09',
+            'description': 'Si estas dispuesto a yudar, te invitamos a ser parte de nuestro centro de adopcion que busca a personas para que cuiden de nuestros animales por 4 horas, se dara una previa capacitación y sera totalmente voluntario. '
+        },
+        {
+            'id': 7,
+            'projectName': 'Ecológica Maya',
+            'projectImg': 'https://diarioresponsable.com/images/opinion/consejos%20para%20integrar%20la%20educaci%C3%B3n%20ecol%C3%B3gica%20en%20las%20aulas%20-%20diarioresponsable_5977967976.jpg',
+            'leader': 'Tanya Santiago',
+            'beginDate': '2021-08-09',
+            'endDate': '2021-10-09',
+            'description': 'Estamos buscando apoyo voluntario, para limpiar las areas verdes que lo necesiten, si estas dispuesto a ayudar comunicate al 5504157600'
+        },]
 };
 
 if (window.sessionStorage.getItem('projects') === null) {
