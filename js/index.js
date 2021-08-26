@@ -54,3 +54,5 @@ boton_4.onclick = function(){
     <button type="submit" id="btn-4">Buscar Curso</button>
     `;
 }
+
+

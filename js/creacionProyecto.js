@@ -74,15 +74,15 @@ function createCards(projects) {
 
         let card = `
         <div class="col-md-4" style="margin: 15px 0"> 
-        <div class="card" style="width: 18rem;">
+        <div class="card" h-100>
             <img class="card-img-top" src="${project.projectImg}" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">${project.projectName}</h5>
-                <p class="card-text">Líder de proyecto: ${project.leader}</p>
-                <p class="card-text">Fecha de inicio: ${project.beginDate}</p>
-                <p class="card-text">Fecha de conclusión: ${project.endDate}</p>
-                <p class="card-text">${project.description}</p>
-                <a href="#" class="btn btn-primary">See details</a>
+                <p class="card-text leader"><strong>Líder de proyecto:</strong> ${project.leader}</p>
+                <p class="card-text"><strong>Fecha de inicio:</strong> ${project.beginDate}</p>
+                <p class="card-text"><strong>Fecha de conclusión:</strong> ${project.endDate}</p>
+                <p class="card-text description">${project.description}</p>
+                <a href="#" class="btn ">See details</a>
             </div>
         </div>
         </div>
