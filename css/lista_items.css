@@ -1,12 +1,8 @@
-.card{
-    background-color: #ffffbb;
-    min-height: 800px;
-    max-height: 800px;
-}
 
-.btn{
-    background-color: #9cbb5d;
-    border-radius: 10px;
+  
+a{
+    color: white;
+    font-family: 'Lato', sans-serif;
 }
 
 .card-img-top{
@@ -25,6 +21,74 @@ body {
 .nav-link{
    color: black;
 }
+:root{
+    --titulos-color: #e9a02f;
+    --card-integrantes-bg-color: #01adb6;
+    --card-acerca-de-bg-color:#3eb9a5;
+    --nav-bg-color: #2b2b2d;
+    --white-color-default: #ffffff;
+    --black-color-default: #000000;
+    --green-color-light: #9cbb5d;
+  
+    /*Tipos de letras*/
+    --font-texto-gral:'Lato', sans-serif;
+    --font-title: 'Rubik', sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    width: 100%;
+  }
+  *,*::after,*::before{
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-title);
+  }
+  
+  a, p, span {
+    font-family: var(--font-texto-gral);
+  }
+  
+  .container-fluid {
+    padding: 0;
+  }
+  
+  
+  .nav__top{
+    background-color: var(--white-color-default);
+    border-bottom: 2px solid rgb(212, 175, 55);
+  }
+  
+  .nav__top span, nav a {
+    font-family: var(--font-texto-gral);
+    font-weight: bolder;
+    font-size: 1.3rem;
+    color: var(--black-color-default);
+  }
+  
+  .nav__top a.nav-link:hover {
+    color: var(--titulos-color);
+    background-color: #5a5a5a22;
+    border-radius: 10px;
+    transform: scale(1.05);
+  }
+  
+  .nav__top a.nav-link:valid {
+    background-color: #5a5a5a;
+  }
+  
+  .navbar-toggler {
+    border: 1px solid var(--black-color-default);
+  }
+  
 /*botones div*/
 .nav_2 div button {
 	background-color: white;
@@ -64,14 +128,94 @@ hr {
     box-shadow: 1px 1px 10px  #ffc266;
     margin: 0;
 }
+
+.card{
+
+    min-height: 45rem;
+    max-height: 800px;
+}
+
+.card:last-child{
+    text-align: center;
+}
+
+.card .leader {
+    height: 3rem;
+    border-bottom: 1px solid rgb(189, 186, 186);
+}
+
+.card .description {
+    margin: 1rem 0;
+    padding: 1rem 0;
+    border-top: 1px solid rgb(189, 186, 186);
+    border-bottom: 1px solid rgb(189, 186, 186);
+}
+
+.btn{
+    outline: none;
+    background-color: #e9a02f;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+.btn:hover{
+    background-color: #9cbb5d;
+    text-decoration: none;
+}
+
+.btn:active{
+  outline: none;
+  background-color: #7a9249;
+  text-decoration: none;
+  transform: scale(.9);
+}
+
+.btn:focus{
+  outline: none;
+  border: 0;
+}
+
+.card-footer a:first-child i {
+    margin-right: 15%;
+  }
+  .card-footer a:last-child i {
+    margin-left: 15%;
+  }
+  .card-footer a:first-child i:hover {
+    color: var(--card-integrantes-bg-color);
+  }
+  .card-footer a:last-child i:hover {
+    color: var(--card-integrantes-bg-color);
+  }
+
 #foot-col {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    color:rgb(255, 255, 255);
-    text-shadow: 3px 3px 10px black;
-    
+    color:var(--black-color-default); 
 }
+
+.card-footer{
+    border-top: 2px solid var(--titulos-color);
+    background-color: var(--white-color-default);
+  }
+  
+  #fot-nav {
+    width: 30rem;
+  }
+  
+  #fot-nav a{
+    font-size: 1rem;
+    margin-right: 10%;
+    color: var(--black-color-default);
+  }
+  
+  #fot-nav a:hover{
+    color: var(--titulos-color);
+    border-radius: 10px;
+    transform: scale(1.05);
+  }
 
 h5{
     color: #e9a02f;

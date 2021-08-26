@@ -124,7 +124,7 @@ function createCards(projects) {
                   <p class="card-text">${project.description}</p>
                 </div>
                 <div class="card-footer">
-                    <a href=""><i class="fas fa-money-bill"></i></a> <a href=""><i class="fas fa-heart"></i></a>
+                    <a href="../html/opcion_registro.html"><i class="fas fa-money-bill"></i></a> <a href="../html/opcion_registro.html"><i class="fas fa-heart"></i></a>
                 </div>
               </div>
         </div>`;

@@ -242,15 +242,15 @@ padding-bottom: 10px;
 .nav-link_1{
 color: white;
 }
-.flip-container{
+/* .flip-container{
   background-color: transparent;
   width: 300px;
   height: 300px;
   perspective: 1000px;
   margin:0 auto;
-}
+} */
 /*cards*/
-.card_1{
+/* .card_1{
   position: relative;
   display:inline-block;
   width: 100%;
@@ -262,9 +262,9 @@ color: white;
 .card_1 h3, card p {
   display:block; 
 } 
-
+ */
 /* GIRA HORIZONTAL */
-.flip-container:hover .card_1{
+/* .flip-container:hover .card_1{
   transform: rotateY(180deg);
 }
 
@@ -308,10 +308,10 @@ color: white;
   background-image: url("../img/Index_card_cultura.jpeg");
   color: #fff;
   display: flex;
-  background-size: cover;/*Esto es para que la imagen no se repita*/
-}
+  background-size: cover;/*Esto es para que la imagen no se repita
+} */
 
-div.frente span{
+/* div.frente span{
   font-size:11px;
   background:#646464c2;
   color:white;
@@ -342,7 +342,7 @@ div.frente_3 span{
   right: 0px;
   left: 0px;
 
-}
+} */
 
 div.carousel-caption{
   font-size:11px;
@@ -354,26 +354,26 @@ div.carousel-caption{
   right: 0px;
   left: 0px;
 }
-.frente_2{
+/* .frente_2{
   background-image: url("../img/edu.jpg");
   color: #fff;
   display: flex;
-  background-size: cover;/*Esto es para que la imagen no se repita*/
-}
-.frente_3{
+  background-size: cover;/*Esto es para que la imagen no se repita
+} */
+/* .frente_3{
   background-image: url("../img/ambien.jpg");
   color: #fff;
   display: flex;
-  background-size: cover;/*Esto es para que la imagen no se repita*/
-}
-.frente_4{
+  background-size: cover;/*Esto es para que la imagen no se repita
+} */
+/* .frente_4{
   background-image: url("../img/Index_card_proteccionAnimal.jpg");
   color: #fff;
   background-position: center;
   display: flex;
-  background-size: cover;/*Esto es para que la imagen no se repita*/
-}
-.revez {
+  background-size: cover;/*Esto es para que la imagen no se repita
+} */
+/* .revez {
   background-color: var(--card-integrantes-bg-color);
   color: #faebd7;
   transform: rotateX(180deg);
@@ -381,10 +381,10 @@ div.carousel-caption{
   text-align:center;
   opacity: 0.8;
 
-}
-.revez p {
+} */
+/* .revez p {
   font-size:0.65em;
-}/*cards*/
+} *//*cards*/
 /*Cambios de miriam*/
   div.carousel-caption{
     font-size:11px;
@@ -397,7 +397,7 @@ div.carousel-caption{
     left: 0px;
   }
 /*Cards*/
-  div.frente_4 span{
+/*   div.frente_4 span{
     font-size:11px;
     background:#646464c2;
     color:white;
@@ -406,8 +406,8 @@ div.carousel-caption{
     bottom: 0px;
     right: 0px;
     left: 0px;
-  }
-  /*cards*/
+  } */
+  /*cards */
 
 
 #btn-lista{
