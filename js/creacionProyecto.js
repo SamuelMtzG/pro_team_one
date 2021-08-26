@@ -6,7 +6,12 @@ const items = {
         'leader': 'Fundación Antonio Haghenbeck y de la Lama I.A.P',
         'beginDate': '10-09-2021',
         'endDate': '12-09-2021',
-        'description': 'Ven y paricipa en el bazar de venta con causa, en donde encontraras productos con tematicas animalistas, para ayudar a animales sin hogar.'
+        'description': 'Ven y paricipa en el bazar de venta con causa, en donde encontraras productos con tematicas animalistas, para ayudar a animales sin hogar.',
+        'status': '',
+        'investmentPrice': 0,
+        'totalHearts': 0,
+        'totalParticipants': 0,
+        'foundingType': ''
     },
     {
         'id': 1,
@@ -15,7 +20,12 @@ const items = {
         'leader': 'Adoptame México',
         'beginDate': '30-08-2021',
         'endDate': '31-09-2021',
-        'description': 'Buscamos a personas que nos apoyen con donativos o adoptando perritos y gatitos. Si requires más información sigue nuesta pagina de facebook "Adóptame México"'
+        'description': 'Buscamos a personas que nos apoyen con donativos o adoptando perritos y gatitos. Si requires más información sigue nuesta pagina de facebook "Adóptame México"',
+        'status': '',
+        'investmentPrice': 0,
+        'totalHearts': 0,
+        'totalParticipants': 0,
+        'foundingType': ''
     },
     {
         'id': 3,
@@ -24,7 +34,12 @@ const items = {
         'leader': 'Erika Díaz',
         'beginDate': '2021-08-09',
         'endDate': '2021-10-09',
-        'description': 'Te invitamos a donar para que mas animalitos que viven en situación de calle puedan tener un hogar, también puedes adoptar visitandonos en Cuautepec Barrio bajo a un lado del Deportivo Juventino Rosas'
+        'description': 'Te invitamos a donar para que mas animalitos que viven en situación de calle puedan tener un hogar, también puedes adoptar visitandonos en Cuautepec Barrio bajo a un lado del Deportivo Juventino Rosas',
+        'status': '',
+        'investmentPrice': 0,
+        'totalHearts': 0,
+        'totalParticipants': 0,
+        'foundingType': ''
     },
     {
         'id': 4,
@@ -33,7 +48,12 @@ const items = {
         'leader': 'Samuel Martínez',
         'beginDate': '2021-08-30',
         'endDate': '2021-10-1',
-        'description': 'Se parte de el cambio ecológico para una mejor ciudad, si quieres ser parte de esta campaña deveras presentarte con ropa comoda, bolsas de basura y una gran actitud, te esperamos en estación hidalgo. '
+        'description': 'Se parte de el cambio ecológico para una mejor ciudad, si quieres ser parte de esta campaña deveras presentarte con ropa comoda, bolsas de basura y una gran actitud, te esperamos en estación hidalgo.',
+        'status': '',
+        'investmentPrice': 0,
+        'totalHearts': 0,
+        'totalParticipants': 0,
+        'foundingType': ''
     },
     {
         'id': 6,
@@ -42,7 +62,12 @@ const items = {
         'leader': 'Juan Carlos Valencia',
         'beginDate': '2021-08-09',
         'endDate': '2021-10-09',
-        'description': 'Si estas dispuesto a yudar, te invitamos a ser parte de nuestro centro de adopcion que busca a personas para que cuiden de nuestros animales por 4 horas, se dara una previa capacitación y sera totalmente voluntario. '
+        'description': 'Si estas dispuesto a yudar, te invitamos a ser parte de nuestro centro de adopcion que busca a personas para que cuiden de nuestros animales por 4 horas, se dara una previa capacitación y sera totalmente voluntario.',
+        'status': '',
+        'investmentPrice': 0,
+        'totalHearts': 0,
+        'totalParticipants': 0,
+        'foundingType': ''
     },
     {
         'id': 7,
@@ -51,7 +76,12 @@ const items = {
         'leader': 'Tanya Santiago',
         'beginDate': '2021-08-09',
         'endDate': '2021-10-09',
-        'description': 'Estamos buscando apoyo voluntario, para limpiar las areas verdes que lo necesiten, si estas dispuesto a ayudar comunicate al 5504157600'
+        'description': 'Estamos buscando apoyo voluntario, para limpiar las areas verdes que lo necesiten, si estas dispuesto a ayudar comunicate al 5504157600',
+        'status': '',
+        'investmentPrice': 0,
+        'totalHearts': 0,
+        'totalParticipants': 0,
+        'foundingType': ''
     },
     ]
 };
@@ -70,7 +100,6 @@ function createCards(projects) {
     let listaFinal = '';
 
     projects.forEach(function (project) {
-
 
         let card = `
         <div class="col-md-4" style="margin: 15px 0"> 
