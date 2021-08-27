@@ -18,6 +18,11 @@ h3{
     box-shadow: 1px 1px 10px  #ffc266;
     margin: 0;
 }
+
+.img_new-project {
+    height: 30rem;
+}
+
 #foot-col {
     display: flex;
     flex-direction: row;

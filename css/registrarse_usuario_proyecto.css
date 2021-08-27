@@ -11,6 +11,15 @@
   --font-texto-gral:'Lato', sans-serif;
   --font-title: 'Rubik', sans-serif;
 }
+
+a, a:hover {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--orange-color);
+}
+
 nav{
     background-color: var(--white-color);
     border-bottom: 2px solid rgb(212, 175, 55);
