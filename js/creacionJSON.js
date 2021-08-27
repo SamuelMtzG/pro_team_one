@@ -81,6 +81,19 @@ function addProject() {
     document.getElementById("form-add-project").reset();//Reiniciamos los valores del formulario
 
 }
-
+let imagen = document.getElementById('proyecto-foto');
+let myWidget = cloudinary.createUploadWidget({
+    cloudName: 'rsosar2021', 
+    uploadPreset: 'OsarFotos'}, (error, result) => { 
+      if (!error && result && result.event === "success") { 
+        console.log('Imagen subida con éxito', result.info); 
+        imagen.src = result.info.secure_url;
+        }
+    }
+  )
+  
+  document.getElementById("upload_widget").addEventListener("click", function(){
+      myWidget.open();
+    }, false);
 
 
