@@ -1,3 +1,5 @@
+/* Aqui cse declaran las variables generales que usaremos en la pagina */
+
 :root{
     --orange-color: #e9a02f;
     --blue-color: #01adb6;
@@ -10,7 +12,11 @@
     /*Tipos de letras*/
   --font-texto-gral:'Lato', sans-serif;
   --font-title: 'Rubik', sans-serif;
-}
+} /* Aqui terminan las variables */
+
+
+
+/* Aqui se declaran estilos generales y/o reseteo de la pagina */
 
 a,p,span{
   font-family: var(--font-texto-gral);
@@ -18,8 +24,10 @@ a,p,span{
 
 h1,h2,h3,h4,h5,h6 {
   font-family: var(--font-title);
-}
+} /* Aqui termina el reseteo y/o estilos generales de la pagina */
 
+
+/* Aqui se encuentra el nav de la pagina y todo lo correspondiente a el  */
 nav{
     background-color: var(--white-color);
     border-bottom: 2px solid rgb(212, 175, 55);
@@ -45,17 +53,19 @@ nav{
   
   .navbar-toggler {
     border: 1px solid var(--black-color);
-  }
+  } /* Aqui termina el nav de la pagina y todo lo correspondiente a el  */
 
  .container__body {
     margin-top: 2rem;
     margin-bottom: 2rem;
  } 
 
+
 .avatar{
     width: 8em;
     height: 8em;
     border-radius: 50%;
+    background-color: var(--white-color);
 }
 .datos{
     background-color: var(--green-color);
@@ -63,7 +73,8 @@ nav{
 }
 
 .datos h4, .datos h5 {
-  color: var(--white-color);
+  color: var(--black-color);
+  text-align: center;
 }
 .descripcion{
     text-align: justify;
