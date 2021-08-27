@@ -18,13 +18,6 @@ let message = document.querySelector('.message');
 //Aqui van las funciones
 function validarCampoEntrar(e) {
     e.preventDefault();
-    /* if (e.target.value < 18 || e.target.value == 0) {
-        e.target.classList.add('is-invalid');
-    } else {
-       e.target.classList.remove('is-invalid'); 
-       e.target.classList.add('is-valid'); 
-
-    } */
 
     let nameFormInput = e.target.getAttribute('id');
 
@@ -74,12 +67,7 @@ function validarCampoSalir(e) {
         default:
             break;
     }
-    /* if(e.target.value){
-       e.target.classList.remove('is-invalid'); 
-       e.target.classList.add('is-valid');
-    } else {
-        e.target.classList.add('is-invalid');
-    } */
+
 }
 
 function validaNombre(e) {

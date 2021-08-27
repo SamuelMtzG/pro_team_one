@@ -40,8 +40,23 @@ nav{
   .navbar-toggler {
     border: 1px solid var(--black-color-default);
   }
-  .text-hero{
-    display:flex;/* De esta linea para abajo es lo que necesitamos para centrar el texto del hero */
+
+  .hero{
+    height: 100vh;
+    width: 100%;
+    /*background-image: url(../img/HeroIndex.png);
+    background-size: cover;
+    object-fit: cover;
+    background-position: top;
+    background-repeat: no-repeat; */
+  }
+  
+  .hero img {
+    height: 100%;
+    width: 100%;
+  } 
+ /* .text-hero{
+    display:flex;/* De esta linea para abajo es lo que necesitamos para centrar el texto del hero 
     height: 90vh; 
     width: 100%;
     align-items: center;
@@ -53,7 +68,7 @@ nav{
   
   h1{
     color: var(--titulos-color);
-    text-shadow: /* -3px -3px 2px  var(--white-color-default), */ 3px 3px 2px var(--black-color-default);
+    text-shadow: /* -3px -3px 2px  var(--white-color-default), * 3px 3px 2px var(--black-color-default);
     font-size: calc(.8em + 1vw);
     font-weight: bolder;
     font-family: Rubik;
@@ -61,12 +76,12 @@ nav{
     }
   h4{
     color: var(--titulos-color);
-    text-shadow: /* -2px -2px 2px  var(--white-color-default), */ 3px 3px 2px var(--black-color-default);
+    text-shadow: /* -2px -2px 2px  var(--white-color-default), * 3px 3px 2px var(--black-color-default);
     font-size: calc(.15em + 1vw);
     font-weight: bolder;
     text-align: center;
     font-family: lato;
-} 
+}*/ 
 h5{
     font-family: Rubik;
 }
@@ -125,8 +140,8 @@ video {
     font-family: lato;
 }
 section{/*Esto nos ayuda a separar un poco cada seccion*/
-    padding-top: 30px;
-}
+    /* padding-top: 30px;*/
+} 
 
 .description {/*Aqui*/
    width: 100%;  
