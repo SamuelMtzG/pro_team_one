@@ -43,7 +43,7 @@ function createCards(projects) {
             <p class="card-text">${project.description}</p>
           </div>
           <div class="card-footer">
-              <a href="">Ver Detalles</a>
+              <a href="../html/ver_detalles.html?id=${project.id}">Ver Detalles</a>
           </div>
         </div>
   </div>`;

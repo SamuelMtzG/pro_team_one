@@ -37,6 +37,12 @@ nav a.nav-link:valid {
     border: 1px solid var(--black-color);
 }
 
+main {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: fit-content;
+}
+
 #foot-col {
     display: flex;
     flex-direction: row;
