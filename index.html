@@ -58,11 +58,24 @@
         <!--Aqui termina barnav-->
     </header>
     <!--contenido del body del index-->
-    <section>
+    <section class="hero">
+        <div class="container-fluid text-hero">
+            <!--Esto hace que esta seccion tome todo el ancho de la pantalla-->
+            <h1>OSAR</h1>
+            <h4>EL MUNDO TIENE QUE CONOCER TU PROYECTO.</h4>
+        </div>
+        <div class="bg-video">
+            <video autoplay loop muted>
+                <source src="../img/pexels-rodnae-productions-7551577.webm" type="video/mp4">
+                <!-- <source src="../img/dk5o1-nk5ri.webm" type="video/webm"> -->
+            </video>
+        </div>
+    </section>
+    <!-- <section>
         <div class="container-fluid hero">
             <img src="../img/HeroIndex.png" alt="fondo">
         </div>
-    </section>
+    </section> -->
     <br>
     <br>
     <br>
@@ -186,7 +199,7 @@
     <br />
     
     <div class="container">
-        <div class="container row row-cols-1 row-cols-xl-3 g-4 card-deck" id="lista-items">
+        <div class="container row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 g-4 card-deck" id="lista-items">
            
           </div> <!-- Aqui esta el listado de proyectos -->
           <button id="btn-lista" type="button" class="btn btn-secondary btn-lg btn-block"><a href="./html/lista_items.html" style="color: white;" >VER MÁS </a></button>

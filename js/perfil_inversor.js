@@ -39,7 +39,7 @@ function createCards(projects) {
         <div class="card h-100">
           <img src="${project.projectImg}" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">${project.projectName}</h5>
+            <h5 class="card-title"><strong>${project.projectName}</strong></h5>
             <p class="card-text">${project.description}</p>
           </div>
           <div class="card-footer">

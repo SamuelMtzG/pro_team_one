@@ -75,8 +75,18 @@ body{
 
 .user-img{
     
-    margin-top: -10%;
-    text-align: center;
+    margin-top: -11%;
+    text-align: center; 
+}
+
+.user-img img{
+    border-radius: 50%;
+    border: 1px solid var(--orange-color);
+    object-fit: contain;
+    padding: .5rem;
+    width: 30%;
+    height: 80%;
+    background-color: var(--white-color);
 }
 
 .main-section{
@@ -91,11 +101,6 @@ body{
     border: 0;
 }
 
-.user-img img{
-    border-radius: 50%;
-    width: 50%;
-    height: 80%;
-}
 
 .form-group input{
     height: 42px;
