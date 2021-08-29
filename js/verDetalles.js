@@ -21,7 +21,7 @@ function createproject(project) {
     const template = `
     <div class="container details">
     <div class="col-12 d-flex justify-content-center">
-        <img src="${project.projectImg}" class="w-75">
+        <img src="${project.projectImg}" class="post-img">
     </div>
     <div class="col-12">
         <div class="card">
