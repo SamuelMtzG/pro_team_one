@@ -195,6 +195,7 @@ function addUser(){
         let newId = userArray.length;
         const newUser = {
             'id': newId,
+            'organization' : organization,
             'name': name,
             'age': age,
             'tipoPersona': tipoPersona,
