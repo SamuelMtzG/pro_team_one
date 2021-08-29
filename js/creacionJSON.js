@@ -91,6 +91,13 @@ function addProject() {
         window.sessionStorage.setItem('projects', JSON.stringify(projectArray));
     }
     document.getElementById("form-add-project").reset();//Reiniciamos los valores del formulario
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Proyecto creado '  ,
+        showConfirmButton: false,
+        timer: 1500
+      })
 
 }
 
