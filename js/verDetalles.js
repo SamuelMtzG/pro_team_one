@@ -20,8 +20,8 @@ function createproject(project) {
     const parentElement = document.getElementById("post-details");
     const template = `
     <div class="container details">
-    <div class="col-12">
-        <img src="${project.projectImg}" class="w-100">
+    <div class="col-12 d-flex justify-content-center">
+        <img src="${project.projectImg}" class="w-75">
     </div>
     <div class="col-12">
         <div class="card">
@@ -34,7 +34,7 @@ function createproject(project) {
                 </ul>
                 <p class="card-text">${project.description}</p>
             </div>
-            <div class="card-footer">
+            <div class="card-footer d-flex justify-content-around">
                     <a href="../html/opcion_registro.html"><i class="fas fa-money-bill"></i></a> <a href="../html/opcion_registro.html"><i class="fas fa-heart"></i></a>
             </div>
         </div>

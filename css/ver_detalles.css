@@ -64,8 +64,14 @@ h5 {
     background-color: var(--white-color);
 }  
 .details {
-    height: fit-content;
-    width: 60em;
+    /* background-color: rgba(62, 185, 165, 0.3); */
+    background-color: rgba(233, 160, 47, 0.4);
+    width: 75%;
+}
+
+.details img {
+    margin-top: 10px;
+    margin-bottom: 25px;
 }
 #fot-nav {
     width: 30rem;
@@ -105,6 +111,6 @@ h5 {
 @media only screen and (max-width: 575px) {
     .details {
         width: 100%;
-        height: fit-content;    
+        height: 50%;    
     }
 }
