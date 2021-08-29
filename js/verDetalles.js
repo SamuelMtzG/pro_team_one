@@ -19,19 +19,26 @@ function searchOnDatabase(idProject) {
 function createproject(project) {
     const parentElement = document.getElementById("post-details");
     const template = `
-    <div class="col-6">
+    <div class="container details">
+    <div class="col-12">
         <img src="${project.projectImg}" class="w-100">
     </div>
-    <div class="col-9">
+    <div class="col-12">
         <div class="card">
             <h5 class="card-header">${project.projectName}</h5>
             <div class="card-body">
                 <h5 class="card-title">Líder de proyecto: ${project.leader}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Fecha de inicio: ${project.beginDate}</h6>
-                <h6 class="card-subtitle mb-2 text-muted">Fecha de finalización: ${project.endDate}</h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item mb-2 text-muted">Fecha de inicio: ${project.beginDate}</li>
+                    <li class="list-group-item mb-2 text-muted">Fecha de finalización: ${project.endDate}</li>
+                </ul>
                 <p class="card-text">${project.description}</p>
             </div>
+            <div class="card-footer">
+                    <a href="../html/opcion_registro.html"><i class="fas fa-money-bill"></i></a> <a href="../html/opcion_registro.html"><i class="fas fa-heart"></i></a>
+            </div>
         </div>
+    </div>
     </div>
     `;
     parentElement.innerHTML += template;

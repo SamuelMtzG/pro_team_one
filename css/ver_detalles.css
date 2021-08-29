@@ -43,6 +43,16 @@ main {
     height: fit-content;
 }
 
+i{
+    font-size: 2.3rem;
+    color: rgb(192, 178, 178);
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
+}
+
 #foot-col {
     display: flex;
     flex-direction: row;
@@ -53,7 +63,10 @@ main {
     border-top: 2px solid var(--orange-color);
     background-color: var(--white-color);
 }  
-
+.details {
+    height: fit-content;
+    width: 60em;
+}
 #fot-nav {
     width: 30rem;
 }
@@ -68,4 +81,23 @@ main {
     color: var(--orange-color);
     border-radius: 10px;
     transform: scale(1.05);
+}
+.card img {
+    height: 15rem;
+}  
+.card p {
+    overflow-y: auto;
+    height: 6rem;
+}
+.card-footer a:first-child i {
+    margin-right: 15%;
+}
+.card-footer a:last-child i {
+    margin-left: 15%;
+}
+.card-footer a:first-child i:hover {
+    color: var(--card-integrantes-bg-color);
+}
+.card-footer a:last-child i:hover {
+    color: var(--card-integrantes-bg-color);
 }
