@@ -87,7 +87,7 @@ function login(users){
     let message = document.querySelector('.message');
     users.forEach(function(user){
         if((user.email != formUser.value) && (user.password != formPassword.value)){
-            message.innerHTML = "Usuario o contrasaña invaliddos."                     
+            message.innerHTML = "Usuario o contrasaña inválidos."                     
         }else if((user.email == formUser.value) && (user.password == formPassword.value) && (user.tipoUsuario === "founding")){    
             message.innerHTML = `<div class="spinner-border text-success" role="status">
                <span class="sr-only">Loading...</span>    
