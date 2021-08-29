@@ -7,7 +7,6 @@ function validarFormulario(e) {
     e.preventDefault(); 
     //Aqui se recogen los valores una vez se envie el formulario
     let projectName = document.getElementById('project_name').value;
-    let leader = document.getElementById('leader').value;
     let begin = document.getElementById('begin_date').value;
     let end = document.getElementById('end_date').value;
     let description = document.getElementById('description').value;
@@ -18,11 +17,7 @@ function validarFormulario(e) {
         alert('Tu proyecto debe tener un nombre');
         projectName.focus();
         return;
-    } else if (leader.length < 3) {
-        alert('Tienes que escribir un nombre de usuario valido');
-        leader.focus();
-        return;
-    } else if (begin.length == 0){
+    }  else if (begin.length == 0){
         alert('Debes poner una fecha de inicio valida');
         begin.focus();
         return;
@@ -38,11 +33,28 @@ function validarFormulario(e) {
     addProject();
 }
 
+let imagen = document.getElementById('proyecto-foto');
+let myWidget = cloudinary.createUploadWidget({
+    cloudName: 'rsosar2021', 
+    uploadPreset: 'OsarFotos'}, (error, result) => { 
+      if (!error && result && result.event === "success") { 
+        console.log('Imagen subida con éxito', result.info); 
+        imagen.src = result.info.secure_url;
+        }
+    }
+  )
+  
+  document.getElementById("upload_widget").addEventListener("click", function(){
+      myWidget.open();
+    }, false);
+
 function addProject() {
+    const users = JSON.parse(window.sessionStorage.getItem('users'));
     // Obtenemos los valores del formulario
     let projectName = document.getElementById('project_name').value;
-    let projectImg = '../img/elmo.gif';
-    let leader = document.getElementById('leader').value;
+    let projectImg = imagen.src;
+    let leader = users.name;
+    console.log(leader);
     let begin = document.getElementById('begin_date').value;
     let end = document.getElementById('end_date').value;
     let description = document.getElementById('description').value;
@@ -79,8 +91,14 @@ function addProject() {
         window.sessionStorage.setItem('projects', JSON.stringify(projectArray));
     }
     document.getElementById("form-add-project").reset();//Reiniciamos los valores del formulario
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Proyecto creado '  ,
+        showConfirmButton: false,
+        timer: 1500
+      })
 
 }
-
 
 
