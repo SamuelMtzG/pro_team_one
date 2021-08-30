@@ -37,10 +37,11 @@ nav{
   .navbar-toggler {
     border: 1px solid var(--black-color);
   }
-.avatar{
+  .avatar{
     width: 8em;
     height: 8em;
     border-radius: 50%;
+    background-color: var(--white-color);
 }
 .datos{
     background-color: rgba(236, 243, 247, 0.726);
