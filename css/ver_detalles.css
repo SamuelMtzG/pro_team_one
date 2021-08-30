@@ -67,8 +67,16 @@ h5 {
 
 
 .details {
-    height: fit-content;
-    width: 60em;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgba(62, 185, 165, 0.3); */
+    background-color: rgba(233, 160, 47, 0.4);
+}
+.post-img {
+    width: 30%;
+    margin-top: 10px;
+    margin-bottom: 25px;
 }
 #fot-nav {
     width: 30rem;
@@ -111,3 +119,11 @@ i{
   .card-footer a:last-child i:hover {
     color: var(--blue-color);
   }
+
+
+@media only screen and (max-width: 575px) {
+    .post-img {
+        height: 100%;    
+    }
+}
+
