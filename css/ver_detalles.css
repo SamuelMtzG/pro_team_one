@@ -69,14 +69,17 @@ h5 {
 .details {
     width: 80%;
     display: flex;
+    border-radius: 15px;
     flex-direction: column;
-    /* background-color: rgba(62, 185, 165, 0.3); */
-    background-color: rgba(233, 160, 47, 0.4);
+    background-color: beige;
 }
 .post-img {
     width: 30%;
-    margin-top: 10px;
-    margin-bottom: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.orange-titles {
+    color: var(--orange-color);
 }
 #fot-nav {
     width: 30rem;
