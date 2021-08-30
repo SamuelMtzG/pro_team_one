@@ -25,7 +25,7 @@ function createproject(project) {
     </div>
     <div class="col-12">
         <div class="card">
-            <h5 class="card-header">${project.projectName}</h5>
+            <h5 class="card-header orange-titles">${project.projectName}</h5>
             <div class="card-body">
                 <h5 class="card-title">Líder de proyecto: ${project.leader}</h5>
                 <ul class="list-group list-group-flush">
