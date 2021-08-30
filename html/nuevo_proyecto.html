@@ -17,34 +17,37 @@
 </head>
 
 <body>
-  <header class="container-fluid">
-      <nav class="row navbar navbar-expand-lg navbar-dark bg-dark ">
-          <a class="col-3 navbar-brand" href="../index.html">
-              <img src="../img/Isotipo_Osar.png" width="30" height="30" class="d-inline-block align-top" alt="">
-              <span>OSAR</span>  
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerBarraNav"
-              aria-controls="navbarTogglerBarraNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class=" col-9 collapse navbar-collapse" id="navbarTogglerBarraNav">
-              <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ml-auto text-right">
-                  <li class="mr-lg-5 nav-item active">
-                      <a class="nav-link" href="./lista_items.html"><i class="fas fa-home fa-lg" style= "color: #ffffff"> Inicio</i> <span class="sr-only">(current)</span></a>
-                  </li>
-                  <form class="ml-lg-5 mr-lg-5 form-inline my-2 my-lg-0">
-                      <input class="form-control mr-sm-2" type="search" placeholder="Search">
-                      <button class="btn btn-primary my-2 my-sm-0" id="btn-buscar" type="submit">Buscar</button>
-                  </form>
-                  <li class="ml-lg-5 mr-lg-5 nav-item">
-                      <a class="nav-link" href="./nuevo_proyecto.html"><i class="fas fa-plus-square fa-lg" style= "color: #ffffff"> Nuevo</i></a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link " href="./perfil.html"><i class="fas fa-user fa-lg" style= "color: #ffffff"> Perfil</i></a>
-                  </li>
-              </ul>
-          </div>
-      </nav>
+  <header>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <!--Logo y nombre de la red social-->
+        <a class="navbar-brand" href="../index.html">
+            <img src="../img/Isotipo_Osar.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            <span>OSAR</span>
+        </a>
+        <!--Botón para colapsar la barra de navegacion dependiendo de la resolución de la pantalla-->
+        <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarTogglerBarraNav"
+            aria-controls="navbarTogglerBarraNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Div con nuestras opciones.-->
+        <div class="collapse navbar-collapse" id="navbarTogglerBarraNav">
+            <ul class="navbar-nav ml-auto text-right">
+                <li class="nav-item active">
+                    <!--cambiar dirreción cuando se cree el registro-->
+                    <a class="nav-link" href="./contactanos.html">Contáctanos</a>
+                </li>
+                <li class="nav-item active">
+                    <!--cambiar dirreción cuando se cree el registro-->
+                    <a class="nav-link" href="./acerca_de_nosotros.html">Acerca de Nosotros</a>
+                </li>
+                <li class="nav-item active">
+                    <!--cambiar dirreción cuando se cree el registro-->
+                    <a class="nav-link" href="./iniciar_sesion.html">Cerrar Sesión</a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
   </header>
     <main>
         <div class="container">
@@ -107,17 +110,19 @@
             <!-- Fin del botón para ir a la página de lista_items.html -->
         </div>
     </main>
-    <footer class="container-fluid" style="border-top: 4px solid #e9a02f; background-color: rgb(52, 58, 64);">
-        <div class="card-footer text-muted bg-dark ">
-            <div class="row" id="foot-row">
-                <div class="col col-sm-col" id="foot-col">
-                    <span class="foot-text">ATRÉVETE A EMPRENDER <br> <br></span>
-                    <span class="foot-text">OSAR &copy; 2021</span>
-                    <span class="foot-text">MÉXICO, CDMX.</span>
-                </div>
+    <div class="card-footer">
+        <div class="row" id="foot-row">
+            <div class="col col-sm-col" id="foot-col">
+                    <div id="fot-nav">
+                       <a class="nav-link_1" href="./index.html">Inicio</a>
+                       <a class="nav-link_1" href="./html/contactanos.html">Contáctanos</a>
+                        <a class="nav-link_1" href="./html/acerca_de_nosotros.html">Acerca de Nosotros</a>
+                    </div><!-- nuestras opciones.-->
+                <span class="foot-text">OSAR &copy; 2021</span>
+                <span class="foot-text">MÉXICO, CDMX.</span>
             </div>
         </div>
-    </footer>
+    </div>
     <script type="module" src="../js/creacionJSON.js"></script>
     <script src="https://upload-widget.cloudinary.com/global/all.js" type="text/javascript"></script>  
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
