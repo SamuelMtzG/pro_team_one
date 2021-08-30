@@ -62,7 +62,10 @@ h5 {
 .card-footer{
     border-top: 2px solid var(--orange-color);
     background-color: var(--white-color);
+    text-align: center;
 }  
+
+
 .details {
     width: 80%;
     display: flex;
@@ -100,21 +103,30 @@ h5 {
     overflow-y: auto;
     height: 6rem;
 }
+
+i{
+    font-size: 2.3rem;
+    color: rgb(192, 178, 178);
+  }
+  
+
 .card-footer a:first-child i {
     margin-right: 15%;
-}
-.card-footer a:last-child i {
+  }
+  .card-footer a:last-child i {
     margin-left: 15%;
-}
-.card-footer a:first-child i:hover {
-    color: var(--card-integrantes-bg-color);
-}
-.card-footer a:last-child i:hover {
-    color: var(--card-integrantes-bg-color);
-}
+  }
+  .card-footer a:first-child i:hover {
+    color: var(--blue-color);
+  }
+  .card-footer a:last-child i:hover {
+    color: var(--blue-color);
+  }
+
 
 @media only screen and (max-width: 575px) {
     .post-img {
         height: 100%;    
     }
 }
+

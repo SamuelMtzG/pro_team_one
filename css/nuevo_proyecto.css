@@ -1,36 +1,68 @@
 
 
-body{
-    background-color: rgb(255, 255, 255);
-    height: 100vh;
-    font-family: 'Lato', sans-serif; 
+:root{
+    --orange-color: #e9a02f;
+    --blue-color: #01adb6;
+    --aqua-color:#3eb9a5;
+    --green-color: #9cbb5d;
+    --gray-color: #2b2b2d;
+    --white-color: #ffffff;
+    --black-color: #000000;
+
+    /*Tipos de letras*/
+  --font-texto-gral:'Lato', sans-serif;
+  --font-title: 'Rubik', sans-serif;
+} /* Aqui terminan las variables */
+
+
+
+/* Aqui se declaran estilos generales y/o reseteo de la pagina */
+
+a,p,span{
+  font-family: var(--font-texto-gral);
 }
 
-h3{
-    color: #e9a02f;
-    font-family: 'Rubik', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 20px;
-  }
-  hr {
-    border: 2px solid #e9a02f;
-    box-shadow: 1px 1px 10px  #ffc266;
-    margin: 0;
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--font-title);
+} /* Aqui termina el reseteo y/o estilos generales de la pagina */
+
+header{
+    padding: 0;
 }
+/* Aqui se encuentra el nav de la pagina y todo lo correspondiente a el  */
+nav{
+    background-color: var(--white-color);
+    border-bottom: 2px solid rgb(212, 175, 55);
+  }
+  
+  nav span, nav a {
+    font-family: var(--font-texto-gral);
+    font-weight: bolder;
+    font-size: 1.3rem;
+    color: var(--black-color);
+  }
+  
+  nav a.nav-link:hover {
+    color: var(--orange-color);
+    background-color: #5a5a5a22;
+    border-radius: 10px;
+    transform: scale(1.05);
+  }
+  
+  nav a.nav-link:valid {
+    background-color: #5a5a5a;
+  }
+  
+  .navbar-toggler {
+    border: 1px solid var(--black-color);
+  } /* Aqui termina el nav de la pagina y todo lo correspondiente a el  */
+
+
 
 .img_new-project {
     height: 20rem;
 }
 
-#foot-col {
-    display: flex;
-    flex-direction: row;
-    font-family: 'Lato', sans-serif;
-    justify-content: space-between;
-    color:rgb(255, 255, 255);
-    text-shadow: 3px 3px 10px black;
-}
 .btn{
     background-color: #e9a02f;
     border: #e9a02f;
@@ -45,3 +77,33 @@ h3{
 label{
     font-size: 1.3em;
 }
+
+.card-footer {
+    border-top: 2px solid var(--orange-color);
+}
+
+#foot-col {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--black-color-default);
+  
+  }
+
+  
+  #fot-nav {
+    width: 30rem;
+  }
+  
+  #fot-nav a{
+    font-size: 1rem;
+    margin-right: 10%;
+    color: var(--black-color-default);
+  }
+  
+  #fot-nav a:hover{
+    color: var(--orange-color);
+    text-decoration: none;
+    border-radius: 10px;
+    transform: scale(1.05);
+  }
