@@ -53,7 +53,7 @@ function addProject() {
     // Obtenemos los valores del formulario
     let projectName = document.getElementById('project_name').value;
     let projectImg = imagen.src;
-    let leader = users.name;
+    let leader = 'Elias Flores';
     console.log(leader);
     let begin = document.getElementById('begin_date').value;
     let end = document.getElementById('end_date').value;
