@@ -48,6 +48,7 @@ let myWidget = cloudinary.createUploadWidget({
       myWidget.open();
     }, false);
 
+// Function modified to use fetch
 function addProject() {
     const users = JSON.parse(window.sessionStorage.getItem('users'));
     // Obtenemos los valores del formulario
@@ -59,6 +60,20 @@ function addProject() {
     let end = document.getElementById('end_date').value;
     let description = document.getElementById('description').value;
 
+    const newProject = {
+        'projectName': projectName,
+        'projectImg': projectImg,
+        'leader': leader,
+        'beginDate': begin,
+        'endDate': end,
+        'description': description
+    }
+
+    postProject('http://localhost:8080/api/project/', newProject)
+        .then(data => {
+            console.log(data);
+        });
+/*
     if (window.sessionStorage.getItem('projects') === null) {
         const projectArray = [];
         const newProject = {
@@ -89,7 +104,9 @@ function addProject() {
         
         projectArray.push(newProject);
         window.sessionStorage.setItem('projects', JSON.stringify(projectArray));
-    }
+*/
+    } // ends project
+    
     document.getElementById("form-add-project").reset();//Reiniciamos los valores del formulario
     Swal.fire({
         position: 'top-end',
@@ -97,8 +114,22 @@ function addProject() {
         title: 'Proyecto creado '  ,
         showConfirmButton: false,
         timer: 1500
-      })
+    })
 
-}
-
-
+// Fetch POST implementation
+async function postProject(url = '', data = {} ) {
+    // Default options are marked with *
+    const response = await fetch(url, {
+        method: 'POST',
+        mode: 'cors',
+        cache: 'no-cache',
+        credentials: 'same-origin',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        redirect: 'follow',
+        referrerPolicy: 'no-referrer',
+        body: JSON.stringify(data)
+    });
+    return response.json();
+} // ends postProject function
