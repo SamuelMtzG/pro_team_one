@@ -48,7 +48,9 @@ function openOption(evt, optionName) {
     evt.currentTarget.className += " active";
 }
 
-/* const endpoint = 'http://localhost:8080/api/project/';
+/* -----------------Aqui se agregó la parte que trae la API de JAVA--------------------------*/
+
+const endpoint = 'http://localhost:8080/api/project/';
 const promise = fetch(endpoint);
 
 promise.then(data => {
@@ -57,12 +59,9 @@ promise.then(data => {
 .then(data => {
     console.log(data);
     createCards(data);
-}) */
+})//promise
 
-
-/* window.addEventListener('DOMContentLoaded', createCards($projects)); */ // esta parte se queda en espera en lo que se prueba la promesa
-
-/* function createCards(projects) {
+function createCards(projects) {
     const ancla = document.getElementById('lista-items');
     //ul    
 
@@ -91,10 +90,15 @@ promise.then(data => {
     })
     ancla.innerHTML = plantillaFinal;
 
-} */// createCards
+}// createCards
+
+/* -----------------Aqui termina la parte que trae la API de JAVA--------------------------*/
 
 
-const items = {
+
+
+
+/* const items = {
     'projects': [
         {
             'id': 1,
@@ -179,4 +183,4 @@ function createCards(projects) {
     })
     ancla.innerHTML = plantillaFinal;
 
-}// createCards
+}// createCards */
