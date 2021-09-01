@@ -60,18 +60,26 @@ function addProject() {
     let end = document.getElementById('end_date').value;
     let description = document.getElementById('description').value;
 
-    const newProject = {
-        'projectName': projectName,
-        'projectImg': projectImg,
-        'leader': leader,
-        'beginDate': begin,
-        'endDate': end,
-        'description': description
-    }
+    const newProject = [{
+        'name': projectName,
+        'fechainicio': begin,
+        'fechatermino': end,
+        'imagen': projectImg,
+        'descripcion': description,
+        'Estatus': 'En progreso',
+        'precioinversion': '100',
+        'totalcorazones': '3',
+        'totalparticipantes': '2',
+        'idusuario': '3',
+        'tipofounding': 'Inversión'
+    }];
 
     postProject('http://localhost:8080/api/project/', newProject)
         .then(data => {
-            console.log(data);
+            console.log('Success: ', data);
+        })
+        .catch((error) => {
+            console.error('Error: ' , error)
         });
 /*
     if (window.sessionStorage.getItem('projects') === null) {
@@ -120,15 +128,10 @@ function addProject() {
 async function postProject(url = '', data = {} ) {
     // Default options are marked with *
     const response = await fetch(url, {
-        method: 'POST',
-        mode: 'cors',
-        cache: 'no-cache',
-        credentials: 'same-origin',
+        method: 'POST', // or 'PUT'
         headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
         },
-        redirect: 'follow',
-        referrerPolicy: 'no-referrer',
         body: JSON.stringify(data)
     });
     return response.json();
