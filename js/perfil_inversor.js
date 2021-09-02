@@ -1,4 +1,4 @@
-const items = {
+/* const items = {
     'projects': [{
         'id': 0,
         'projectName': 'StormPet',
@@ -8,7 +8,7 @@ const items = {
         'endDate': '2021-10-09',
         'description': 'Maecenas lectus dolor, bibendum ac ligula at, fringilla facilisis sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.'
     },
-    {
+    {           
         'id': 1,
         'projectName': 'TecnoGaming',
         'projectImg': 'https://img.blogs.es/campusomenhp/wp-content/uploads/2020/04/Abre_gaming.jpeg',
@@ -53,4 +53,45 @@ function createCards(projects) {
     })
     ancla.innerHTML = plantillaFinal;
 
-}
+} */
+
+/* ------Esta parte te trae la base de datos de los que tienen un proyecto con inversion -------*/
+const endpoint = 'http://localhost:8080/api/proyectohasinversor/';
+const promiseProyectoHasInversor = fetch(endpoint);
+/* ------Esta parte te trae la base de datos de los que tienen un proyecto con inversion -------*/
+
+
+promise
+.then(data => {return data.json(data);})
+.then(data => {console.log(data);});
+
+const $projects = JSON.parse(window.sessionStorage.getItem('UsuarioRegistrado'));
+
+window.addEventListener('DOMContentLoaded', createCards($projects));
+function createCards(projects) {
+    const ancla = document.getElementById('projects');
+    //ul    
+
+    let plantillaFinal = '';
+    let listaFinal = '';
+
+    projects.forEach(function (project) {
+
+
+        let card = `<div class="col-sm-11 col-md-11 col-lg-5 col-xl-5 alto">
+        <div class="card h-100">
+          <img src="${project.projectImg}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><strong>${project.projectName}</strong></h5>
+            <p class="card-text">${project.description}</p>
+          </div>
+          <div class="card-footer">
+              <a href="../html/ver_detalles.html?id=${project.id}">Ver Detalles</a>
+          </div>
+        </div>
+  </div>`;
+
+        plantillaFinal = plantillaFinal + card;
+
+    })
+    ancla.innerHTML = plantillaFinal;
