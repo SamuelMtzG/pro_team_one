@@ -59,30 +59,22 @@ function addProject() {
     let end = document.getElementById('end_date').value;
     let description = document.getElementById('description').value;
 
-    fetch('http://localhost:8080/api/project/', {
-        method: 'POST', // or 'PUT'
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            'name': projectName,
-            'fechainicio': begin,
-            'fechatermino': end,
-            'imagen': projectImg,
-            'descripcion': description,
-            'Estatus': 'I',
-            'precioinversion': '100',
-            'totalcorazones': '3',
-            'totalparticipantes': '2',
-            'idusuario': '3',
-            'tipofounding': 'Inversión'
-        })
-    })
+    const data = {
+        'name': projectName,
+        'fechainicio': begin,
+        'fechatermino': end,
+        'imagen': projectImg,
+        'descripcion': description,
+        'estatus': 'Finalizado',
+        'precioinversion': 100,
+        'totalcorazones': 3,
+        'totalparticipantes': 2,
+        'tipofounding': 'Inversión',
+        'idusuario': 4
+    }
+    postProject('http://localhost:8080/api/project/', data)
         .then(data => {
             console.log('Success: ', data);
-        })
-        .catch((error) => {
-            console.error('Error: ', error)
         });
     /*
         if (window.sessionStorage.getItem('projects') === null) {
@@ -127,7 +119,7 @@ Swal.fire({
     timer: 1500
 })
 
-/*
+
 // Fetch POST implementation
 async function postProject(url = '', data = {} ) {
     // Default options are marked with *
@@ -139,4 +131,4 @@ async function postProject(url = '', data = {} ) {
         body: JSON.stringify(data)
     });
     return response.json();
-} // ends postProject function */
+} // ends postProject function
