@@ -88,17 +88,6 @@ function validarCampoSalir(e) {
     } */
 }
 
-function validarOrganizacion(e) {
-    let regExpForOrg = /^[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]{1,80}$/i;
-    if(regExpForOrg.test(e.target.value)){
-        e.target.classList.remove('is-invalid'); 
-        e.target.classList.add('is-valid');
-        message.innerHTML =""
-    } else {
-        e.target.classList.add('is-invalid');
-        message.innerHTML = "Organización inválida."
-    }
-}
 
 function validaNombre(e) {
     let regExpForName = /^[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]{1,80}$/i;
@@ -164,56 +153,56 @@ function validarFormulario(e){
     }
     addUser();
 }
+async function postData(url = '', data = {}) {
+    // Default options are marked with *
+    const response = await fetch(url, {
+    method: 'POST', // *GET, POST, PUT, DELETE, etc.
+    headers: {
+      'Content-Type': 'application/json'
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body: JSON.stringify(data) // body data type must match "Content-Type" header
+  });
+  return response; // parses JSON response into native JavaScript objects
+}
 
 function addUser(){
     // Obtenemos los valores del formulario
-    let organization = document.getElementById('organization').value;
     let name = document.getElementById('name').value;
     let age = document.getElementById('age').value;
     let tipoPersona = document.querySelector('input[name=tipoPersona]:checked').value;
     let email =document.getElementById('email').value;
     let password = document.getElementById('password').value;
-    let tipoUsuario = "founding";
-    if (window.localStorage.getItem('users') === null) {
-        const userArray = [];
-        const newUser = {
-            'id': 0,
-            'organization': organization,
-            'name': name,
-            'age': age,
-            'tipoPersona': tipoPersona,
-            'email': email,
-            'password': password,
-            'tipoUsuario': tipoUsuario
-        }
-
-        userArray.push(newUser);
-        window.localStorage.setItem('users', JSON.stringify(userArray));
+    let tipoUsuario = "inversor";
+    const newUser = {
+        'id': 0,
+        'fullName': name,
+        'age': age,
+        'personType': tipoPersona,
+        'email': email,
+        'password': password,
+        'userType': tipoUsuario
     }
-    else {
-        const userArray = JSON.parse(window.localStorage.getItem('users'));
-        let newId = userArray.length;
-        const newUser = {
-            'id': newId,
-            'organization' : organization,
-            'name': name,
-            'age': age,
-            'tipoPersona': tipoPersona,
-            'email': email,
-            'password': password,
-            'tipoUsuario': tipoUsuario
-        }
-        
-        userArray.push(newUser);
-        window.localStorage.setItem('users', JSON.stringify(userArray));
-    }
-    Swal.fire({
-        position: 'top-center',
-        icon: 'success',
-        title: 'cuenta creada ' +name  ,
-        showConfirmButton: false,
-        timer: 1500
-      })
+        postData('http://localhost:8080/api/user/', newUser)
+        .then(data => {
+        console.log(data); // JSON data parsed by `data.json()` call
+        if(data.status == 200){
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'cuenta creada ' +name  ,
+                showConfirmButton: false,
+                timer: 3000
+              })  
+          }else{
+            Swal.fire({
+                position: 'top-end',
+                icon: 'warning',
+                title: 'cuenta existente '  ,
+                showConfirmButton: false,
+                timer: 3000
+              })  
+            }
+    });
     document.getElementById("registro-form").reset();//Reiniciamos los valores del formulario
-    window.location.href="../html/inversor_profile.html";
 }

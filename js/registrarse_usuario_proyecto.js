@@ -134,6 +134,19 @@ function validarFormulario(e){
     }
     addUser();
 }
+// Example POST method implementation:
+async function postData(url = '', data = {}) {
+    // Default options are marked with *
+    const response = await fetch(url, {
+    method: 'POST', // *GET, POST, PUT, DELETE, etc.
+    headers: {
+      'Content-Type': 'application/json'
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body: JSON.stringify(data) // body data type must match "Content-Type" header
+  });
+  return response; // parses JSON response into native JavaScript objects
+  }
 
 function addUser(){
     // Obtenemos los valores del formulario
@@ -143,17 +156,41 @@ function addUser(){
     let email =document.getElementById('email').value;
     let password = document.getElementById('password').value;
     let tipoUsuario = "founding";
-    if (window.sessionStorage.getItem('users') === null) {
-        const userArray = [];
-        const newUser = {
-            'id': 0,
-            'name': name,
-            'age': age,
-            'tipoPersona': tipoPersona,
-            'email': email,
-            'password': password,
-            'tipoUsuario': tipoUsuario
+    const newUser = {
+        'id': 0,
+        'fullName': name,
+        'age': age,
+        'personType': tipoPersona,
+        'email': email,
+        'password': password,
+        'userType': tipoUsuario
+    }
+    postData('http://localhost:8080/api/user/', newUser)
+    .then(data => {
+    console.log(data); // JSON data parsed by `data.json()` call
+    if(data.status == 200){
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'cuenta creada ' +name  ,
+            showConfirmButton: false,
+            timer: 3000
+          })  
+      }else{
+        Swal.fire({
+            position: 'top-end',
+            icon: 'warning',
+            title: 'cuenta existente '  ,
+            showConfirmButton: false,
+            timer: 3000
+          })  
         }
+    });
+   
+
+    /*if (window.sessionStorage.getItem('users') === null) {
+        const userArray = [];
+        
 
         userArray.push(newUser);
         window.sessionStorage.setItem('users', JSON.stringify(userArray));
@@ -173,14 +210,9 @@ function addUser(){
         
         userArray.push(newUser);
         window.sessionStorage.setItem('users', JSON.stringify(userArray));
-    }
-    Swal.fire({
-        position: 'top-end',
-        icon: 'success',
-        title: 'cuenta creada ' +name  ,
-        showConfirmButton: false,
-        timer: 1500
-      })
+    }*/
+    //Carga de imagenes con cloudinary
+   
     document.getElementById("registro-form").reset();//Reiniciamos los valores del formulario
 }
 
