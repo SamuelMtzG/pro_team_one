@@ -49,6 +49,20 @@ document.getElementById("upload_widget").addEventListener("click", function () {
     myWidget.open();
 }, false);
 
+
+// Fetch POST implementation
+async function postProject(url = '', data = {}) {
+    // Default options are marked with *
+    const response = await fetch(url, {
+        method: 'POST', // or 'PUT'
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data)
+    });
+    return response;
+} // ends postProject function
+
 // Function modified to use fetch
 function addProject() {
     const users = JSON.parse(window.sessionStorage.getItem('users'));
@@ -75,25 +89,26 @@ function addProject() {
     postProject('http://localhost:8080/api/project/', data)
         .then(data => {
             console.log('Success: ', data);
+            if (data.status == 200) {
+                Swal.fire({
+                    position: 'top-center',
+                    icon: 'success',
+                    title: 'Proyecto Creado',
+                    showConfirmButton: false,
+                    timer: 3000
+                })
+            } else {
+                Swal.fire({
+                    position: 'top-center',
+                    icon: 'warning',
+                    title: 'Proyecto Existente',
+                    showConfirmButton: false,
+                    timer: 3000
+                })
+            }
+            console.clear();
         });
-    if (data.status == 200) {
-        Swal.fire({
-            position: 'top-center',
-            icon: 'warning',
-            title: 'Proyecto Existente',
-            showConfirmButton: false,
-            timer: 3000
-        })
-    } else {
-        Swal.fire({
-            position: 'top-center',
-            icon: 'success',
-            title: 'Proyecto Creado',
-            showConfirmButton: false,
-            timer: 3000
-        })
-    }
-    console.clear();
+    
     /*
         if (window.sessionStorage.getItem('projects') === null) {
             const projectArray = [];
@@ -126,20 +141,8 @@ function addProject() {
             projectArray.push(newProject);
             window.sessionStorage.setItem('projects', JSON.stringify(projectArray));
     */
+    document.getElementById("form-add-project").reset();//Reiniciamos los valores del formulario
 } // ends project
 
-document.getElementById("form-add-project").reset();//Reiniciamos los valores del formulario
 
 
-// Fetch POST implementation
-async function postProject(url = '', data = {}) {
-    // Default options are marked with *
-    const response = await fetch(url, {
-        method: 'POST', // or 'PUT'
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data)
-    });
-    return response.json();
-} // ends postProject function
