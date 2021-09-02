@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', () => { document.getElementById('for
 let users = [];
 
 //Recoge los inputs del formulario
-const $inputsFormulario = Array.from(document.getElementsByClassName('formulario')[0].getElementsByTagName('input'));;
+const $inputsFormulario = Array.from(document.getElementsByClassName('formulario')[0].getElementsByTagName('input'));
 
 //Les agrego el evento para validar campos a cada input
 $inputsFormulario.forEach(input => {
@@ -70,7 +70,7 @@ window.onload = function () {
         return data.json(data);
     })
         .then(data => {
-            users = data;
+            users = data;   
         });//promise
 }
 
@@ -100,23 +100,38 @@ function login(users) {
     let formUser = document.getElementById("email");
     let formPassword = document.getElementById("password");
     let message = document.querySelector('.message');
-    users.forEach(function (user) {
-        if ((user.email != formUser.value) && (user.password != formPassword.value)) {
-            message.innerHTML = "Usuario o contrasaña inválidos."
-        } else if ((user.email === formUser.value) && (user.password === formPassword.value) && (user.userType === 'founding')) {
-            message.innerHTML = `<div class="spinner-border text-success" role="status">
-               <span class="sr-only">Loading...</span>    
-            </div>`
-            window.location.href = "../html/perfil_fondea.html";
-        } else if ((user.email === formUser.value) && (user.password === formPassword.value) && (user.userType === 'inversor')) {
-            message.innerHTML = `<div class="spinner-border text-success" role="status">
-               <span class="sr-only">Loading...</span>    
-            </div>`
-            window.location.href = "../html/inversor_profile.html";
-        }
-
+    console.log(typeof(users));
+    let usuarioEncontrado = users.filter((user) => {
+        return (user.email == formUser.value) && (user.password == formPassword.value);
     });
+      if(usuarioEncontrado.length > 0) {
+        window.localStorage.setItem('UsuarioRegistrado', JSON.stringify(usuarioEncontrado[0]));
+        message.innerHTML = `<div class="spinner-border text-success" role="status">
+           <span class="sr-only">Loading...</span>    
+        </div>`;
+        if (usuarioEncontrado[0].userType === 'inversor') {
+            window.location.href = "../html/inversor_profile.html";
+        } else if (usuarioEncontrado[0].userType === 'founding') {
+            window.location.href = "../html/perfil_fondea.html";
+        }
+        Swal.fire({
+            position: 'top-center',
+            icon: 'success',
+            title: 'Iniciando sesion' + usuarioEncontrado[0].fullName  ,
+            showConfirmButton: false,
+            timer: 3000
+          });
+      } else{
+        Swal.fire({
+            position: 'top-center',
+            icon: 'warning',
+            title: 'Datos incorrectos'  ,
+            showConfirmButton: false,
+            timer: 3000
+          });
+      } // else 
 }
+
 function validaEmail(e) {
     //Aqui traemos el patron para validar el email
     let regExpForEmail = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
