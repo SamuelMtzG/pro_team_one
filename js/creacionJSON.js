@@ -76,6 +76,24 @@ function addProject() {
         .then(data => {
             console.log('Success: ', data);
         });
+    if (data.status == 200) {
+        Swal.fire({
+            position: 'top-center',
+            icon: 'warning',
+            title: 'Proyecto Existente',
+            showConfirmButton: false,
+            timer: 3000
+        })
+    } else {
+        Swal.fire({
+            position: 'top-center',
+            icon: 'success',
+            title: 'Proyecto Creado',
+            showConfirmButton: false,
+            timer: 3000
+        })
+    }
+    console.clear();
     /*
         if (window.sessionStorage.getItem('projects') === null) {
             const projectArray = [];
@@ -111,17 +129,10 @@ function addProject() {
 } // ends project
 
 document.getElementById("form-add-project").reset();//Reiniciamos los valores del formulario
-Swal.fire({
-    position: 'top-end',
-    icon: 'success',
-    title: 'Proyecto creado ',
-    showConfirmButton: false,
-    timer: 1500
-})
 
 
 // Fetch POST implementation
-async function postProject(url = '', data = {} ) {
+async function postProject(url = '', data = {}) {
     // Default options are marked with *
     const response = await fetch(url, {
         method: 'POST', // or 'PUT'
