@@ -1,4 +1,4 @@
-const items = {
+/* const items = {
     'projects': [{
         'id': 0,
         'projectName': 'StormPet',
@@ -21,26 +21,39 @@ const items = {
 
 if (window.sessionStorage.getItem('projects') === null) {
     window.sessionStorage.setItem('projects', JSON.stringify(items.projects));
-}
-const $projects = JSON.parse(window.sessionStorage.getItem('projects'));
+} */
+let projects = [];
+window.onload = function () {
+    const endpoint = 'http://localhost:8080/api/project/';
+    const promise = fetch(endpoint);
 
-window.addEventListener('DOMContentLoaded', createCards($projects));
+    promise.then(data => {
+        return data.json(data);
+    })
+        .then(data => {
+            projects = data;
+            let user = JSON.parse(window.localStorage.getItem('UsuarioRegistrado'));
+            console.log(user);
+            let userProjects = projects.filter((project) => {
+                return (project.idusuario == user.idUser);
+            });
+            createCards(userProjects);
+        });//promise
+}
+
 function createCards(projects) {
     const ancla = document.getElementById('projects');
     //ul    
 
     let plantillaFinal = '';
-    let listaFinal = '';
 
     projects.forEach(function (project) {
-
-
         let card = `<div class="col-sm-11 col-md-11 col-lg-5 col-xl-5 alto">
         <div class="card h-100">
-          <img src="${project.projectImg}" class="card-img-top" alt="...">
+          <img src="${project.imagen}" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">${project.projectName}</h5>
-            <p class="card-text">${project.description}</p>
+            <h5 class="card-title">${project.name}</h5>
+            <p class="card-text">${project.descripcion}</p>
           </div>
           <div class="card-footer">
               <a href=""><i class="fas fa-money-bill"></i></a> <a href=""><i class="fas fa-heart"></i></a>
@@ -50,7 +63,6 @@ function createCards(projects) {
 
         plantillaFinal = plantillaFinal + card;
 
-    })
+    });
     ancla.innerHTML = plantillaFinal;
-
 }

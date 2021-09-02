@@ -65,7 +65,6 @@ async function postProject(url = '', data = {}) {
 
 // Function modified to use fetch
 function addProject() {
-    const users = JSON.parse(window.sessionStorage.getItem('users'));
     // Obtenemos los valores del formulario
     let projectName = document.getElementById('project_name').value;
     let projectImg = imagen.src;
@@ -73,6 +72,7 @@ function addProject() {
     let end = document.getElementById('end_date').value;
     let description = document.getElementById('description').value;
 
+    let user = JSON.parse(window.localStorage.getItem('UsuarioRegistrado'));
     const data = {
         'name': projectName,
         'fechainicio': begin,
@@ -84,7 +84,7 @@ function addProject() {
         'totalcorazones': 3,
         'totalparticipantes': 2,
         'tipofounding': 'Inversión',
-        'idusuario': 4
+        'idusuario': user.idUser
     }
     postProject('http://localhost:8080/api/project/', data)
         .then(data => {
