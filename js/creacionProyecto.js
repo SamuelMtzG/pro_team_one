@@ -19,7 +19,6 @@ function createCards(projects) {
 
     projects.forEach(function (project) {
 
-
         let card = 
         `<div class="col mb-4">
               <div class="card h-100">
@@ -29,7 +28,7 @@ function createCards(projects) {
                   <p class="card-text">${project.descripcion}</p>
                 </div>
                 <div class="card-footer">
-                    <a href="../html/opcion_registro.html"><i class="fas fa-money-bill"></i></a> <a href="../html/opcion_registro.html"><i class="fas fa-heart"></i></a>
+                    <a href="../html/ver_detalles.html?id=${project.idproyecto}" class="btn">Ver Detalles</a>
                 </div>
               </div>
         </div>`;
