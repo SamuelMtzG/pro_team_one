@@ -1,4 +1,5 @@
 //Asignacion de cuenta valida en local storage
+/*
 const iUsers ={
     'users' :[{
             'email': 'eliasfv25@gmail.com',
@@ -14,12 +15,13 @@ const iUsers ={
 };
 if (window.localStorage.getItem('users') === null) {
     window.localStorage.setItem('users', JSON.stringify(iUsers.users));
-}
+}*/
 //Capturamos la carga del formulario para su validacion con js
-window.addEventListener('DOMContentLoaded',()=> {document.getElementById('form-login').addEventListener('submit',validarFormulario);});
+window.addEventListener('DOMContentLoaded', () => { document.getElementById('form-login').addEventListener('submit', validarFormulario); });
+let users = [];
 
 //Recoge los inputs del formulario
-const $inputsFormulario =Array.from(document.getElementsByClassName('formulario')[0].getElementsByTagName('input')); ;
+const $inputsFormulario = Array.from(document.getElementsByClassName('formulario')[0].getElementsByTagName('input'));;
 
 //Les agrego el evento para validar campos a cada input
 $inputsFormulario.forEach(input => {
@@ -44,7 +46,7 @@ function validarCampoEntrar(e) {
 
 function validarCampoSalir(e) {
     e.preventDefault();
-    let email;    
+    let email;
     let loginFormInput = e.target.getAttribute('id');
     switch (loginFormInput) {
         case 'email':
@@ -58,8 +60,23 @@ function validarCampoSalir(e) {
     }
 }
 
+// This function calls JAVA API of every single user
+
+window.onload = function () {
+    const endpoint = 'http://localhost:8080/api/user/';
+    const promise = fetch(endpoint);
+
+    promise.then(data => {
+        return data.json(data);
+    })
+        .then(data => {
+            users = data;
+        });//promise
+}
+
+
 //Agregamos la funciones para validar formulario
-function validarFormulario(e){
+function validarFormulario(e) {
     e.preventDefault();
 
     //Se guardan los valores una vez que se envie el formulario
@@ -67,57 +84,55 @@ function validarFormulario(e){
     let password = document.getElementById("password");
 
     //Validaciones
-    if(user.length == 0){
+    if (user.length == 0) {
         alert('Debes de poner tu usuario');
         user.focus();
         return;
-    }else if (password.length == 0){
+    } else if (password.length == 0) {
         alert('Debes de poner tu contraseña');
         password.focus();
         return;
     }
-    
-    const users = JSON.parse(window.localStorage.getItem('users'));
     login(users);
 }
 
-function login(users){
+function login(users) {
     let formUser = document.getElementById("email");
     let formPassword = document.getElementById("password");
     let message = document.querySelector('.message');
-    users.forEach(function(user){
-        if((user.email != formUser.value) && (user.password != formPassword.value)){
-            message.innerHTML = "Usuario o contrasaña inválidos."                     
-        }else if((user.email == formUser.value) && (user.password == formPassword.value) && (user.tipoUsuario === "founding")){    
+    users.forEach(function (user) {
+        if ((user.email != formUser.value) && (user.password != formPassword.value)) {
+            message.innerHTML = "Usuario o contrasaña inválidos."
+        } else if ((user.email === formUser.value) && (user.password === formPassword.value) && (user.userType === 'founding')) {
             message.innerHTML = `<div class="spinner-border text-success" role="status">
                <span class="sr-only">Loading...</span>    
             </div>`
-            window.location.href="../html/perfil_fondea.html";
-        }else if((user.email == formUser.value) && (user.password == formPassword.value) && (user.tipoUsuario === "inversor")){    
+            window.location.href = "../html/perfil_fondea.html";
+        } else if ((user.email === formUser.value) && (user.password === formPassword.value) && (user.userType === 'inversor')) {
             message.innerHTML = `<div class="spinner-border text-success" role="status">
                <span class="sr-only">Loading...</span>    
             </div>`
-            window.location.href="../html/inversor_profile.html";
+            window.location.href = "../html/inversor_profile.html";
         }
-            
+
     });
 }
 function validaEmail(e) {
     //Aqui traemos el patron para validar el email
     let regExpForEmail = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
     if (regExpForEmail.test(e.target.value)) {
-        e.target.classList.remove('is-invalid'); 
+        e.target.classList.remove('is-invalid');
         e.target.classList.add('is-valid');
         email = e.target.value;
-    }  else {        
+    } else {
         e.target.classList.add('is-invalid');
     }
 }
 function validaContraseña(e) {
-    if(e.target.value){
-        e.target.classList.remove('is-invalid'); 
+    if (e.target.value) {
+        e.target.classList.remove('is-invalid');
         e.target.classList.add('is-valid');
     } else {
         e.target.classList.add('is-invalid');
     }
-}    
+}
