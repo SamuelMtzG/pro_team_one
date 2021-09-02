@@ -170,7 +170,7 @@ function addUser(){
     console.log(data); // JSON data parsed by `data.json()` call
     if(data.status == 200){
         Swal.fire({
-            position: 'top-end',
+            position: 'top-center',
             icon: 'success',
             title: 'cuenta creada ' +name  ,
             showConfirmButton: false,
@@ -178,13 +178,14 @@ function addUser(){
           })  
       }else{
         Swal.fire({
-            position: 'top-end',
+            position: 'top-center',
             icon: 'warning',
             title: 'cuenta existente '  ,
             showConfirmButton: false,
             timer: 3000
           })  
         }
+        console.clear();
     });
    
 
@@ -212,7 +213,6 @@ function addUser(){
         window.sessionStorage.setItem('users', JSON.stringify(userArray));
     }*/
     //Carga de imagenes con cloudinary
-   
     document.getElementById("registro-form").reset();//Reiniciamos los valores del formulario
 }
 
