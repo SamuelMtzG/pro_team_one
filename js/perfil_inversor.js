@@ -53,21 +53,55 @@ function createCards(projects) {
     })
     ancla.innerHTML = plantillaFinal;
 
-} */
+}
+ */
+
 
 /* ------Esta parte te trae la base de datos de los que tienen un proyecto con inversion -------*/
-const endpoint = 'http://localhost:8080/api/proyectohasinversor/';
-const promiseProyectoHasInversor = fetch(endpoint);
-/* ------Esta parte te trae la base de datos de los que tienen un proyecto con inversion -------*/
+const endpointProyectoHasInversor = 'http://localhost:8080/api/proyectohasinversor/';
+const promiseProyectoHasInversor = fetch(endpointProyectoHasInversor);
 
-
-promise
+promiseProyectoHasInversor
 .then(data => {return data.json(data);})
-.then(data => {console.log(data);});
+.then(data => {window.sessionStorage.setItem('hasInversor',JSON.stringify(data));});
+/* ------Esta parte te trae la base de datos de los que tienen un proyecto con inversion -------*/
 
-const $projects = JSON.parse(window.sessionStorage.getItem('UsuarioRegistrado'));
+/* ------Esta parte te trae la base de datos de los proyectos -------*/
+const endpointProyecto = 'http://localhost:8080/api/project/';
+const promiseProyecto = fetch(endpointProyecto);
 
-window.addEventListener('DOMContentLoaded', createCards($projects));
+promiseProyecto
+.then(data => {return data.json(data);})
+.then(data => {window.sessionStorage.setItem('proyectos',JSON.stringify(data));});
+/* ------Esta parte te trae la base de datos de los proyectos -------*/
+
+//Aqui estan todas las variables que se usan en el codigo 
+const Usuario = JSON.parse(window.localStorage.getItem('UsuarioRegistrado'));
+const UsuarioId= Usuario.idUser;
+const Proyectos = JSON.parse(window.sessionStorage.getItem('proyectos'));
+const HasInversor = JSON.parse(window.sessionStorage.getItem('hasInversor'));
+let listaProyectosInversor = [];
+
+let proyectos_invertido = HasInversor.filter(proyecto => {return proyecto.inversoridusuario == String(UsuarioId) ;});
+
+console.log(proyectos_invertido);
+
+for(let j = 0; j < Proyectos.length; j++){
+    for(let i = 0 ; i < proyectos_invertido.length ;i++){
+        if(Proyectos[j].idproyecto == proyectos_invertido[i].proyectoidproyecto){
+            
+            	listaProyectosInversor.push(Proyectos[j])
+        }
+    }
+   
+}
+console.log(listaProyectosInversor);
+
+
+
+
+
+/* window.addEventListener('DOMContentLoaded', createCards($projects));
 function createCards(projects) {
     const ancla = document.getElementById('projects');
     //ul    
@@ -95,3 +129,4 @@ function createCards(projects) {
 
     })
     ancla.innerHTML = plantillaFinal;
+} */
