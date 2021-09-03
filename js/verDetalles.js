@@ -7,32 +7,25 @@ function searchOnURL() {
     return idParam;
 } // ends searchOnURL()
 
-function searchOnDatabase(idProject) {
-    // array
-    const projectArray = JSON.parse(window.sessionStorage.getItem('projects'));
-    const projectFilter = projectArray.find( project => {
-        return project.id === parseInt(idProject); 
-    });
-    return projectFilter;
-} // ends searchOnDatabase()
+let userName = "";
 
-function createproject(project) {
+function createproject(project, user) {
     const parentElement = document.getElementById("post-details");
     const template = `
     <div class="container details">
     <div class="col-12 d-flex justify-content-center">
-        <img src="${project.projectImg}" class="post-img">
+        <img src="${project.imagen}" class="post-img">
     </div>
     <div class="col-12">
         <div class="card">
-            <h5 class="card-header orange-titles">${project.projectName}</h5>
+            <h5 class="card-header orange-titles">${project.name}</h5>
             <div class="card-body">
-                <h5 class="card-title">Líder de proyecto: ${project.leader}</h5>
+                <h5 class="card-title">Líder de proyecto: ${user}</h5>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item mb-2 text-muted">Fecha de inicio: ${project.beginDate}</li>
-                    <li class="list-group-item mb-2 text-muted">Fecha de finalización: ${project.endDate}</li>
+                    <li class="list-group-item mb-2 text-muted">Fecha de inicio: ${project.fechainicio}</li>
+                    <li class="list-group-item mb-2 text-muted">Fecha de finalización: ${project.fechatermino}</li>
                 </ul>
-                <p class="card-text">${project.description}</p>
+                <p class="card-text">${project.descripcion}</p>
             </div>
             <div class="card-footer d-flex justify-content-around">
                     <a href="../html/opcion_registro.html"><i class="fas fa-money-bill"></i></a> <a href="../html/opcion_registro.html"><i class="fas fa-heart"></i></a>
@@ -42,13 +35,31 @@ function createproject(project) {
     </div>
     `;
     parentElement.innerHTML += template;
-    
+
 }
 
-window.onload = function() {
+window.onload = function () {
     const idParamproject = searchOnURL();
-    const projectFind = searchOnDatabase(idParamproject);
 
-    createproject(projectFind);
+    const endpoint = `http://localhost:8080/api/project/${idParamproject}`;
+    const promise = fetch(endpoint);
+
+    promise.then(data => {
+        return data.json(data);
+    })
+        .then(data => {
+            project = data;
+            const userEndPoint = `http://localhost:8080/api/user/${project.idusuario}`;
+            const userpromise = fetch(userEndPoint);
+            
+            // Metí una promesa dentro de otra, como ella :'v
+            userpromise.then(userdata => {
+                return userdata.json(userdata);
+            })
+                .then(userdata => {
+                    userName = userdata.fullName;
+                    createproject(project, userName);
+                });
+        });//promise
     //createproject(projectFind);
 }

@@ -37,11 +37,20 @@ window.onload = function () {
             let userProjects = projects.filter((project) => {
                 return (project.idusuario == user.idUser);
             });
-            createCards(userProjects);
+            createCards(userProjects, user);
         });//promise
 }
 
-function createCards(projects) {
+function createCards(projects, user) {
+    const anclaUser = document.getElementById('userName');
+    anclaUser.innerHTML = `${user.fullName}`;
+
+    const anclaPerson = document.getElementById('userType');
+    anclaPerson.innerHTML = `${user.personType}`;
+
+    const anclaEmail = document.getElementById('userEmail');
+    anclaEmail.innerHTML = `${user.email}`;
+
     const ancla = document.getElementById('projects');
     //ul    
 

@@ -1,4 +1,16 @@
 
+window.onload = function () {
+    const invUser = JSON.parse(window.localStorage.getItem('UsuarioRegistrado'));
+
+    const anclaUser = document.getElementById('invUser');
+    anclaUser.innerHTML = `${invUser.fullName}`;
+
+    const anclaPerson = document.getElementById('invPerson');
+    anclaPerson.innerHTML = `${invUser.personType}`;
+
+    const anclaEmail = document.getElementById('invEmail');
+    anclaEmail.innerHTML = `${invUser.email}`;
+}
 /* ------Esta parte te trae la base de datos de los que tienen un proyecto con inversion -------*/
 const endpointProyectoHasInversor = 'http://localhost:8080/api/proyectohasinversor/';
 const promiseProyectoHasInversor = fetch(endpointProyectoHasInversor);
@@ -38,7 +50,9 @@ for(let j = 0; j < Proyectos.length; j++){
 }
 
 
+
 window.addEventListener('DOMContentLoaded', createCards(listaProyectosInversor));
+
 function createCards(projects) {
     const ancla = document.getElementById('projects');
     //ul    
